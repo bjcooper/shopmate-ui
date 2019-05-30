@@ -1,8 +1,8 @@
-const path = require('path');
+const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackMd5Hash = require("webpack-md5-hash");
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -14,13 +14,25 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
+        exclude: /node_modules/,
         use: [
-          process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
+          process.env.NODE_ENV !== "production" ? "style-loader" : MiniCssExtractPlugin.loader,
           "css-loader",
           "postcss-loader",
           "sass-loader"
         ]
-      }
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader",
+            options: {
+              interpolate: true
+            }
+          }
+        ],
+      },
     ]
   },
   plugins: [
@@ -29,16 +41,12 @@ module.exports = {
       filename: "style.[hash].css",
     }),
     new HtmlWebpackPlugin({
-      inject: false,
       hash: true,
-      template: "./src/html/index.html",
+      inject: false,
+      title: "SHOPMATE",
+      body: "./index.html",
+      template: "./src/html/template.html",
       filename: "index.html"
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      hash: true,
-      template: "./src/html/front.html",
-      filename: "front.html"
     }),
     new WebpackMd5Hash()
   ],

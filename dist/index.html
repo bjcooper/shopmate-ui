@@ -1,32 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <base href="/" />
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!-- Viewport setup -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-  <!-- Favicons -->
-  <link rel="icon" type="image/x-icon" href="/images/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="24x24" href="/images/favicons/favicon-24x24.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png" />
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.9a7da4d70049866bc59b.css?9a7da4d70049866bc59b" />
-
-  <!-- Scripts -->
-  <script src="main.9a7da4d70049866bc59b.js?9a7da4d70049866bc59b"></script>
-
-  <title>SHOPMATE</title>
-</head>
-
-<body>
-  <h1>I am here!</h1>
-</body>
-
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: /var/www/source/src/html/template.html:92
+  module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <base href=\"/\" />\n  <meta chars  et=\"utf-8\" />\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n\n  <!-- Viewport set  up -->\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0,   user-scalable=no\" />\n\n  <!-- Favicons -->\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"/ima  ges/favicons/favicon.ico\" />\n  <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"/imag  es/icons/192x192.png\" />\n  <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/images/fav  icons/favicon-32x32.png\" />\n  <link rel=\"icon\" type=\"image/png\" sizes=\"24x24\" href=\"/images/  favicons/favicon-24x24.png\" />\n  <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/imag  es/favicons/favicon-16x16.png\" />\n\n  <!-- Stylesheets -->\n  <link rel=\"stylesheet\" href=\"<%=ht  mlWebpackPlugin.files.chunks.main.css %>\" />\n\n  <!-- Scripts -->\n  
+  ReferenceError: htmlWebpackPlugin is not defined
+  
+  - template.html:92 Object.webpackEmptyContext.keys
+    /var/www/source/src/html/template.html:92:1164
+  
+  - template.html:21 __webpack_require__
+    /var/www/source/src/html/template.html:21:30
+  
+  - template.html:85 
+    /var/www/source/src/html/template.html:85:18
+  
+  - template.html:88 
+    /var/www/source/src/html/template.html:88:10
+  
+  - index.js:247 HtmlWebpackPlugin.evaluateCompilationResult
+    [source]/[html-webpack-plugin]/index.js:247:28
+  
+  - index.js:161 Promise.resolve.then.then.then.compiledTemplate
+    [source]/[html-webpack-plugin]/index.js:161:23
+  
+</pre>
