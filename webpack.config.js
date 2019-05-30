@@ -36,6 +36,11 @@ module.exports = {
     }),
     new WebpackMd5Hash()
   ],
+  resolve: {
+    alias: {
+      scss: path.resolve(__dirname, "src/scss")
+    }
+  },
   devServer: {
     host: "0.0.0.0",
     port: 3003,
