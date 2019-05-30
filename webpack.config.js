@@ -5,7 +5,7 @@ const WebpackMd5Hash = require("webpack-md5-hash");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: { main: "./src/index.js" },
+  entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[hash].js"
@@ -15,8 +15,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          "style-loader",
-          MiniCssExtractPlugin.loader,
+          process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
           "css-loader",
           "postcss-loader",
           "sass-loader"

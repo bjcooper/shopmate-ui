@@ -1,6 +1,10 @@
-$color: red;
+$color: blue;
 
 .autoprefixer-test {
   color: $color;
   user-select: none;
+}
+
+h1 {
+  color: $color;
 }
