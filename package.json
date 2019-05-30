@@ -4,7 +4,7 @@
   "description": "HTML/CSS mastery demonstration for Turing.ly.",
   "main": "index.js",
   "scripts": {
-    "serve": "NODE_ENV=development webpack-dev-server --mode development --open --hot",
+    "serve": "NODE_ENV=development webpack-dev-server --mode development --hot",
     "build": "NODE_ENV=production webpack --mode production"
   },
   "repository": {

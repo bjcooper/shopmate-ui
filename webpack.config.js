@@ -8,7 +8,7 @@ module.exports = {
   entry: { main: "./src/index.js" },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].[chunkhash].js"
+    filename: "[name].[hash].js"
   },
   module: {
     rules: [
@@ -27,7 +27,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "style.[contenthash].css",
+      filename: "style.[hash].css",
     }),
     new HtmlWebpackPlugin({
       inject: false,
@@ -40,6 +40,7 @@ module.exports = {
   devServer: {
     host: "0.0.0.0",
     port: 3003,
+    contentBase: path.join(__dirname, "dist"),
     https: false,
     disableHostCheck: true,
     watchOptions: {
