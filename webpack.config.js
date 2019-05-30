@@ -1,6 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackMd5Hash = require("webpack-md5-hash");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -31,8 +31,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
-      template: './src/public/index.html',
-      filename: 'index.html'
+      template: "./src/html/index.html",
+      filename: "index.html"
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: "./src/html/front.html",
+      filename: "front.html"
     }),
     new WebpackMd5Hash()
   ],
