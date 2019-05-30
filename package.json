@@ -1,0 +1,28 @@
+{
+  "name": "turing-uiux",
+  "version": "1.0.0",
+  "description": "HTML/CSS mastery demonstration for Turing.ly.",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.thewiznerd.com:Brett/turing-uiux.git"
+  },
+  "keywords": [
+    "webpack",
+    "npm",
+    "sass",
+    "html",
+    "css"
+  ],
+  "author": "Brett Cooper",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  }
+}
