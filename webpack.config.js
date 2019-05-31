@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackMd5Hash = require("webpack-md5-hash");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
@@ -21,18 +22,7 @@ module.exports = {
           "postcss-loader",
           "sass-loader"
         ]
-      },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader",
-            options: {
-              interpolate: true
-            }
-          }
-        ],
-      },
+      }
     ]
   },
   plugins: [
@@ -42,12 +32,22 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       hash: true,
-      inject: false,
-      title: "SHOPMATE",
-      body: "./index.html",
-      template: "./src/html/template.html",
+      template: "./src/html/index.html",
       filename: "index.html"
     }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: "./src/html/catalog.html",
+      filename: "catalog.html"
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: "./src/html/blog.html",
+      filename: "blog.html"
+    }),
+    new CopyPlugin([
+      { from: './src/images', to: 'images' }
+    ]),
     new WebpackMd5Hash()
   ],
   resolve: {
