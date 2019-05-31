@@ -22,6 +22,18 @@ module.exports = {
           "postcss-loader",
           "sass-loader"
         ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+              context: path.resolve(__dirname, "src"),
+            }
+          }
+        ]
       }
     ]
   },
@@ -46,13 +58,14 @@ module.exports = {
       filename: "blog.html"
     }),
     new CopyPlugin([
-      { from: './src/images', to: 'images' }
+      { from: './src/robots.txt' }
     ]),
     new WebpackMd5Hash()
   ],
   resolve: {
     alias: {
-      scss: path.resolve(__dirname, "src/scss")
+      scss: path.resolve(__dirname, "src/scss"),
+      images: path.resolve(__dirname, "src/images")
     }
   },
   devServer: {

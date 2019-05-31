@@ -8,11 +8,14 @@
 }
 
 .navbar {
-  input.form-control {
+  input[type="search"] {
     border-radius: 100rem;
+    // width: 1rem;
+    border: 0 none;
+    background: url("~images/icons/icons-search-black.png");
   }
 
-  &.navbar-dark input.form-control {
+  &.navbar-dark input[type="search"] {
     border: 0 none;
   }
 }
