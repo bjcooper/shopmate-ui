@@ -65,7 +65,13 @@
 
       <!-- Search Form -->
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="search everything" aria-label="Search">
+        <div class="form-group">
+          <input id="search-input" class="form-control form-control-sm" type="text" placeholder="search everything"
+            aria-label="Search">
+          <a href="#" id="search-reset" class="btn form-control-sm">
+            <span class="sr-only">Clear search</span>
+          </a>
+        </div>
       </form>
     </div>
   </nav>

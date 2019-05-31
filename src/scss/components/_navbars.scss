@@ -8,16 +8,24 @@
 }
 
 .navbar {
-  input[type="search"] {
+  #search-input {
     border-radius: 100rem;
     // width: 1rem;
     border-color: transparent;
-    background: url("~images/icons/icons-search-black.png") 0.5rem 50% no-repeat scroll red;
+    background: url("~images/icons/icons-search-black.png") 0.5rem 50% no-repeat scroll transparent;
     padding-left: 1.5rem;
     overflow: hidden;
     width: 0;
     cursor: pointer;
     transition: width 0.2s ease;
+
+    + #search-reset {
+      display: none;
+      margin-left: -2rem;
+      background: url("~images/icons/icons-close-small-black.png") 50% 50% no-repeat scroll transparent;
+      min-height: $input-height-sm;
+      opacity: 0.8;
+    }
 
     &:focus {
       width: 16rem;
@@ -26,10 +34,20 @@
       border-color: $input-border-color;
       background-position-x: 0.75rem;
       cursor: auto;
+
+      + #search-reset {
+        display: block;
+
+        &:focus,
+        &:hover {
+          box-shadow: none;
+          opacity: 1;
+        }
+      }
     }
   }
 
-  &.navbar-dark input[type="search"] {
+  &.navbar-dark #search-input {
     border: 0 none;
   }
 }
