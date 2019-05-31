@@ -6,3 +6,13 @@
 .navbar .nav-link {
   font-weight: bolder;
 }
+
+.navbar {
+  input.form-control {
+    border-radius: 100rem;
+  }
+
+  &.navbar-dark input.form-control {
+    border: 0 none;
+  }
+}
