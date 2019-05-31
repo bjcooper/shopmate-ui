@@ -11,8 +11,22 @@
   input[type="search"] {
     border-radius: 100rem;
     // width: 1rem;
-    border: 0 none;
-    background: url("~images/icons/icons-search-black.png");
+    border-color: transparent;
+    background: url("~images/icons/icons-search-black.png") 0.5rem 50% no-repeat scroll red;
+    padding-left: 1.5rem;
+    overflow: hidden;
+    width: 0;
+    cursor: pointer;
+    transition: width 0.2s ease;
+
+    &:focus {
+      width: 16rem;
+      padding-left: 2.5rem;
+      padding-right: 1rem;
+      border-color: $input-border-color;
+      background-position-x: 0.75rem;
+      cursor: auto;
+    }
   }
 
   &.navbar-dark input[type="search"] {
