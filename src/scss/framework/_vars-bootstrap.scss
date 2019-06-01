@@ -303,17 +303,17 @@ $font-size-base:              1rem * (15 / 16);
 
 // $display1-size:               6rem;
 // $display2-size:               5.5rem;
-// $display3-size:               4.5rem;
+$display3-size:               1rem * (48 / 16);
 // $display4-size:               3.5rem;
 
-// $display1-weight:             300;
-// $display2-weight:             300;
-// $display3-weight:             300;
-// $display4-weight:             300;
-// $display-line-height:         $headings-line-height;
+$display1-weight:             700;
+$display2-weight:             700;
+$display3-weight:             700;
+$display4-weight:             700;
+$display-line-height:         1.5;
 
-// $lead-font-size:              $font-size-base * 1.25;
-// $lead-font-weight:            300;
+$lead-font-size:              1rem * (24 / 16);
+$lead-font-weight:            700;
 
 // $small-font-size:             80%;
 
@@ -729,14 +729,14 @@ $navbar-dark-hover-color:           $navbar-dark-color;
 $navbar-dark-active-color:          $navbar-dark-color;
 // $navbar-dark-disabled-color:        rgba($white, .25);
 // $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23");
-// $navbar-dark-toggler-border-color:  rgba($white, .1);
+$navbar-dark-toggler-border-color:  transparent;
 
 $navbar-light-color:                $gray-900;
 $navbar-light-hover-color:          $navbar-light-color;
 $navbar-light-active-color:         $navbar-light-color;
 // $navbar-light-disabled-color:       rgba($black, .3);
 $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$primary}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M0 7h30M0 15h30M0 23h30'/%3e%3c/svg%3e"), "#", "%23");
-// $navbar-light-toggler-border-color: rgba($black, .1);
+$navbar-light-toggler-border-color: transparent;
 
 $navbar-light-brand-color:                $primary;
 // $navbar-light-brand-hover-color:          $navbar-light-active-color;

@@ -2,7 +2,7 @@
 //
 // Fonts
 //
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import "~scss/framework/fonts";
 
 //
 // Functions
@@ -63,8 +63,14 @@
 // Custom base styles
 //
 @import "~scss/base/layout";
+@import "~scss/base/type";
 
 //
 // Custom components
 //
 @import "~scss/components/navbars";
+
+//
+// One-off singleton styles
+//
+@import "~scss/singletons/page-front";

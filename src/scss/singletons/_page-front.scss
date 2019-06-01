@@ -1,0 +1,13 @@
+#page-front {
+  #top-hero {
+    background: url("~images/photos/images-woman1.png") no-repeat scroll center center #ddd;
+    background-size: cover;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+
+    > .container-fluid {
+      padding: 0 45% ($spacer * 1.5) ($spacer * 6);
+    }
+  }
+}
