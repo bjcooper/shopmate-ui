@@ -1,53 +1,96 @@
+
+/**
+ * General navbar styles.
+ */
+.navbar {
+  .nav-link {
+    font-weight: bolder;
+  }
+}
+
+/**
+ * Navbar branding area.
+ */
 .navbar-brand {
   font-weight: bolder;
   letter-spacing: 1rem * 0.25;
 }
 
-.navbar .nav-link {
-  font-weight: bolder;
+/**
+ * Navbar toggler.
+ */
+.navbar-toggler {
+  border: 0 none;
 }
 
-.navbar {
-  #search-input {
-    border-radius: 100rem;
-    // width: 1rem;
-    border-color: transparent;
-    background: url("~images/icons/icons-search-black.png") 0.5rem 50% no-repeat scroll transparent;
-    padding-left: 1.5rem;
-    overflow: hidden;
-    width: 0;
-    cursor: pointer;
-    transition: width 0.2s ease;
+/**
+ * Navbar search box.
+ */
+.navbar #search-input {
+  border-radius: 100rem;
+  border-color: transparent;
+  background: url("~images/icons/icons-search-black.png") 0.5rem 50% no-repeat scroll transparent;
+  padding-left: 1.5rem;
+  overflow: hidden;
+  width: 0;
+  cursor: pointer;
+  transition: width 0.2s ease;
+  margin-right: $spacer;
+
+  + #search-reset {
+    display: none;
+    margin-left: -3rem;
+    background: url("~images/icons/icons-close-small-black.png") 50% 50% no-repeat scroll transparent;
+    min-height: $input-height-sm;
+    opacity: 0.8;
+  }
+
+  &:focus {
+    width: 16rem;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+    border-color: $input-border-color;
+    background-position-x: 0.75rem;
+    cursor: auto;
 
     + #search-reset {
-      display: none;
-      margin-left: -2rem;
-      background: url("~images/icons/icons-close-small-black.png") 50% 50% no-repeat scroll transparent;
-      min-height: $input-height-sm;
-      opacity: 0.8;
-    }
+      display: block;
 
-    &:focus {
-      width: 16rem;
-      padding-left: 2.5rem;
-      padding-right: 1rem;
-      border-color: $input-border-color;
-      background-position-x: 0.75rem;
-      cursor: auto;
-
-      + #search-reset {
-        display: block;
-
-        &:focus,
-        &:hover {
-          box-shadow: none;
-          opacity: 1;
-        }
+      &:focus,
+      &:hover {
+        box-shadow: none;
+        opacity: 1;
       }
     }
   }
+}
 
-  &.navbar-dark #search-input {
-    border: 0 none;
+.navbar-dark #search-input {
+  border: 0 none;
+}
+
+/**
+ * Navbar cart link.
+ */
+.navbar .cart-link {
+  position: relative;
+  display: block;
+  background: url("~images/icons/icons-bag.png") 50% 50% no-repeat scroll transparent;
+  width: 2rem;
+  height: 2rem;
+
+  .cart-item-count {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    top: -0.25rem;
+    right: -0.25rem;
+    background: $primary;
+    color: $white;
+    font-weight: bolder;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.25rem;
   }
 }
