@@ -24,7 +24,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|jpg|gif|ico)$/,
         use: [
           {
             loader: 'file-loader',
@@ -34,6 +34,15 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader',
+          options: {
+            attrs: ['img:src', 'link:href']
+          }
+        }
       }
     ]
   },
@@ -59,7 +68,6 @@ module.exports = {
     }),
     new CopyPlugin([
       { from: './src/robots.txt' },
-      { from: './src/images/favicons/favicon.ico' }
     ]),
     new WebpackMd5Hash()
   ],
