@@ -58,7 +58,8 @@ module.exports = {
       filename: "blog.html"
     }),
     new CopyPlugin([
-      { from: './src/robots.txt' }
+      { from: './src/robots.txt' },
+      { from: './src/images/favicons/favicon.ico' }
     ]),
     new WebpackMd5Hash()
   ],
