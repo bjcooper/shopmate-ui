@@ -4,6 +4,14 @@
 
   .product-image {
     text-align: center;
+    position: relative;
+
+    .badge-sale {
+      font-size: 1rem;
+      position: absolute;
+      top: $spacer;
+      left: $spacer;
+    }
   }
 
   .product-details {

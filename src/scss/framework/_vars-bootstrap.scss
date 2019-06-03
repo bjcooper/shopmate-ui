@@ -42,7 +42,7 @@ $pink:    #F62F5E;
 // $orange:  #fd7e14;
 // $yellow:  #ffc107;
 // $green:   #28a745;
-// $teal:    #20c997;
+$teal:    #00D3CA;
 // $cyan:    #17a2b8;
 
 $colors: ();
@@ -910,10 +910,10 @@ $navbar-light-brand-color:                $primary;
 // Badges
 
 // $badge-font-size:                   75%;
-// $badge-font-weight:                 $font-weight-bold;
+$badge-font-weight:                 bolder;
 // $badge-padding-y:                   .25em;
 // $badge-padding-x:                   .4em;
-// $badge-border-radius:               $border-radius;
+$badge-border-radius:               0;
 
 // $badge-transition:                  $btn-transition;
 // $badge-focus-width:                 $input-btn-focus-width;
