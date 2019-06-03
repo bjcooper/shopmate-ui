@@ -1,0 +1,18 @@
+#footer {
+  padding: ($spacer * 3) 0 ($spacer * 2);
+  background: $white;
+
+  ul.links {
+    list-style: none;
+    padding: 0;
+
+    a {
+      color: $body-color;
+
+      &:hover,
+      &:focus {
+        color: $link-hover-color;
+      }
+    }
+  }
+}

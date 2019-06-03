@@ -19,7 +19,7 @@
   grid-template-areas:
     'accent primary'
     'secondary primary';
-  grid-gap: $spacer;
+  grid-gap: $spacer * 1.5;
 
   .tile-accent {
     background: $cyan;
