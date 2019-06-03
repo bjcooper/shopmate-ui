@@ -238,7 +238,7 @@ $link-color:                              $primary;
 
 // $rounded-pill:                50rem;
 
-// $box-shadow-sm:               0 .125rem .25rem rgba($black, .075);
+$box-shadow-sm:               0 0.125rem 0.25rem -0.125rem rgba($black, .075);
 // $box-shadow:                  0 .5rem 1rem rgba($black, .15);
 // $box-shadow-lg:               0 1rem 3rem rgba($black, .175);
 
@@ -820,8 +820,8 @@ $navbar-light-brand-color:                $primary;
 // $card-spacer-y:                     .75rem;
 // $card-spacer-x:                     1.25rem;
 // $card-border-width:                 $border-width;
-// $card-border-radius:                $border-radius;
-// $card-border-color:                 rgba($black, .125);
+$card-border-radius:                0;
+$card-border-color:                 $gray-100;
 // $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width});
 // $card-cap-bg:                       rgba($black, .03);
 // $card-cap-color:                    null;
