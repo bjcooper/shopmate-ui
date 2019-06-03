@@ -13,3 +13,12 @@
 p {
   max-width: 36em;
 }
+
+.text-center p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.large {
+  font-size: $font-size-lg;
+}
