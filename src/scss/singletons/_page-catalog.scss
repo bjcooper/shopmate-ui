@@ -1,0 +1,29 @@
+#menswear-categories {
+  background: url("~images/photos/images-modal4.png") no-repeat scroll 0 0 $gray-500;
+  background-size: cover;
+  min-height: 336px;
+
+  .card-body {
+    padding: ($spacer * 2) ($spacer * 3);
+    line-height: 1.5;
+    font-size: 1rem;
+
+    ul {
+      columns: 3;
+      list-style: none;
+      padding: 0;
+      max-width: 90%;
+
+      a {
+        font-weight: bolder;
+        color: $white;
+
+        &:focus,
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+}
