@@ -5,6 +5,7 @@
   .product-image {
     text-align: center;
     position: relative;
+    max-width: 330px;
 
     .badge-sale {
       font-size: 1rem;
@@ -15,6 +16,6 @@
   }
 
   .product-details {
-    padding: $spacer * 2;
+    padding: ($spacer * 2) $spacer;
   }
 }
