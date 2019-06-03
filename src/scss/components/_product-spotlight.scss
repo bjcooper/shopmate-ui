@@ -1,0 +1,12 @@
+.product-spotlight {
+  background: $white;
+  align-items: center;
+
+  .product-image {
+    text-align: center;
+  }
+
+  .product-details {
+    padding: $spacer * 2;
+  }
+}
