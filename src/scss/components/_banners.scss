@@ -1,0 +1,9 @@
+.banner {
+  margin-left: -100vw;
+  margin-right: -100vw;
+  padding: ($spacer * 2) 100vw;
+}
+
+.banner-light {
+  background: $gray-200;
+}

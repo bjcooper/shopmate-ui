@@ -7,7 +7,7 @@
 
 // $white:    #fff;
 // $gray-100: #f8f9fa;
-// $gray-200: #e9ecef;
+$gray-200: #EFEFEF;
 // $gray-300: #dee2e6;
 // $gray-400: #ced4da;
 // $gray-500: #adb5bd;
@@ -171,7 +171,7 @@ $body-bg:                   #f7f7f7;
 
 $link-color:                              $primary;
 // $link-decoration:                         none;
-// $link-hover-color:                        darken($link-color, 15%);
+$link-hover-color:                        darken($link-color, 15%);
 // $link-hover-decoration:                   underline;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 // $emphasized-link-hover-darken-percentage: 15%;
@@ -381,7 +381,7 @@ $lead-font-weight:            700;
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 // $input-btn-padding-y:         .375rem;
-// $input-btn-padding-x:         .75rem;
+$input-btn-padding-x:         1rem;
 // $input-btn-font-family:       null;
 // $input-btn-font-size:         $font-size-base;
 // $input-btn-line-height:       $line-height-base;
@@ -392,7 +392,7 @@ $lead-font-weight:            700;
 
 // $input-btn-padding-y-sm:      .25rem;
 // $input-btn-padding-x-sm:      .5rem;
-// $input-btn-font-size-sm:      $font-size-sm;
+$input-btn-font-size-sm:      1rem * (14 / 16);
 // $input-btn-line-height-sm:    $line-height-sm;
 
 // $input-btn-padding-y-lg:      .5rem;
@@ -408,14 +408,14 @@ $lead-font-weight:            700;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 // $btn-padding-y:               $input-btn-padding-y;
-// $btn-padding-x:               $input-btn-padding-x;
+$btn-padding-x:               $input-btn-padding-x;
 // $btn-font-family:             $input-btn-font-family;
 // $btn-font-size:               $input-btn-font-size;
 // $btn-line-height:             $input-btn-line-height;
 
 // $btn-padding-y-sm:            $input-btn-padding-y-sm;
-// $btn-padding-x-sm:            $input-btn-padding-x-sm;
-// $btn-font-size-sm:            $input-btn-font-size-sm;
+$btn-padding-x-sm:            $spacer * 0.75;
+$btn-font-size-sm:            1rem * (12 / 16);
 // $btn-line-height-sm:          $input-btn-line-height-sm;
 
 // $btn-padding-y-lg:            $input-btn-padding-y-lg;
@@ -437,9 +437,9 @@ $btn-font-weight:             $font-weight-bold;
 // $btn-block-spacing-y:         .5rem;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           2rem;
-$btn-border-radius-lg:        2rem;
-// $btn-border-radius-sm:        $border-radius-sm;
+$btn-border-radius:           10rem;
+$btn-border-radius-lg:        10rem;
+$btn-border-radius-sm:        10rem;
 
 // $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
@@ -457,7 +457,7 @@ $btn-border-radius-lg:        2rem;
 
 // $input-padding-y-sm:                    $input-btn-padding-y-sm;
 // $input-padding-x-sm:                    $input-btn-padding-x-sm;
-// $input-font-size-sm:                    $input-btn-font-size-sm;
+$input-font-size-sm:                    $input-btn-font-size-sm;
 // $input-line-height-sm:                  $input-btn-line-height-sm;
 
 // $input-padding-y-lg:                    $input-btn-padding-y-lg;
@@ -469,13 +469,13 @@ $btn-border-radius-lg:        2rem;
 // $input-disabled-bg:                     $gray-200;
 
 // $input-color:                           $gray-700;
-// $input-border-color:                    $gray-400;
+$input-border-color:                    $gray-300;
 // $input-border-width:                    $input-btn-border-width;
 // $input-box-shadow:                      inset 0 1px 1px rgba($black, .075);
 
-// $input-border-radius:                   $border-radius;
-// $input-border-radius-lg:                $border-radius-lg;
-// $input-border-radius-sm:                $border-radius-sm;
+$input-border-radius:                   10em;
+$input-border-radius-lg:                10em;
+$input-border-radius-sm:                10em;
 
 // $input-focus-bg:                        $input-bg;
 // $input-focus-border-color:              lighten($component-active-bg, 25%);
