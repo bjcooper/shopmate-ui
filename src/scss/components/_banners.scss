@@ -7,3 +7,13 @@
 .banner-light {
   background: $gray-200;
 }
+
+.banner-sm {
+  padding-top: $spacer;
+  padding-bottom: $spacer;
+}
+
+.banner-lg {
+  padding-top: $spacer * 3;
+  padding-bottom: $spacer * 3;
+}

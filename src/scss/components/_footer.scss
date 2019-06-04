@@ -1,7 +1,8 @@
 #footer {
   padding: ($spacer * 3) $spacer ($spacer * 2);
-  background: $white;
+}
 
+#page-front #footer {
   ul.links {
     list-style: none;
     padding: 0;
@@ -13,6 +14,80 @@
       &:focus {
         color: $link-hover-color;
       }
+    }
+  }
+}
+
+#page-catalog #footer {
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  ul.department-links {
+    font-size: 1rem * (24 / 16);
+    line-height: 1.5;
+    font-weight: bolder;
+
+    a {
+      color: $white;
+      display: inline-block;
+      padding: 0 ($spacer * 1.5);
+      margin: 0 ($spacer * 1.5);
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+
+  ul.social-links {
+    margin: ($spacer * 1.5) 0;
+
+    a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: no-repeat scroll 0 0 transparent;
+      margin: 0 ($spacer * 0.75);
+      overflow: hidden;
+      text-indent: 40px;
+
+      &.instagram {
+        background-image: url("~images/icons/icons-instagram-black.png");
+      }
+
+      &.pinterest {
+        background-image: url("~images/icons/icons-pinterest-black.png");
+      }
+
+      &.twitter {
+        background-image: url("~images/icons/icons-twitter-black.png");
+      }
+
+      &.facebook {
+        background-image: url("~images/icons/icons-facebook-black.png");
+      }
+    }
+  }
+
+  ul.small-print {
+
+    li:not(:first-child)::before {
+      display: inline-block;
+      content: "•";
+      margin: 0 0.25em;
+    }
+
+
+    a,
+    span,
+    li::before {
+      color: $gray-600;
     }
   }
 }
