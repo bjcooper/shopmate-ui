@@ -1,0 +1,33 @@
+ul.size-options {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 ($spacer * -0.5) 0;
+
+  .size-option {
+    font-size: 1rem * (12 / 16);
+    line-height: 2;
+    display: block;
+    background: $gray-200;
+    margin: 0 ($spacer / 2) ($spacer / 2) 0;
+    padding: 0 $spacer;
+    text-align: center;
+
+    &.selected {
+      background: $primary;
+      color: $white;
+    }
+  }
+
+  a.size-option {
+    text-decoration: none;
+    color: $body-color;
+
+    &:focus,
+    &:hover {
+      background: $link-hover-color;
+      color: $white;
+    }
+  }
+}

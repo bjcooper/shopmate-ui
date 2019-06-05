@@ -133,14 +133,12 @@
             <li><a href="#">Caps &amp; Hats</a></li>
             <li><a href="#">Gifts</a></li>
             <li><a href="#">Grooming</a></li>
-
             <li><a href="#">Hoodies &amp; Sweatshirts</a></li>
             <li><a href="#">Jackets &amp; Coats</a></li>
             <li><a href="#">Jeans</a></li>
             <li><a href="#">Jewellry</a></li>
             <li><a href="#">Joggers</a></li>
             <li><a href="#">Jumpers &amp; Cardigans</a></li>
-
             <li><a href="#">Leather Jackets</a></li>
             <li><a href="#">Long Sleeve T-Shirts</a></li>
             <li><a href="#">Loungewear</a></li>
@@ -152,11 +150,128 @@
       </div>
 
       <!-- Categories grid -->
-      <div id="categories-grid">
+      <div class="product-grid filter-section">
 
         <!-- Filters -->
-        <div id="categories-grid-filters">
-          Filters
+        <div class="product-grid-filters">
+
+          <!-- Filter sumamry -->
+          <div class="filter-summary">
+            <div class="text-summary">Matched 486 items</div>
+
+            <ul class="active-filters">
+              <li><a href="#" class="remove-filter"></a> Gender: Men's</li>
+              <li><a href="#" class="remove-filter"></a> Category: Shirts</li>
+            </ul>
+          </div>
+
+          <!-- Color filter -->
+          <div class="filter color-filter">
+            <div class="filter-label">Color</div>
+            <ul class="color-options">
+              <li><a href="#" class="color-option blue">Periwinkle</a></li>
+              <li><a href="#" class="color-option teal">Teal</a></li>
+              <li><a href="#" class="color-option pink">Pink</a></li>
+              <li><a href="#" class="color-option orange">Orange</a></li>
+              <li><a href="#" class="color-option yellow">Yellow</a></li>
+              <li><a href="#" class="color-option green">Green</a></li>
+              <li><a href="#" class="color-option purple">Purple</a></li>
+            </ul>
+          </div>
+
+          <!-- Size filter -->
+          <div class="filter size-filter">
+            <div class="filter-label">Size</div>
+            <ul class="size-options">
+              <li><a href="#" class="size-option">XS</a></li>
+              <li><a href="#" class="size-option selected">S</a></li>
+              <li><a href="#" class="size-option">M</a></li>
+              <li><a href="#" class="size-option">L</a></li>
+              <li><a href="#" class="size-option">XL</a></li>
+            </ul>
+          </div>
+
+          <!-- Price range filter -->
+          <div class="filter price-filter">
+            <div class="filter-label">Price range</div>
+            <div class="range-slider">
+              <input type="range" class="range-min" min="4" max="28" value="8" />
+              <input type="range" class="range-max" min="4" max="28" value="8" />
+            </div>
+          </div>
+
+          <!-- Brand filter -->
+          <div class="filter brand-filter">
+            <div class="filter-label">Brand</div>
+            <div class="brand-options">
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--1" type="checkbox" class="custom-control-input" checked />
+                <label class="custom-control-label" for="brand-option--1">Abercrombie &amp; Fitch</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--2" type="checkbox" class="custom-control-input" checked />
+                <label class="custom-control-label" for="brand-option--2">Adidas Originals</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--3" type="checkbox" class="custom-control-input" checked />
+                <label class="custom-control-label" for="brand-option--3">ASOS</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--4" type="checkbox" class="custom-control-input" />
+                <label class="custom-control-label" for="brand-option--4">Cheap Monday</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--5" type="checkbox" class="custom-control-input" />
+                <label class="custom-control-label" for="brand-option--5">Diesel</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--6" type="checkbox" class="custom-control-input" />
+                <label class="custom-control-label" for="brand-option--6">Ellesse</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--7" type="checkbox" class="custom-control-input" />
+                <label class="custom-control-label" for="brand-option--7">Fred Perry</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--8" type="checkbox" class="custom-control-input" />
+                <label class="custom-control-label" for="brand-option--8">Jack &amp; Jones</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--9" type="checkbox" class="custom-control-input" />
+                <label class="custom-control-label" for="brand-option--9">New Balance</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--10" type="checkbox" class="custom-control-input" />
+                <label class="custom-control-label" for="brand-option--10">New Look</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--11" type="checkbox" class="custom-control-input" />
+                <label class="custom-control-label" for="brand-option--11">Polo Ralph Lauren</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--12" type="checkbox" class="custom-control-input" />
+                <label class="custom-control-label" for="brand-option--12">Religion</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--13" type="checkbox" class="custom-control-input" />
+                <label class="custom-control-label" for="brand-option--13">River Island</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--14" type="checkbox" class="custom-control-input" />
+                <label class="custom-control-label" for="brand-option--14">Selected Homme</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="brand-option--15" type="checkbox" class="custom-control-input" />
+                <label class="custom-control-label" for="brand-option--15">Vans</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter form actions -->
+          <div class="filter-actions">
+            <button class="btn btn-primary btn-sm">Apply</button>
+            <button class="btn btn-link btn-sm">Clear all</button>
+          </div>
         </div>
 
         <!-- Categories -->
@@ -164,7 +279,7 @@
           <div class="product-image">
             <img src="~images/photos/images-shirt5.png" />
           </div>
-          <div class="product-title">Men's Knitwear</div>
+          <div class="product-title">Navidad Men's Knit</div>
           <div class="product-details">
             <a href="#" class="btn btn-primary btn-sm">Buy now</a>
           </div>
@@ -174,14 +289,14 @@
           <div class="product-image">
             <img src="~images/photos/images-shirt6.png" />
           </div>
-          <div class="product-title">Lolwut Shirts</div>
+          <div class="product-title">Lolwut Pizza Cat Tee</div>
           <div class="product-details">
             <a href="#" class="btn btn-primary btn-sm">Buy now</a>
           </div>
         </div>
 
         <div class="product-teaser">
-          <div class="product-title">Button-Ups</div>
+          <div class="product-title">Men's Button-Ups</div>
           <div class="product-image">
             <img src="~images/photos/images-shirt7.png" />
           </div>
@@ -195,7 +310,7 @@
           <div class="product-image">
             <img src="~images/photos/images-shirt8.png" />
           </div>
-          <div class="product-title">New Look T-shirt in Gradient Fade</div>
+          <div class="product-title">New Look Gradient Fade Tee</div>
 
           <div class="product-details">
             <a href="#" class="price">$14.99</a>
@@ -206,7 +321,7 @@
           <div class="product-image">
             <img src="~images/photos/images-shirt9.png" />
           </div>
-          <div class="product-title">Novelty T-shirts</div>
+          <div class="product-title">Novelty Lizard Tee</div>
           <div class="product-details">
             <a href="#" class="btn btn-primary btn-sm">Buy now</a>
           </div>
@@ -216,49 +331,56 @@
           <div class="product-image">
             <img src="~images/photos/images-shirt10.png" />
           </div>
-          <div class="product-title">Various T-shirts</div>
+          <div class="product-title">Brain Esplode Tee</div>
           <div class="product-details">
             <span class="price">$14.99</span>
             <ul class="color-options">
-              <li><a class="color-option blue">Periwinkle</a></li>
-              <li><a class="color-option teal">Teal</a></li>
-              <li><a class="color-option pink">Pink</a></li>
+              <li><span class="color-option blue">Periwinkle</span></li>
+              <li><span class="color-option teal">Teal</span></li>
+              <li><span class="color-option pink">Pink</span></li>
             </ul>
           </div>
         </div>
       </div>
 
       <!-- Products grid -->
-      <div id="products-grid">
+      <div class="product-grid">
 
         <!-- Products -->
         <div class="product-teaser">
+          <div class="product-badge badge badge-primary">HOT</div>
           <div class="product-image">
             <img src="~images/photos/images-shirt13.png" />
           </div>
           <div class="product-title">Pull &amp; Bear Jumper in Textured Knit in Blue</div>
-          <span class="product-price">$14.99</span>
+          <div class="product-details">
+            <a href="#" class="price">$14.99</a>
+          </div>
         </div>
 
         <div class="product-teaser">
           <div class="product-image">
             <img src="~images/photos/images-shirt12.png" />
           </div>
-          <div class="product-title">Harajuku T-shirt</div>
-          <span class="product-price">$14.99</span>
+          <div class="product-title">Harajuku Stormtrooper Tee</div>
+          <div class="product-details">
+            <a href="#" class="price">$12.99</a>
+          </div>
         </div>
 
         <div class="product-teaser">
           <div class="product-image">
             <img src="~images/photos/images-shirt11.png" />
           </div>
-          <div class="product-title">Men's Casual Lizard</div>
-          <span class="product-price">$14.99</span>
-          <ul class="available-colors">
-            <li>Periwinkle</li>
-            <li>Teal</li>
-            <li>Pink</li>
-          </ul>
+          <div class="product-title">Los Pollos Hermanos Tee</div>
+          <div class="product-details">
+            <span class="price">$14.99</span>
+            <ul class="color-options">
+              <li><span class="color-option blue">Periwinkle</span></li>
+              <li><span class="color-option teal">Teal</span></li>
+              <li><span class="color-option pink">Pink</span></li>
+            </ul>
+          </div>
         </div>
       </div>
 

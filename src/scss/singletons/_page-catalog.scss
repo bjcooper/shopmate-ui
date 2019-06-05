@@ -28,32 +28,6 @@
     }
   }
 
-  #categories-grid,
-  #products-grid {
-    display: grid;
-    grid-gap: $spacer;
-    margin-bottom: $spacer;
-
-    > div {
-      background: $white;
-      padding: ($spacer * 1.5) $spacer;
-      box-shadow: $box-shadow-sm;
-    }
-  }
-
-  #categories-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
-  }
-
-  #categories-grid-filters {
-    grid-row: 1 / 3;
-  }
-
-  #products-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   #brand-spotlight {
     background: url("~images/photos/images-shoe2.png") no-repeat scroll center center #ddd;
     background-size: cover;
