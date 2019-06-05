@@ -1,3 +1,11 @@
 .btn-light {
   color: $primary;
 }
+
+.btn-primary {
+  &:focus,
+  &:hover {
+    background-color: $link-hover-color;
+    border-color: $link-hover-color;
+  }
+}
