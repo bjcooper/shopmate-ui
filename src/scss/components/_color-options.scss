@@ -1,0 +1,29 @@
+.color-options {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  .color-option {
+    display: block;
+    background: $gray-300;
+    width: 1rem * (14 / 16);
+    height: 1rem * (14/ 16);
+    overflow: hidden;
+    text-indent: 100%;
+    border-radius: 50%;
+    margin: 0 ($spacer * 0.5);
+
+    &.blue {
+      background-color: $blue;
+    }
+
+    &.teal {
+      background-color: $teal;
+    }
+
+    &.pink {
+      background-color: $pink;
+    }
+  }
+}
