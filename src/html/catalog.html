@@ -194,10 +194,8 @@
           <!-- Price range filter -->
           <div class="filter price-filter">
             <div class="filter-label">Price range</div>
-            <div class="range-slider">
-              <input type="range" class="range-min" min="4" max="28" value="8" />
-              <input type="range" class="range-max" min="4" max="28" value="8" />
-            </div>
+            <input type="text" class="range-slider" data-type="double" data-min="4" data-max="28" data-step="1"
+              data-from="6" data-to="24" data-prefix="$" />
           </div>
 
           <!-- Brand filter -->
@@ -274,7 +272,7 @@
           </div>
         </div>
 
-        <!-- Categories -->
+        <!-- Products grid filter section -->
         <div class="product-teaser">
           <div class="product-image">
             <img src="~images/photos/images-shirt5.png" />
