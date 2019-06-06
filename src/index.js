@@ -6,6 +6,7 @@ import popper from "popper.js";
 import "../node_modules/bootstrap/js/dist/collapse.js";
 import "../node_modules/bootstrap/js/dist/tooltip.js";
 import "ion-rangeslider";
+import "simplebar";
 
 
 $(function () {

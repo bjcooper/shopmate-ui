@@ -1,0 +1,24 @@
+@import "~simplebar/src/simplebar";
+
+.simplebar-track {
+  background: $gray-200;
+  border-radius: 3px;
+
+  &.simplebar-vertical {
+    width: 5px;
+  }
+
+  &.simplebar-horizontal {
+    height: 5px;
+  }
+}
+
+.simplebar-scrollbar {
+  width: 5px;
+  right: 0;
+
+  &::before {
+    opacity: 0.2;
+    background: $gray-800;
+  }
+}
