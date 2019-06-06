@@ -24,9 +24,13 @@ ul.size-options {
     text-decoration: none;
     color: $body-color;
 
-    &:focus,
     &:hover {
-      background: $link-hover-color;
+      background: $primary-lighter;
+      color: $white;
+    }
+
+    &.selected {
+      background: $primary;
       color: $white;
     }
   }

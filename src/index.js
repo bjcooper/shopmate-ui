@@ -10,5 +10,20 @@ import "simplebar";
 
 
 $(function () {
+  // Enable range sliders.
   $('.range-slider').ionRangeSlider();
+
+  // Add some standard click behaviors.
+  $('.selected-onclick').click(function () {
+    $(this).toggleClass('selected');
+  });
+
+  $('.hide-onclick').click(function () {
+    $(this).hide();
+  });
+
+  // Disable fake links.
+  $('a[href="#"]').click(function (event) {
+    event.preventDefault();
+  });
 });

@@ -6,3 +6,7 @@ input[type="email"] {
   padding-left: 2.5rem;
   background: url("~images/icons/icons-email-black.png") no-repeat scroll 0.75rem 50% $input-bg;
 }
+
+.custom-control-label {
+  cursor: pointer;
+}

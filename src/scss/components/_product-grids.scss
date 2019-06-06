@@ -41,7 +41,7 @@
 
         li {
           display: flex;
-          margin-bottom: $spacer * 0.25;
+          margin: 0;
           align-items: center;
 
           &:last-child {
@@ -49,9 +49,17 @@
           }
 
           a.remove-filter {
-            width: 20px;
-            height: 20px;
-            background: url("~images/icons/icons-close-small-black.png") no-repeat scroll 50% 50% transparent;
+            color: $body-color;
+            padding-left: $spacer * ((20 / 16) + 0.1);
+            padding-right: $spacer / 2;
+            margin-left: -0.1rem;
+            margin-bottom: $spacer * 0.25;
+            border-radius: 10rem;
+            background: url("~images/icons/icons-close-small-black.png") no-repeat scroll 0.1rem 50% transparent;
+
+            &:hover {
+              background-color: $gray-200;
+            }
           }
         }
       }
