@@ -8,6 +8,17 @@
   }
 }
 
+@include media-breakpoint-up(lg) {
+  .navbar-dark.navbar-expand-lg {
+    .navbar-nav {
+      .nav-link {
+        padding-right: $spacer;
+        padding-left: $spacer;
+      }
+    }
+  }
+}
+
 /**
  * Navbar branding area.
  */
@@ -82,10 +93,12 @@
  */
 .navbar .cart-link {
   position: relative;
-  display: block;
+  display: inline-block;
   background: url("~images/icons/icons-bag.png") 50% 50% no-repeat scroll transparent;
   width: 2rem;
   height: 2rem;
+  margin-bottom: -$spacer;
+  top: $spacer / -4;
 
   .cart-item-count {
     display: block;

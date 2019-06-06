@@ -1,0 +1,12 @@
+#user-bar {
+  font-weight: bolder;
+
+  .nav .nav-link {
+    color: $body-color;
+
+    &:focus,
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+}

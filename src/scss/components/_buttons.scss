@@ -9,3 +9,8 @@
     border-color: $link-hover-color;
   }
 }
+
+.btn-link.btn-sm.btn-clear {
+  background: url("~images/icons/icons-close-small-red.png") no-repeat scroll 0 50% transparent;
+  padding-left: $spacer * 1.1;
+}

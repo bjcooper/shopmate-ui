@@ -64,9 +64,13 @@
       margin-bottom: $spacer * 0.5;
     }
 
-    .brand-filter .brand-options {
-      overflow: auto;
-      max-height: 7.5em;
+    .brand-filter {
+      flex: 1;
+
+      .brand-options {
+        overflow: auto;
+        max-height: 12em;
+      }
     }
 
     .size-filter .size-options li {
