@@ -10,3 +10,11 @@ input[type="email"] {
 .custom-control-label {
   cursor: pointer;
 }
+
+textarea.form-control {
+  border-radius: 5px;
+
+  &::placeholder {
+    font-size: $font-size-sm;
+  }
+}
