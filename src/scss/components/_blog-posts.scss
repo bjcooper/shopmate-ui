@@ -5,11 +5,30 @@ $blog-width: 780px;
   font-weight: bold;
 }
 
+body.blog {
+  background: $white;
+
+  .secondary-page-section {
+    background: $gray-100;
+    border-top: 2px solid $gray-200;
+    padding-top: $spacer * 3;
+    padding-bottom: $spacer * 2;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    @include remove-gutter();
+  }
+}
+
 .blog-post {
   font-size: $font-size-larger;
   line-height: 1.5;
   font-family: $font-family-copy;
   font-weight: $font-weight-copy;
+
+  .blog-header {
+    background: $gray-100;
+    @include remove-gutter();
+  }
 
   /**
    * Meta data
@@ -38,6 +57,7 @@ $blog-width: 780px;
    * Title
    */
   .blog-title {
+    text-align: center;
     margin-bottom: $spacer * 2;
     @include center-content($blog-width - 20px);
   }
@@ -46,6 +66,7 @@ $blog-width: 780px;
    * Intro
    */
   .blog-intro {
+    text-align: center;
     @include blog-bold();
     @include center-content($blog-width - 20px);
     margin-bottom: $spacer * 4;
@@ -55,8 +76,7 @@ $blog-width: 780px;
    * Main photo
    */
   .blog-photo {
-    margin-left: -15px;
-    margin-right: -15px;
+    @include remove-gutter();
     margin-bottom: $spacer * 2;
 
     .photo-wrapper {
@@ -75,6 +95,7 @@ $blog-width: 780px;
       text-align: right;
       padding: $spacer ($spacer * 2);
       font-size: $font-size-sm;
+      background: $white;
     }
   }
 
@@ -130,7 +151,7 @@ $blog-width: 780px;
   /**
    * Footer
    */
-  footer {
+  .blog-footer {
     @include center-content($blog-width);
 
     /**
@@ -167,4 +188,12 @@ $blog-width: 780px;
  */
 .blog-post-comments {
   @include center-content($blog-width);
+
+  .h3 {
+    margin-bottom: $spacer * 2.5;
+  }
+
+  .blog-author-teaser {
+    margin-bottom: $spacer;
+  }
 }

@@ -1,15 +1,15 @@
-.user-teaser {
+.comment {
   display: flex;
+  margin-bottom: $spacer * 2;
 
   .user-image {
     padding-right: $spacer * 1.5;
   }
 
-  .user-details {
+  .comment-details {
     flex: 1;
     font-family: $font-family-copy;
     font-weight: $font-weight-copy;
-    padding-right: $spacer;
 
     .user-name {
       font-weight: bold;
@@ -17,8 +17,14 @@
       margin-bottom: $spacer * 0.5;
     }
 
-    p {
-      max-width: none;
+    .user-name + .comment-time {
+      margin-top: -$spacer * 0.5;
+      margin-bottom: $spacer * 0.5;
+    }
+
+    .comment-time {
+      font-size: 1rem * (12 / 16);
+      color: $gray-500;
     }
   }
 }

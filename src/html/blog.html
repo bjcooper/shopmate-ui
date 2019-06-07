@@ -25,7 +25,7 @@
   <title>SHOPMATE</title>
 </head>
 
-<body id="page-blog">
+<body id="page-blog" class="blog">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
 
@@ -80,25 +80,25 @@
   <!-- Main content -->
   <div id="main-content">
     <!-- Blog post -->
-    <article class="blog-post ">
+    <article class="blog-post">
 
       <!-- Blog header -->
-      <header>
+      <header class="blog-header">
         <!-- Block meta info -->
-        <div class="blog-meta">
+        <div class="blog-meta container-fluid">
           <div class="blog-badges"><span class="badge badge-orange">POP</span></div>
           <div class="blog-date">January 28, 2016</div>
           <div class="blog-author">by Jooze Van Geek</div>
         </div>
 
-        <!-- Blog title and intro -->
-        <div class="container text-center">
-          <h1 class="blog-title display-3">Institutional Buying and Selling—Eyes on the Competition</h1>
-          <p class="blog-intro">
-            Media planning permits market segment. The concept of Ackoff and Stack, strategic planning induces a
-            constructive analytics of the market price. Konvesiya buyers degenerate.
-          </p>
-        </div>
+        <!-- Blog title -->
+        <h1 class="blog-title display-3">Institutional Buying and Selling—Eyes on the Competition</h1>
+
+        <!-- Blog intro -->
+        <p class="blog-intro">
+          Media planning permits market segment. The concept of Ackoff and Stack, strategic planning induces a
+          constructive analytics of the market price. Konvesiya buyers degenerate.
+        </p>
 
         <!-- Main blog photo-->
         <div class="blog-photo">
@@ -109,18 +109,19 @@
         </div>
       </header>
 
-      <!-- Blog lead line -->
-      <p class="blog-lead lead text-center">
-        Factor of communication, summarizing the examples, subconsciously draws a constructive image, optimizing
-        budgets.
-      </p>
-
       <!-- Main blog body copy-->
       <div class="blog-body">
+        <!-- Blog lead line -->
+        <p class="blog-lead lead text-center">
+          Factor of communication, summarizing the examples, subconsciously draws a constructive image, optimizing
+          budgets.
+        </p>
+
         <p>
           I must say that targeted traffic causes BTL. Creating customer loyalty balances the public conversion rate.
           Spot exposure fullest specifies sociometric image. The fact is that buying and selling supports pilot
-          presentation materials. Raising living standards, analyzing the results of the campaign, gracefully justifies
+          presentation materials. Raising living standards, analyzing the results of the campaign, gracefully
+          justifies
           the method of studying the market, working on a project. Positioning strategy saves targeted traffic.
         </p>
 
@@ -150,7 +151,8 @@
         </p>
 
         <p>
-          Until recently it was thought that the consumption is not critical. Promotion of culture produces a corporate
+          Until recently it was thought that the consumption is not critical. Promotion of culture produces a
+          corporate
           identity. Consumption, at first glance, traditionally induces a comprehensive analysis of the situation. The
           main stage of the market research is integrated. In addition, a comprehensive analysis of the situation
           coalesces into a unified vision.
@@ -158,13 +160,16 @@
       </div>
 
       <!-- Blog footer -->
-      <footer>
+      <footer class="blog-footer">
+        <!-- Blog tags/categoreis -->
         <div class="blog-tags">
           <ul>
             <li>UI/UX</li>
             <li>Transplantation</li>
           </ul>
         </div>
+
+        <!-- Blog metadata and actions -->
         <div class="content-metadata">
           <div class="content-likes">664</div>
           <div class="content-comments">8</div>
@@ -179,21 +184,51 @@
     </article>
 
     <!-- Blog post comments -->
-    <div class="blog-post-comments">
-      <div class="user-teaser">
-        <div class="user-image">
-          <img src="~images/photos/images-Author.png" title="Jooze Van Geek" />
+    <div class="secondary-page-section">
+      <div class="blog-post-comments">
+        <!-- Blog author -->
+        <div class="user-teaser blog-author-teaser">
+          <div class="user-image">
+            <img src="~images/photos/images-Author.png" title="Jooze Van Geek" />
+          </div>
+          <div class="user-details">
+            <div class="user-name">Jooze Van Geek</div>
+            <p>
+              Consumption, at first glance, traditionally induces a comprehensive analysis of the situation. The main
+              stage of the market research is integrated. In addition, a comprehensive analysis of the situation
+              coalesces into a unified vision.
+            </p>
+          </div>
+          <div class="user-actions">
+            <a href="#" class="btn btn-link btn-sm">Follow</a>
+          </div>
         </div>
-        <div class="user-details">
-          <div class="user-name">Jooze Van Geek</div>
-          <p>
-            Consumption, at first glance, traditionally induces analysis of the situation.
-            The main stage of the market research is integrated. In addition, a comprehensive analysis of the situation
-            versifitsirovan.
-          </p>
-        </div>
-        <div class="user-actions">
-          <a href="#" class="btn btn-link">Follow</a>
+
+        <!-- Comments -->
+        <h2 class="h3">Comments</h2>
+
+        <div class="comment">
+          <div class="user-image">
+            <img src="~images/photos/images-comment-profile2.png" title="Pablo Permins" />
+          </div>
+          <div class="comment-details">
+            <div class="user-name">Pablo Permins</div>
+            <div class="comment-time">one hour ago</div>
+            <p class="comment-body">
+              I still believe in running. But only after I’ve decided on the point of running first. And only if I’m the
+              only one in the race. If there’s anyone else, it’s the wrong race.
+            </p>
+            <div class="content-metadata">
+              <div class="content-likes">113</div>
+              <div class="content-comments">6</div>
+              <div class="content-actions">
+                <ul>
+                  <li><a href="#" class="content-action-bookmark" title="Bookmark">Bookmark</a></li>
+                  <li><a href="#" class="content-action-more" title="More options">More</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
