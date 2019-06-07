@@ -1,0 +1,40 @@
+.blog-post-teaser {
+  display: flex;
+  margin-bottom: $spacer * 2.5;
+
+  .blog-post-details {
+    flex: 1;
+    font-family: $font-family-copy;
+    font-weight: $font-weight-copy;
+    font-size: $font-size-larger;
+    padding-right: $spacer;
+
+    
+    .blog-post-title {
+      font-weight: bold;
+      margin-bottom: $spacer * 0.5;
+    }
+
+    .blog-post-body {
+      max-width: none;
+      margin-bottom: $spacer * 0.5;
+    }
+  }
+
+  .blog-post-author {
+    display: flex;
+
+    .user-image {
+      padding-right: $spacer * 1.25;
+    }
+    
+    .user-name {
+      font-weight: bold;
+    }
+
+    .blog-post-time {
+      font-size: 1rem * (12 / 16);
+      color: $gray-600;
+    }
+  }
+}
