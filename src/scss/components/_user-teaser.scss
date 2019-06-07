@@ -1,0 +1,19 @@
+.user-teaser {
+  display: flex;
+
+  .user-details {
+    flex: 1;
+    font-family: $font-family-copy;
+    font-weight: $font-weight-copy;
+
+    .user-name {
+      font-weight: bold;
+      font-size: $font-size-larger;
+      margin-bottom: $spacer * 0.5;
+    }
+
+    p {
+      max-width: none;
+    }
+  }
+}

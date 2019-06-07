@@ -1,0 +1,74 @@
+ .content-metadata {
+  display: flex;
+
+  .content-likes,
+  .content-comments,
+  .content-actions ul li a {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      margin-right: $spacer * 0.5;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-color: $gray-200;
+    }
+  }
+
+  .content-likes,
+  .content-comments {
+    padding-right: $spacer * 2;
+  }
+
+  .content-likes {
+    &::before {
+      background-image: url("~images/icons/icons-heart-red.png");
+    }
+  }
+
+  .content-comments {
+    flex: 1;
+
+    &::before {
+      background-image: url("~images/icons/icons-comments-black.png");
+    }
+  }
+
+  .content-actions {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+      height: 36px;
+
+      li {
+        display: inline-block;
+        margin-left: $spacer * 0.25;
+
+        > a {
+          font-size: 0;
+          line-height: 0;
+          color: transparent;
+
+          &::before {
+            margin-right: 0;
+          }
+
+          &.content-action-bookmark::before {
+            background-image: url("~images/icons/icons-bookmark-black.png");
+          }
+
+          &.content-action-more::before {
+            background-image: url("~images/icons/icons-more-black.png");
+          }
+        }
+      }
+    }
+  }
+}

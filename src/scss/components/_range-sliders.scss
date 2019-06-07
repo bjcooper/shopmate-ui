@@ -216,7 +216,7 @@
     top: $spacer * 0.75;
     padding: 1px 3px;
     color: $gray-600;
-    font-size: 1rem * (12 / 16);
+    font-size: $font-size-larger * (12 / 16);
     line-height: 1.333;
     text-shadow: none;
     border-radius: 4px;
@@ -228,7 +228,7 @@
   .irs-single {
     top: -28px;
     color: $white;
-    font-size: 1rem * (12 / 16);
+    font-size: $font-size-larger * (12 / 16);
     line-height: 1;
     text-shadow: none;
     padding: 4px 5px;

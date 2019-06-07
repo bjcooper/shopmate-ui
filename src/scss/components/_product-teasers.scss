@@ -17,13 +17,13 @@
   }
 
   .product-title {
-    font-size: 1rem;
+    font-size: $font-size-larger;
     font-weight: bold;
     margin-bottom: $spacer * 0.5;
   }
 
   .product-details {
-    font-size: 1rem;
+    font-size: $font-size-larger;
 
     a.price {
       font-weight: bolder;

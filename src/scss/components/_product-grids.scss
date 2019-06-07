@@ -28,13 +28,13 @@
 
     .filter-summary {
       .text-summary {
-        font-size: 1rem;
+        font-size: $font-size-larger;
         font-weight: bolder;
         margin-bottom: $spacer * 0.5;
       }
 
       .active-filters {
-        font-size: 1rem * (12 / 16);
+        font-size: $font-size-larger * (12 / 16);
         list-style: none;
         padding: 0;
         margin-bottom: 0;
@@ -66,7 +66,7 @@
     }
 
     .filter-label {
-      font-size: 1rem;
+      font-size: $font-size-larger;
       font-weight: bold;
       color: $gray-500;
       margin-bottom: $spacer * 0.5;

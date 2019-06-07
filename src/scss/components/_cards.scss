@@ -2,7 +2,7 @@
   box-shadow: $box-shadow-sm;
   
   .card-badge {
-    font-size: 1rem;
+    font-size: $font-size-larger;
     position: absolute;
     top: $spacer;
     left: $spacer;

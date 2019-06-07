@@ -6,7 +6,7 @@ ul.size-options {
   margin: 0 0 ($spacer * -0.5) 0;
 
   .size-option {
-    font-size: 1rem * (12 / 16);
+    font-size: $font-size-larger * (12 / 16);
     line-height: 2;
     display: block;
     background: $gray-200;
