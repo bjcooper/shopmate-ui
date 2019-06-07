@@ -1,91 +1,100 @@
 #footer {
   padding: ($spacer * 3) $spacer ($spacer * 2);
-}
 
-#page-front #footer {
-  ul.links {
-    list-style: none;
-    padding: 0;
-
-    a {
-      color: $body-color;
-
-      &:hover,
-      &:focus {
-        color: $link-hover-color;
+  &.footer-standard {
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    ul.department-links {
+      font-size: 1rem * (24 / 16);
+      line-height: 1.5;
+      font-weight: bolder;
+  
+      a {
+        color: $body-color;
+        display: inline-block;
+        padding: 0 ($spacer * 1.5);
+        margin: 0 ($spacer * 1.5);
+        text-decoration: none;
+  
+        &:focus,
+        &:hover {
+          color: $link-hover-color;
+        }
       }
     }
-  }
-}
 
-#page-catalog #footer {
-  ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  ul.department-links {
-    font-size: 1rem * (24 / 16);
-    line-height: 1.5;
-    font-weight: bolder;
-
-    a {
+    &.bg-dark ul.department-links a {
       color: $white;
-      display: inline-block;
-      padding: 0 ($spacer * 1.5);
-      margin: 0 ($spacer * 1.5);
-      text-decoration: none;
 
       &:focus,
       &:hover {
         color: $link-hover-color;
       }
     }
-  }
-
-  ul.social-links {
-    margin: ($spacer * 1.5) 0;
-
-    a {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      background: no-repeat scroll 0 0 transparent;
-      margin: 0 ($spacer * 0.75);
-      overflow: hidden;
-      text-indent: 40px;
-
-      &.instagram {
-        background-image: url("~images/icons/icons-instagram-black.png");
+  
+    ul.social-links {
+      margin: ($spacer * 1.5) 0;
+  
+      a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: no-repeat scroll 0 0 transparent;
+        margin: 0 ($spacer * 0.75);
+        overflow: hidden;
+        text-indent: 40px;
+  
+        &.instagram {
+          background-image: url("~images/icons/icons-instagram-black.png");
+        }
+  
+        &.pinterest {
+          background-image: url("~images/icons/icons-pinterest-black.png");
+        }
+  
+        &.twitter {
+          background-image: url("~images/icons/icons-twitter-black.png");
+        }
+  
+        &.facebook {
+          background-image: url("~images/icons/icons-facebook-black.png");
+        }
       }
-
-      &.pinterest {
-        background-image: url("~images/icons/icons-pinterest-black.png");
+    }
+  
+    ul.small-print {
+      li:not(:first-child)::before {
+        display: inline-block;
+        content: "•";
+        margin: 0 0.25em;
       }
-
-      &.twitter {
-        background-image: url("~images/icons/icons-twitter-black.png");
-      }
-
-      &.facebook {
-        background-image: url("~images/icons/icons-facebook-black.png");
+  
+      a,
+      span,
+      li::before {
+        color: $gray-600;
       }
     }
   }
 
-  ul.small-print {
-    li:not(:first-child)::before {
-      display: inline-block;
-      content: "•";
-      margin: 0 0.25em;
-    }
-
-    a,
-    span,
-    li::before {
-      color: $gray-600;
+  &.footer-dense {
+    ul.links {
+      list-style: none;
+      padding: 0;
+  
+      a {
+        color: $body-color;
+  
+        &:hover,
+        &:focus {
+          color: $link-hover-color;
+        }
+      }
     }
   }
 }

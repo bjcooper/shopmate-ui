@@ -19,32 +19,28 @@
     }
   </style>
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/x-icon" href="/images/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="24x24" href="/images/favicons/favicon-24x24.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="~images/favicons/favicon.ico" />
 
   <title>SHOPMATE</title>
 </head>
 
-<body>
+<body id="page-blog">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
 
     <!-- Brand -->
-    <a class="navbar-brand" href="#">SHOPMATE</a>
+    <a class="navbar-brand text-primary" href="#">SHOPMATE</a>
 
-    <!-- Collapse Toggle -->
+    <!-- Collapse toggle -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Navbar Collapse Wrapper -->
+    <!-- Navbar collapse wrapper -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Navbar Nav -->
+      <!-- Navbar nav -->
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">Women</a>
@@ -63,13 +59,119 @@
         </li>
       </ul>
 
-      <!-- Search Form -->
+      <!-- Search form -->
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <input id="search-input" class="form-control form-control-sm" type="text" placeholder="search everything"
+          aria-label="Search" autocomplete="off">
+        <a href="#" id="search-reset" class="btn form-control-sm">
+          <span class="sr-only">Clear search</span>
+        </a>
       </form>
+
+      <!-- Cart link -->
+      <div class="nav-item">
+        <a href="#" class="cart-link">
+          <span class="cart-item-count">6</span>
+        </a>
+      </div>
     </div>
   </nav>
+
+  <!-- Main content -->
+  <div id="main-content">
+    <article class="blog-post ">
+      <header>
+        <div class="container text-center">
+          <h1 class="blog-title display-3">Institutional Buying and Selling: Eyes on the Competition</h1>
+          <p class="blog-intro">
+            Media planning permits market segment. The concept of Ackoff and Stack, strategic planning induces a
+            constructive analytics of the market price. Konvesiya buyers degenerate.
+          </p>
+        </div>
+        <div class="blog-photo">
+          <div class="photo-wrapper">
+            <img src="~images/photos/images-model1.png" alt="Man stretching on pier with city skyline behind." />
+          </div>
+          <small class="photo-caption">photo by Carline Shnaps</small>
+        </div>
+      </header>
+      <div class="blog-content">
+        <p class="blog-lead lead text-center">
+          Factor of communication, summarizing the examples, subconsciously draws a constructive image, optimizing
+          budgets.
+        </p>
+        <p>
+          I must say that targeted traffic causes BTL. Creating customer loyalty balances the public conversion rate.
+          Spot exposure fullest specifies sociometric image. The fact is that buying and selling supports pilot
+          presentation materials. Raising living standards, analyzing the results of the campaign, gracefully justifies
+          the method of studying the market, working on a project. Positioning strategy saves targeted traffic.
+        </p>
+
+        <div class="blog-highlights">
+          <h2 class="h4">Highlights</h2>
+          <ul class="list-cols-2 list-bulleted">
+            <li>I must say that targeted traffic</li>
+            <li>Creating customer loyalty balances</li>
+            <li>Spot exposure fullest specifies image</li>
+            <li>The fact is that buying and selling s</li>
+            <li>supports ilot presentation material</li>
+            <li>Presentation emerging</li>
+            <li>In general, the production</li>
+            <li>Targeting specifies the life cycle</li>
+            <li>Seling and supports</li>
+            <li>Pricing strategy</li>
+          </ul>
+        </div>
+
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/J2rZWdW1Sn4"
+            allowfullscreen></iframe>
+        </div>
+
+        <p><strong>According to the above, an investment product uniformly arranges buying and selling.</strong></p>
+
+        <p>
+          Until recently it was thought that the consumption is not critical. Promotion of culture produces a corporate
+          identity. Consumption, at first glance, traditionally induces a comprehensive analysis of the situation. The
+          main stage of the market research is integrated. In addition, a comprehensive analysis of the situation
+          coalesces into a unified vision.
+        </p>
+      </div>
+      <footer>
+
+      </footer>
+    </article>
+  </div>
+
+  <!-- Page footer -->
+  <footer id="footer" class="bg-white footer-standard">
+    <div class="container">
+      <h3 class="sr-only">Department Links</h3>
+      <ul class="department-links">
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Shoes</a></li>
+        <li><a href="#">Brands</a></li>
+      </ul>
+
+      <h3 class="sr-only">Social Media</h3>
+      <ul class="social-links">
+        <li><a class="instagram" href="#">Instagram</a></li>
+        <li><a class="pinterest" href="#">Pinterest</a></li>
+        <li><a class="twitter" href="#">Twitter</a></li>
+        <li><a class="facebook" href="#">Facebook</a></li>
+      </ul>
+
+      <ul class="small-print">
+        <li><span>&copy;2016 Shopmate Ltd</span></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy policy</a></li>
+      </ul>
+
+    </div>
+  </footer>
+
 </body>
 
 </html>

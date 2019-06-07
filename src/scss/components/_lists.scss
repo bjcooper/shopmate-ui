@@ -1,0 +1,27 @@
+ul,
+ol {
+  @for $i from 2 through 6 {
+    &.list-cols-#{$i} {
+      column-count: $i;
+    }
+  }
+}
+
+ul.list-bulleted {
+  padding-left: 0;
+  list-style: none;
+
+  > li {
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 4px;
+      height: 4px;
+      background: $body-color;
+      border-radius: 50%;
+      margin-right: $spacer * 0.75;
+      vertical-align: middle;
+      margin-top: -1px;
+    }
+  }
+}
