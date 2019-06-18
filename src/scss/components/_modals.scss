@@ -9,17 +9,18 @@
     width: 72px;
     overflow: hidden;
     text-indent: 72px;
-    background: url("~images/icons/close-big-red.png") no-repeat scroll 0 0 transparent;
+    background: url("~images/icons/icons-close-big-black.png") no-repeat scroll 0 0 transparent;
     margin-bottom: -36px;
     z-index: 1;
     border: 0 none;
-    filter: saturate(0);
     box-shadow: none;
     outline: none;
+    opacity: 1;
+    transition: 0.25s ease;
 
     &:focus,
     &:hover {
-      filter: saturate(100%);
+      background-image: url("~images/icons/close-big-red.png");
     }
   }
 }

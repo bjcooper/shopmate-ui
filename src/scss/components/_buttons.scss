@@ -6,6 +6,16 @@
   color: $primary;
 }
 
+.btn-white {
+  color: $primary;
+  background: $white;
+
+  &:focus,
+  &:hover {
+    background-color: $link-hover-color;
+  }
+}
+
 .btn-primary {
   &:focus,
   &:hover {
