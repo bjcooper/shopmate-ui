@@ -6,6 +6,8 @@
   position: relative;
   transition: 0.25s ease;
   overflow: hidden;
+  background: $white;
+  padding: ($spacer / 2) $spacer;
 
   .product-badge {
     font-size: 100%;
@@ -20,6 +22,8 @@
 
   .product-image {
     margin-bottom: $spacer;
+    display: flex;
+    justify-content: center;
   }
 
   .product-title {
