@@ -14,4 +14,23 @@
       background-image: url("~images/icons/icons-star-gold.png");
     }
   }
+
+  &.star-rating-selector {
+    li {
+      cursor: pointer;
+    }
+  }
+}
+
+.form-group .star-rating {
+  padding-top: 0.25rem;
+
+  li {
+    transition: filter 0.25s ease;
+
+    &:hover,
+    &:focus {
+      filter: brightness(80%);
+    }
+  }
 }

@@ -1,0 +1,21 @@
+.review {
+  .star-rating {
+    margin-bottom: $spacer;
+  }
+
+  .user-name {
+    font-weight: bold;
+    font-size: $font-size-larger;
+    margin-bottom: $spacer * 0.5;
+  }
+
+  .user-name + .review-time {
+    margin-top: -$spacer * 0.5;
+    margin-bottom: $spacer * 0.5;
+  }
+
+  .review-time {
+    font-size: 1rem * (12 / 16);
+    color: $gray-600;
+  }
+}

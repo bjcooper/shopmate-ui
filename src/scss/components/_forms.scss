@@ -18,3 +18,19 @@ textarea.form-control {
     font-size: $font-size-sm;
   }
 }
+
+.form-group {
+  label {
+    font-weight: bolder;
+  }
+}
+
+.form-group {
+  .help-text:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-control + .help-text {
+  margin-top: $spacer * 0.25;
+}

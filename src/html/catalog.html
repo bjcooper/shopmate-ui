@@ -283,7 +283,8 @@
             <div class="price">&pound;24.99</div>
           </div>
           <div class="product-options">
-            <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">Quick
+              view</a>
             <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
           </div>
         </div>
@@ -297,7 +298,8 @@
             <div class="price">&pound;10.99</div>
           </div>
           <div class="product-options">
-            <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">Quick
+              view</a>
             <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
           </div>
         </div>
@@ -311,7 +313,8 @@
             <div class="price">From &pound;4.99</div>
           </div>
           <div class="product-options">
-            <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">Quick
+              view</a>
             <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
           </div>
         </div>
@@ -326,7 +329,8 @@
             <div class="price">&pound;14.99</div>
           </div>
           <div class="product-options">
-            <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">Quick
+              view</a>
             <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
           </div>
         </div>
@@ -340,7 +344,8 @@
             <div class="price">&pound;14.99</div>
           </div>
           <div class="product-options">
-            <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">Quick
+              view</a>
             <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
           </div>
         </div>
@@ -359,7 +364,8 @@
             </ul>
           </div>
           <div class="product-options">
-            <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">Quick
+              view</a>
             <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
           </div>
         </div>
@@ -379,7 +385,8 @@
             <div class="price">&pound;14.99</div>
           </div>
           <div class="product-options">
-            <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">Quick
+              view</a>
             <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
           </div>
         </div>
@@ -393,7 +400,8 @@
             <div class="price">&pound;12.99</div>
           </div>
           <div class="product-options">
-            <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">Quick
+              view</a>
             <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
           </div>
         </div>
@@ -412,8 +420,8 @@
             </ul>
           </div>
           <div class="product-options">
-            <a href="#" class="btn btn-primary quickview-link" data-toggle="modal"
-              data-target="#product-quickview-modal">Quick view</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">Quick
+              view</a>
             <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
           </div>
         </div>
@@ -525,10 +533,10 @@
                 <!-- Existing reviews -->
                 <h3>Product reviews</h3>
                 <div class="product-reviews-list">
-                  <div class="product-review row">
+                  <div class="review row">
 
                     <!-- Review column 1 -->
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                       <ul class="star-rating">
                         <li class="star"></li>
                         <li class="star"></li>
@@ -536,7 +544,7 @@
                         <li class="star"></li>
                         <li></li>
                       </ul>
-                      <div class="review-user">
+                      <div class="user-name">
                         Pablo Permins
                       </div>
                       <div class="review-time">
@@ -545,7 +553,7 @@
                     </div>
 
                     <!-- Review column 2-->
-                    <div class="col-sm-10">
+                    <div class="col-sm-9">
                       <p class="review-body">
                         Got this through the post the other day and right from opening the packet I knew this was
                         quality, put it on and I was right!! Well done
@@ -572,7 +580,7 @@
                     <label for="review-explanation" class="col-sm-3 col-form-label">Your review</label>
                     <div class="col-sm-9">
                       <textarea class="form-control" id="review-explanation" rows="4"></textarea>
-                      <p class="helptext small">
+                      <p class="help-text small">
                         Your review must be at least 50 characters. <a href="#">Full review guidelines</a>
                       </p>
                     </div>
@@ -580,8 +588,8 @@
                   <div class="form-group row">
                     <label for="review-rating" class="col-sm-3 col-form-label">Overall rating</label>
                     <div class="col-sm-9">
-                      <ul class='star-rating'>
-                        <li></li>
+                      <ul class="star-rating star-rating-selector">
+                        <li class="star"></li>
                         <li></li>
                         <li></li>
                         <li></li>
@@ -614,7 +622,8 @@
                         <div class="price">&pound;14.99</div>
                       </div>
                       <div class="product-options">
-                        <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                          data-target="#product-quickview-modal">Quick view</a>
                         <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
                       </div>
                     </div>
@@ -628,7 +637,8 @@
                         <div class="price">&pound;18.99</div>
                       </div>
                       <div class="product-options">
-                        <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                          data-target="#product-quickview-modal">Quick view</a>
                         <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
                       </div>
                     </div>
@@ -640,9 +650,15 @@
                       <div class="product-details">
                         <div class="product-title">Rastafarian Lion Tee</div>
                         <div class="price">&pound;14.99</div>
+                        <ul class="color-options">
+                          <li><span class="color-option blue">Periwinkle</span></li>
+                          <li><span class="color-option teal">Teal</span></li>
+                          <li><span class="color-option pink">Pink</span></li>
+                        </ul>
                       </div>
                       <div class="product-options">
-                        <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                          data-target="#product-quickview-modal">Quick view</a>
                         <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
                       </div>
                     </div>
@@ -656,7 +672,8 @@
                         <div class="price">&pound;4.99</div>
                       </div>
                       <div class="product-options">
-                        <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                          data-target="#product-quickview-modal">Quick view</a>
                         <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
                       </div>
                     </div>
@@ -671,7 +688,8 @@
                         <div class="price">&pound;14.99</div>
                       </div>
                       <div class="product-options">
-                        <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                          data-target="#product-quickview-modal">Quick view</a>
                         <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
                       </div>
                     </div>
@@ -685,7 +703,8 @@
                         <div class="price">&pound;18.99</div>
                       </div>
                       <div class="product-options">
-                        <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                          data-target="#product-quickview-modal">Quick view</a>
                         <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
                       </div>
                     </div>
@@ -699,7 +718,8 @@
                         <div class="price">&pound;14.99</div>
                       </div>
                       <div class="product-options">
-                        <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                          data-target="#product-quickview-modal">Quick view</a>
                         <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
                       </div>
                     </div>
@@ -713,7 +733,8 @@
                         <div class="price">&pound;4.99</div>
                       </div>
                       <div class="product-options">
-                        <a href="#" class="btn btn-primary quickview-link">Quick view</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal"
+                          data-target="#product-quickview-modal">Quick view</a>
                         <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
                       </div>
                     </div>

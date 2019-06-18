@@ -41,4 +41,17 @@ $(function () {
     }
     valWrapper.html(val);
   });
+
+  // Power up rating selectors.
+  $('.star-rating-selector li').click(function () {
+    var rating = $(this).index() + 1;
+    $(this).closest('.star-rating-selector').find('li').each(function () {
+      if ($(this).index() < rating) {
+        $(this).addClass('star');
+      }
+      else {
+        $(this).removeClass('star');
+      }
+    });
+  });
 });

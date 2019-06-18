@@ -27,11 +27,12 @@
 
   &:hover,
   &:focus {
+    box-shadow: none;
     text-decoration: underline;
   }
 }
 
 .btn-xl {
-  font-size: $font-size-lg;
+  font-size: 1rem;
   padding: $spacer ($spacer * 3);
 }
