@@ -1,0 +1,11 @@
+.shopping-cart.table {
+  th {
+    border-top: 0 none;
+    color: $gray-500;
+  }
+
+  .product-name {
+    font-weight: bolder;
+    margin-bottom: $spacer / 2;
+  }
+}
