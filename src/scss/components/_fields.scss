@@ -1,0 +1,21 @@
+.field {
+  margin-bottom: $spacer * 1.5;
+  
+  .field-label {
+    font-size: $font-size-larger;
+    font-weight: bold;
+    color: $gray-500;
+    margin-bottom: $spacer * 0.5;
+
+    .field-label-info {
+      float: right;
+      font-size: $font-size-sm;
+      font-weight: normal;
+    }
+  }
+}
+
+.field-wrapper > .field {
+  display: inline-block;
+
+}

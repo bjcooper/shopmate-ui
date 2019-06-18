@@ -20,6 +20,10 @@ ul.size-options {
     }
   }
 
+  li:last-child .size-option {
+    margin-right: 0;
+  }
+
   a.size-option {
     text-decoration: none;
     color: $body-color;

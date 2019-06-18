@@ -1,0 +1,30 @@
+.modal {
+  .modal-footer,
+  .modal-body {
+    background-color: $modal-content-bg;
+  }
+
+  .close {
+    height: 72px;
+    width: 72px;
+    overflow: hidden;
+    text-indent: 72px;
+    background: url("~images/icons/close-big-red.png") no-repeat scroll 0 0 transparent;
+    margin-bottom: -36px;
+    z-index: 1;
+    border: 0 none;
+    filter: saturate(0);
+    box-shadow: none;
+    outline: none;
+
+    &:focus,
+    &:hover {
+      filter: saturate(100%);
+    }
+  }
+}
+
+.modal-fullwidth {
+  max-width: calc(100vw - 4rem);
+  left: 8px;
+}

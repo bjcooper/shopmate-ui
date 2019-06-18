@@ -22,7 +22,7 @@
     flex-direction: column;    
 
     > .filter-summary,
-    > .filter {
+    > .field {
       margin-bottom: $spacer * 1.5;
     }
 
@@ -63,13 +63,6 @@
           }
         }
       }
-    }
-
-    .filter-label {
-      font-size: $font-size-larger;
-      font-weight: bold;
-      color: $gray-500;
-      margin-bottom: $spacer * 0.5;
     }
 
     .brand-filter {

@@ -1,0 +1,17 @@
+.star-rating {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: red;
+    background: url("~images/icons/icons-star-grey.png") no-repeat scroll 0 0 transparent;
+
+    &.star {
+      background-image: url("~images/icons/icons-star-gold.png");
+    }
+  }
+}

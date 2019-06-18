@@ -18,3 +18,20 @@
   background: url("~images/icons/icons-close-small-red.png") no-repeat scroll 0 50% transparent;
   padding-left: $spacer * 1.1;
 }
+
+.btn-add-to-wishlist {
+  font-weight: normal;
+  background: url("~images/icons/icons-heart-red.png") no-repeat scroll 0 50% transparent;
+  padding-left: $spacer * 1.5;
+  padding-right: 0;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.btn-xl {
+  font-size: $font-size-lg;
+  padding: $spacer ($spacer * 3);
+}
