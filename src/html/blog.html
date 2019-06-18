@@ -67,8 +67,8 @@
 
       <!-- Cart link -->
       <div class="nav-item">
-        <a href="#" class="cart-link">
-          <span class="cart-item-count">6</span>
+        <a href="#" class="cart-link" data-toggle="modal" data-target="#shopping-cart-modal">
+          <span class="cart-item-count">4</span>
         </a>
       </div>
     </div>
@@ -317,6 +317,134 @@
       </div>
     </div>
 
+  </div>
+
+  <!-- Shopping cart -->
+  <div id="shopping-cart-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 class="h3">4 Items in Your Cart</h2>
+          <table class="table shopping-cart">
+            <thead>
+              <tr>
+                <th colspan="2">Item</th>
+                <th>Size</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td class="product-photo">
+                  <img src="~images/photos/images-shirt1.png" />
+                </td>
+                <td class="product-details">
+                  <div class="product-name">Green T-shirt 2016</div>
+                  <div class="product-details">Men BK3569</div>
+                  <a href="#" class="remove-from-cart">Remove</a>
+                </td>
+                <td class="product-size">
+                  XXL
+                </td>
+                <td class="product-quantity">
+                  <div class="input-group quantity-selector">
+                    <button class="btn decrement">-</button>
+                    <div class="quantity-value">2</div>
+                    <button class="btn increment">+</button>
+                  </div>
+                </td>
+                <td class="product-price">
+                  &pound;21
+                </td>
+              </tr>
+              <tr>
+                <td class="product-photo">
+                  <img src="~images/photos/images-shirt2.png" />
+                </td>
+                <td class="product-details">
+                  <div class="product-name">Purple T-shirt 2016</div>
+                  <div class="product-details">Men BK3569</div>
+                  <a href="#" class="remove-from-cart">Remove</a>
+                </td>
+                <td class="product-size">
+                  XL
+                </td>
+                <td class="product-quantity">
+                  <div class="input-group quantity-selector">
+                    <button class="btn decrement">-</button>
+                    <div class="quantity-value">2</div>
+                    <button class="btn increment">+</button>
+                  </div>
+                </td>
+                <td class="product-price">
+                  &pound;13
+                </td>
+              </tr>
+
+              <tr>
+                <td class="product-photo">
+                  <img src="~images/photos/images-shirt3.png" />
+                </td>
+                <td class="product-details">
+                  <div class="product-name">Yellow T-shirt 2016</div>
+                  <div class="product-details">Men BK3569</div>
+                  <a href="#" class="remove-from-cart">Remove</a>
+                </td>
+                <td class="product-size">
+                  L
+                </td>
+                <td class="product-quantity">
+                  <div class="input-group quantity-selector">
+                    <button class="btn decrement">-</button>
+                    <div class="quantity-value">2</div>
+                    <button class="btn increment">+</button>
+                  </div>
+                </td>
+                <td class="product-price">
+                  &pound;42
+                </td>
+              </tr>
+
+              <tr>
+                <td class="product-photo">
+                  <img src="~images/photos/images-shirt4.png" />
+                </td>
+                <td class="product-details">
+                  <div class="product-name">Orange T-shirt 2016</div>
+                  <div class="product-details">Men BK3569</div>
+                  <a href="#" class="remove-from-cart">Remove</a>
+                </td>
+                <td class="product-size">
+                  XS
+                </td>
+                <td class="product-quantity">
+                  <div class="input-group quantity-selector">
+                    <button class="btn decrement">-</button>
+                    <div class="quantity-value">2</div>
+                    <button class="btn increment">+</button>
+                  </div>
+                </td>
+                <td class="product-price">
+                  &pound;24
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-white" data-dismiss="modal">Back to Shop</button>
+          <button type="button" class="btn btn-primary">Check out</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Page footer -->

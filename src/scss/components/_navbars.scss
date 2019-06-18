@@ -94,9 +94,11 @@
 .navbar .cart-link {
   position: relative;
   display: inline-block;
-  background: url("~images/icons/icons-bag.png") 50% 50% no-repeat scroll transparent;
-  width: 2rem;
+  background: url("~images/icons/icons-bag.png") 0 50% no-repeat scroll transparent;
+  text-decoration: none;
+  padding-left: 2rem;
   height: 2rem;
+  line-height: 2rem;
   margin-bottom: -$spacer;
   top: $spacer / -4;
 
@@ -106,13 +108,24 @@
     height: 1.25rem;
     position: absolute;
     top: -0.25rem;
-    right: -0.25rem;
+    left: 0.5rem;
     background: $primary;
     color: $white;
     font-weight: bolder;
     border-radius: 50%;
     text-align: center;
     line-height: 1.25rem;
+  }
+
+  .cart-total {
+    color: $body-color;
+  }
+
+  &:focus,
+  &:hover {
+    .cart-total {
+      color: $primary;
+    }
   }
 }
 
