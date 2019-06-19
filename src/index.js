@@ -54,4 +54,19 @@ $(function () {
       }
     });
   });
+
+  // Power up modal swapping.
+  $('a[data-modalswap]').click(function () {
+    let currentModalId = '#' + $(this).closest('.modal').attr('id');
+    let newModalId = $(this).data('modalswap');
+
+    // Prepare to show the new modal once the current one is hidden.
+    $(currentModalId).on('hidden.bs.modal', function () {
+      $(this).off('hidden.bs.modal');
+      $(newModalId).modal('show');
+    })
+
+    // Hide the current modal.
+    $(currentModalId).modal('hide');
+  })
 });
