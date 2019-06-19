@@ -26,6 +26,12 @@
 }
 
 .modal-fullwidth {
-  max-width: calc(100vw - 4rem);
-  left: 8px;
+  max-width: calc(100vw - 2rem);
+  margin: $spacer;
+
+  @include media-breakpoint-up(lg) {
+    left: 0.5rem;
+    max-width: calc(100vw - 4rem);
+    margin: ($spacer * 1.5) $spacer;
+  }
 }
