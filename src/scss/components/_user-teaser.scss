@@ -1,15 +1,11 @@
 .user-teaser {
   display: flex;
-
-  .user-image {
-    padding-right: $spacer * 1.5;
-  }
-
+  flex-direction: column;
+  text-align: center;
   .user-details {
     flex: 1;
     font-family: $font-family-copy;
     font-weight: $font-weight-copy;
-    padding-right: $spacer;
 
     .user-name {
       font-weight: bold;
@@ -19,6 +15,19 @@
 
     p {
       max-width: none;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    text-align: left;
+
+    .user-image {
+      padding-right: $spacer * 1.5;
+    }  
+
+    .user-details {
+      padding-right: $spacer;
     }
   }
 }

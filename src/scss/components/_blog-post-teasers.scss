@@ -1,5 +1,6 @@
 .blog-post-teaser {
   display: flex;
+  flex-direction: column-reverse;
   margin-bottom: $spacer * 2.5;
 
   .blog-post-details {
@@ -21,6 +22,14 @@
     }
   }
 
+  .blog-post-image {
+    margin-bottom: $spacer;
+    
+    img {
+      width: 100%;
+    }
+  }
+
   .blog-post-author {
     display: flex;
 
@@ -36,5 +45,9 @@
       font-size: 1rem * (12 / 16);
       color: $gray-600;
     }
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
   }
 }

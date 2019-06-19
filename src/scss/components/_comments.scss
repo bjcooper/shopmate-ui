@@ -1,5 +1,6 @@
 .comment {
   display: flex;
+  flex-direction: column;
   margin-bottom: $spacer * 2.5;
 
   .user-image {
@@ -26,5 +27,9 @@
       font-size: 1rem * (12 / 16);
       color: $gray-600;
     }
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
   }
 }

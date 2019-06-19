@@ -13,6 +13,8 @@ body.blog {
     border-top: 2px solid $gray-200;
     padding-top: $spacer * 2.5;
     padding-bottom: $spacer * 0.5;
+    padding-left: $spacer;
+    padding-right: $spacer;
     @include remove-gutter();
   }
 
@@ -37,9 +39,15 @@ body.blog {
    */
   .blog-meta {
     display: flex;
+    justify-content: center;
+    padding: ($spacer * 1.5) ($spacer * 1.5);
 
     > div {
-      padding: ($spacer * 1.75) ($spacer * 0.5);
+      padding: ($spacer * 0.5);
+
+      &.blog-date {
+        display: none;
+      }
     }
 
     .blog-badges {
@@ -62,6 +70,8 @@ body.blog {
     text-align: center;
     margin-bottom: $spacer * 2;
     @include center-content($blog-width - 20px);
+    padding-left: $spacer;
+    padding-right: $spacer;
   }
 
   /**
@@ -72,6 +82,8 @@ body.blog {
     @include blog-bold();
     @include center-content($blog-width - 20px);
     margin-bottom: $spacer * 4;
+    padding-left: $spacer;
+    padding-right: $spacer;
   }
 
   /**
@@ -126,6 +138,7 @@ body.blog {
   
     .blog-highlights {
       margin-left: $spacer * 2;
+      margin-right: $spacer * 2;
       margin-top: $spacer * 2.5;
       margin-bottom: $spacer * 3;
   
@@ -136,8 +149,6 @@ body.blog {
       }
   
       ul {
-        column-width: 100px;
-  
         li {
           margin-left: $spacer * 0.75;
         }
@@ -180,6 +191,24 @@ body.blog {
     .content-metadata {
       margin-top: $spacer * 3;
       margin-bottom: $spacer * 3;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .blog-meta {
+      > div {
+        &.blog-date {
+          display: block;
+        }
+      }
+    }
+
+    .blog-body {
+      .blog-highlights {
+        ul {
+          column-width: 100px;
+        }
+      }
     }
   }
 }
