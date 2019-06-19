@@ -1,12 +1,23 @@
 .discount-banner {
+  p {
+    text-align: center;
+  }
+
   .form-inline {
     .btn.form-control {
       margin-top: $spacer / 2;
       width: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   @include media-breakpoint-up(sm) {
+    p {
+      margin-bottom: 0;
+      text-align: left;
+    }
+
     .form-inline {
       input.form-control {
         margin-right: $spacer / 2;
@@ -14,6 +25,8 @@
   
       .btn.form-control {
         margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
       }
     }
   }

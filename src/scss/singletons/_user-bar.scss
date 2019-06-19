@@ -1,5 +1,16 @@
 #user-bar {
   font-weight: bolder;
+  min-height: 48px;
+
+  .special-links,
+  .currency-selector,
+  .cart-total {
+    display: none;
+  }
+
+  .cart-link {
+    margin-right: -$spacer * 0.75;
+  }
 
   .nav .nav-link {
     color: $body-color;
@@ -7,6 +18,24 @@
     &:focus,
     &:hover {
       color: $link-hover-color;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .special-links {
+      display: flex;
+    }
+
+    .currency-selector {
+      display: block;
+    }
+
+    .cart-total {
+      display: inline;
+    }
+  
+    .cart-link {
+      margin-right: 0;
     }
   }
 }

@@ -5,9 +5,15 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100%;
 }
 
 #main-content {
   padding: 0 $spacer;
   flex: 1;
+
+  > .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

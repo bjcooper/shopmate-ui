@@ -1,6 +1,6 @@
 #page-catalog {
   #menswear-categories {
-    background: url("~images/photos/images-modal4.png") no-repeat scroll 0 0 $gray-500;
+    background: url("~images/photos/images-modal4.png") no-repeat scroll 80% center $gray-500;
     background-size: cover;
     min-height: 336px;
 
@@ -28,14 +28,29 @@
   }
 
   #brand-spotlight {
-    background: url("~images/photos/images-shoe2.png") no-repeat scroll center center #ddd;
+    background: url("~images/photos/images-shoe2.png") no-repeat scroll 80% center #ddd;
     background-size: cover;
     min-height: 312px;
     display: flex;
     align-items: center;
 
     > .container {
-      padding: 0 45% ($spacer * 1.5) ($spacer * 3);
+      padding: 0 $spacer;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    #menswear-categories {
+      background-position: center center;
+    }
+    
+
+    #brand-spotlight {
+      background-position: center center;
+
+      > .container {
+        padding: 0 45% ($spacer * 1.5) ($spacer * 3);
+      }
     }
   }
 }

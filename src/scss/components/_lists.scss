@@ -1,8 +1,10 @@
-ul,
-ol {
-  @for $i from 2 through 6 {
-    &.list-cols-#{$i} {
-      column-count: $i;
+@include media-breakpoint-up(md) {  
+  ul,
+  ol {
+    @for $i from 2 through 6 {
+      &.list-cols-#{$i} {
+        column-count: $i;
+      }
     }
   }
 }

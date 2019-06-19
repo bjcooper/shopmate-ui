@@ -1,18 +1,13 @@
 .product-grid {
   display: grid;
   grid-gap: $spacer;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   margin-bottom: $spacer;
 
   > div {
     background: $white;
     padding: ($spacer * 1.5) $spacer;
     box-shadow: $box-shadow-sm;
-  }
-
-  &.filter-section {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
   }
 
   .product-grid-filters {
@@ -84,6 +79,15 @@
 
     .size-filter .size-options li {
       width: 33%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(3, 1fr);
+
+    &.filter-section {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr 1fr;
     }
   }
 }

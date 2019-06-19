@@ -5,14 +5,20 @@
     ul {
       list-style: none;
       padding: 0;
-      display: flex;
+      text-align: center;
       justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
     }
   
     ul.department-links {
       font-size: $font-size-larger * (24 / 16);
       line-height: 1.5;
       font-weight: bolder;
+
+      > li {
+        width: 100%;
+      }
   
       a {
         color: $body-color;
@@ -93,6 +99,16 @@
         &:hover,
         &:focus {
           color: $link-hover-color;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &.footer-standard {
+      ul.department-links {
+        li {
+          width: auto;
         }
       }
     }
