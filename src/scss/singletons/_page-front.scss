@@ -1,13 +1,22 @@
 #page-front {
   #top-hero {
-    background: url("~images/photos/images-woman1.png") no-repeat scroll center center #ddd;
+    background: url("~images/photos/images-woman1.png") no-repeat scroll 70% center #ddd;
     background-size: cover;
     min-height: 480px;
     display: flex;
     align-items: center;
 
     > .container {
-      padding: 0 35% ($spacer * 1.5) ($spacer * 6);
+      padding: ($spacer * 2) ($spacer * 2) ($spacer * 3);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-position: center center;
+    #top-hero {
+      > .container {
+        padding: 0 35% ($spacer * 1.5) ($spacer * 6);
+      }
     }
   }
 
