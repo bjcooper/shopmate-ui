@@ -6,6 +6,15 @@
   .nav-link {
     font-weight: bolder;
   }
+
+  .navbar-toggler {
+    margin-right: -$spacer * 0.75;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-left: $spacer * 2;
+    padding-right: $spacer * 2;
+  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -25,6 +34,7 @@
 .navbar-brand {
   font-weight: bolder;
   letter-spacing: 1rem * 0.25;
+  margin-right: 0;
 }
 
 /**
