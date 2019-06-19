@@ -64,7 +64,6 @@
   
     .tile-primary {
       grid-area: primary;
-      max-width: 627px;
     }
   
     .tile-accent,
@@ -84,6 +83,10 @@
       grid-template-areas:
         'accent primary'
         'secondary primary';
+  
+        .tile-primary {
+          max-width: 627px;
+        }
     }
   }
 }

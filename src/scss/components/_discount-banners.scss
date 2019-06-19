@@ -1,0 +1,20 @@
+.discount-banner {
+  .form-inline {
+    .btn.form-control {
+      margin-top: $spacer / 2;
+      width: auto;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .form-inline {
+      input.form-control {
+        margin-right: $spacer / 2;
+      }
+  
+      .btn.form-control {
+        margin-top: 0;
+      }
+    }
+  }
+}
