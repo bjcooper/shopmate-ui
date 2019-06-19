@@ -22,14 +22,15 @@
 
   #highlights-grid {
     display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      'accent primary'
-      'secondary primary';
+    grid-template-columns: 1fr;
     grid-gap: $spacer * 1.5;
+    grid-template-areas:
+      'accent'
+      'secondary'
+      'primary';
   
     .tile-accent {
+      min-height: 260px;
       background: $cyan;
       grid-area: accent;
   
@@ -39,6 +40,7 @@
     }
   
     .tile-secondary {
+      min-height: 260px;
       position: relative;
       grid-area: secondary;
       background-color: rgba($yellow, 0.5);
@@ -74,6 +76,14 @@
       justify-content: center;
       padding: $spacer * 2;
       box-shadow: $box-shadow-sm;
+    }
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 1fr auto;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        'accent primary'
+        'secondary primary';
     }
   }
 }
