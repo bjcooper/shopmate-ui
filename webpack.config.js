@@ -63,6 +63,11 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       hash: true,
+      template: "./src/html/landing.html",
+      filename: "landing.html"
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
       template: "./src/html/catalog.html",
       filename: "catalog.html"
     }),

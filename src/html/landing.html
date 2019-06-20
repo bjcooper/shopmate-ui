@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="/" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Viewport setup -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- Initial page styles -->
+  <style>
+    body {
+      opacity: 0;
+    }
+  </style>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="~images/favicons/favicon.ico" />
+
+  <title>SHOPMATE</title>
+</head>
+
+<body id="page-front">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">SHOPMATE</a>
+
+    <!-- Collapse toggle -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar collapse wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar nav -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Women</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Men</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kids</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shoes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Brands</a>
+        </li>
+      </ul>
+
+      <!-- Search form -->
+      <form class="form-inline my-2 my-lg-0">
+        <input id="search-input" class="form-control form-control-sm" type="text" placeholder="search everything"
+          aria-label="Search" autocomplete="off">
+        <a href="#" id="search-reset" class="btn form-control-sm">
+          <span class="sr-only">Clear search</span>
+        </a>
+      </form>
+
+      <!-- Cart link -->
+      <div class="nav-item">
+        <a href="#" class="cart-link" data-toggle="modal" data-target="#shopping-cart-modal">
+          <span class="cart-item-count">4</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Top hero -->
+  <div id="top-hero" class="jumbotron jumbotron-fluid bg-secondary text-light">
+    <div class="container">
+      <h2 class="display-3 mb-3">Background <small>and</small> development</h2>
+      <p class="lead">
+        Find out how we empower customers to turn their creative vision into reality.
+      </p>
+      <a class="btn btn-light btn-lg" href="#" role="button">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div id="main-content">
+    <div class="container">
+
+      <!-- Page title -->
+      <h1 class="sr-only">SHOPMATE</h1>
+
+      <!-- Product spotlight -->
+      <div class="row">
+        <div class="card container-fluid product-spotlight my-4">
+          <div class="card-body row">
+            <!-- Product image area -->
+            <div class="product-image col-sm">
+              <span class="badge badge-sale">Sale</span>
+              <img class="img-fluid" src="~images/photos/images-bag.png" alt="Vera Bradley Tote"
+                title="Vera Bradley B.B. Collection Tote" />
+            </div>
+
+            <!-- Product details area -->
+            <div class="product-details col-sm-8">
+              <h2 class="h3">Vera Bradley</h2>
+              <p>
+                Carry the day in style with this extra-large tote crafted in our chic B.B. Collection textured PVC.
+                Featuring
+                colorful faux leather trim, this tote offers a roomy interior plus just enough perfectly placed
+                pockets
+                to
+                keep smaller items organized and easy to find.
+              </p>
+              <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlights grid -->
+      <div id="highlights-grid" class="row mb-4">
+        <!-- Accent tile -->
+        <a href="#" class="tile-accent">
+          <h3 class="display-3">WOW</h3>
+          <strong class="large">See what's HOT!</strong>
+        </a>
+
+        <!-- Secondary tile -->
+        <a href="#" class="tile-secondary">
+          <h3 class="display-3">MEN</h3>
+        </a>
+
+        <!-- Primary card tile -->
+        <div class="tile-primary">
+          <div class="card text-center">
+            <img class="img-fluid" src="~images/photos/images-model3.png" />
+            <div class="card-body">
+              <h3 class="card-title display-3 mb-0">Let the games begin</h3>
+              <p class="card-text "><strong>Registration is on—get ready for the Open!</strong></p>
+              <a href="#" class="btn btn-primary btn-lg mb-3">Register</a>
+              <span class="badge card-badge badge-orange">Pop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Discount banner -->
+      <div class="discount-banner row banner banner-light">
+        <div class="container text-center my-3">
+          <h3 class="text-primary">10% discount when you subscribe</h3>
+          <p>
+            <strong>Subscribe now to get access to exclusive offers, advanced notice about special sales, reduced
+              shipping, and a whole lot more!</strong>
+          </p>
+
+          <form class="form-inline mt-4">
+            <input class="form-control form-control-sm" type="email" placeholder="Your e-mail here"
+              aria-label="Subscribe" />
+            <button class="btn btn-primary btn-sm form-control form-control-sm">
+              Subscribe
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shopping cart -->
+  <div id="shopping-cart-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 class="h3">4 Items in Your Cart</h2>
+          <table class="table shopping-cart">
+            <thead>
+              <tr>
+                <th colspan="2">Item</th>
+                <th>Size</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td class="product-photo">
+                  <img src="~images/photos/images-shirt1.png" />
+                </td>
+                <td class="product-details">
+                  <div class="product-name">Green T-shirt 2016</div>
+                  <div class="product-details">Men BK3569</div>
+                  <a href="#" class="remove-from-cart">Remove</a>
+                </td>
+                <td class="product-size">
+                  XXL
+                </td>
+                <td class="product-quantity">
+                  <div class="input-group quantity-selector">
+                    <button class="btn decrement">-</button>
+                    <div class="quantity-value">2</div>
+                    <button class="btn increment">+</button>
+                  </div>
+                </td>
+                <td class="product-price">
+                  &pound;21
+                </td>
+              </tr>
+              <tr>
+                <td class="product-photo">
+                  <img src="~images/photos/images-shirt2.png" />
+                </td>
+                <td class="product-details">
+                  <div class="product-name">Purple T-shirt 2016</div>
+                  <div class="product-details">Men BK3569</div>
+                  <a href="#" class="remove-from-cart">Remove</a>
+                </td>
+                <td class="product-size">
+                  XL
+                </td>
+                <td class="product-quantity">
+                  <div class="input-group quantity-selector">
+                    <button class="btn decrement">-</button>
+                    <div class="quantity-value">2</div>
+                    <button class="btn increment">+</button>
+                  </div>
+                </td>
+                <td class="product-price">
+                  &pound;13
+                </td>
+              </tr>
+
+              <tr>
+                <td class="product-photo">
+                  <img src="~images/photos/images-shirt3.png" />
+                </td>
+                <td class="product-details">
+                  <div class="product-name">Yellow T-shirt 2016</div>
+                  <div class="product-details">Men BK3569</div>
+                  <a href="#" class="remove-from-cart">Remove</a>
+                </td>
+                <td class="product-size">
+                  L
+                </td>
+                <td class="product-quantity">
+                  <div class="input-group quantity-selector">
+                    <button class="btn decrement">-</button>
+                    <div class="quantity-value">2</div>
+                    <button class="btn increment">+</button>
+                  </div>
+                </td>
+                <td class="product-price">
+                  &pound;42
+                </td>
+              </tr>
+
+              <tr>
+                <td class="product-photo">
+                  <img src="~images/photos/images-shirt4.png" />
+                </td>
+                <td class="product-details">
+                  <div class="product-name">Orange T-shirt 2016</div>
+                  <div class="product-details">Men BK3569</div>
+                  <a href="#" class="remove-from-cart">Remove</a>
+                </td>
+                <td class="product-size">
+                  XS
+                </td>
+                <td class="product-quantity">
+                  <div class="input-group quantity-selector">
+                    <button class="btn decrement">-</button>
+                    <div class="quantity-value">2</div>
+                    <button class="btn increment">+</button>
+                  </div>
+                </td>
+                <td class="product-price">
+                  &pound;24
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-white" data-dismiss="modal">Back to Shop</button>
+          <button type="button" class="btn btn-primary">Check out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page footer -->
+  <footer id="footer" class="bg-white footer-dense">
+    <div class="container">
+      <h3 class="sr-only">Quick Links</h3>
+      <div class="row">
+        <div class="col-sm">
+          <h4>Questions?</h4>
+          <ul class="links">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <h4>What's in Store</h4>
+          <ul class="links">
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Product A–Z</a></li>
+            <li><a href="#">Buy Gift Vouchers</a></li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          <h4>Follow Us</h4>
+          <ul class="links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="col-sm">
+          &copy;2016 Shopmate Ltd
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
