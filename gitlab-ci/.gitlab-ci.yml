@@ -1,0 +1,66 @@
+variables:
+  PROJECT_NAME: "shopmate-ui.thewiznerd.com"
+  WEB_ROOT_FOLDER_NAME: "web"
+  IMAGE_NAME: "technatelogy/wiznerd-vue:latest"
+  #NPM binary cache location
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+  #Produciton config
+  PRODUCTION_PATH: "/var/www/shopmate-ui.thewiznerd.com"
+  PRODUCTION_USER: "devops"
+  PRODUCTION_URL: "shopmate-ui.thewiznerd.com"
+  PRODUCTION_HOST: "gandalf.thewiznerd.com"
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  tags:
+    - vue-cli
+  image: $IMAGE_NAME
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - .npm
+      - node_modules
+
+  script:
+    - npm ci
+    - npm run build
+
+  artifacts:
+    name: $PROJECT_NAME_{CI_COMMIT_SHA}
+    expire_in: "2 days"
+    paths:
+      - dist
+  only:
+    - master
+
+deploy_production:
+  stage: deploy
+  tags:
+    - vue-cli
+  environment:
+    name: production
+    url: $PRODUCTION_URL
+  only:
+    - master
+  image: $IMAGE_NAME
+  script:
+    - eval $(ssh-agent -s)
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "$PRODUCTION_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - ssh -p22 $PRODUCTION_USER@$PRODUCTION_HOST /bin/bash <<EOF
+    - mkdir ${PRODUCTION_PATH}_tmp
+    - EOF
+    - scp -r ./dist/* $PRODUCTION_USER@$PRODUCTION_HOST:${PRODUCTION_PATH}_tmp
+    - ssh $PRODUCTION_USER@$PRODUCTION_HOST /bin/bash <<EOF
+    - mv $PRODUCTION_PATH ${PRODUCTION_PATH}_old
+    - mv ${PRODUCTION_PATH}_tmp $PRODUCTION_PATH
+    - rm -rf ${PRODUCTION_PATH}_old
+    - cd $PRODUCTION_PATH
+    - EOF
+
