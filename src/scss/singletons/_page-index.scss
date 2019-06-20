@@ -1,4 +1,5 @@
 #page-index {
+
   .page-header {
     padding: $spacer ($spacer * 2.5) ($spacer * 0.5);
     background: $white;
@@ -9,6 +10,10 @@
       hyphens: manual;
       margin-bottom: 0;
     }
+  }
+
+  .page-section {
+    margin-bottom: $spacer * 2;
   }
 
   .demo-links {
@@ -177,11 +182,14 @@
     }
   }
 
-  #footer {
-    .user-teaser {
-      p {
-        max-width: 36em;
-      }
+  .user-teaser {
+    .user-image {
+      padding-right: $spacer;
+      padding-top: $spacer * 0.25;
+    }
+
+    p {
+      max-width: 36em;
     }
   }
 
