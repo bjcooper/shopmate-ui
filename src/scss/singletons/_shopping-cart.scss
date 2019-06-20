@@ -1,53 +1,115 @@
 #shopping-cart-modal {
   .modal-body {
-    padding: $spacer ($spacer * 3);
+    padding: ($spacer * 1.5) ($spacer * 2) $spacer;
+
+    h2 {
+      text-align: center;
+    }
   }
 
   .modal-footer {
+    flex-direction: column-reverse;
     background: $body-bg;
     padding-left: $spacer * 3;
     padding-right: $spacer * 3;
 
     .btn-white {
-      margin-right: auto;
+      margin-top: $spacer;
     }
   }
-}
 
-.shopping-cart.table {
-  th {
-    border-top: 0 none;
-    color: $gray-500;
+  .shopping-cart.table {
+    thead {
+      display: none;
+    }
+
+    tbody tr {
+      border-top: 2px solid $table-border-color;
+    }
+
+    th {
+      border-top: 0 none;
+      color: $gray-500;
+    }
+
+    th,
+    td {
+      vertical-align: middle;
+    }
+
+    td {
+      display: block;
+      border: 0 none;
+      text-align: center;
+    }
+
+    .product-details {
+      line-height: 2;
+    }
+
+    .product-name {
+      font-size: 1rem;
+      font-weight: bolder;
+    }
+
+    .quantity-selector {
+      justify-content: center;
+    }
+
+    .product-price {
+      font-size: 1rem * (24 / 16);
+      font-weight: bolder;
+    }
+
+    .remove-from-cart {
+      font-size: 1rem * (12 / 16);
+      color: $gray-500;
+      padding-left: $spacer * 1.25;
+      margin-left: -$spacer * 0.25;
+      background: url("~images/icons/icons-close-small-red.png") no-repeat scroll 0 -2px transparent;
+    }
   }
 
-  th,
-  td {
-    vertical-align: middle;
-  }
+  @include media-breakpoint-up(lg) {
+    .modal-body {
+      padding: $spacer ($spacer * 3);
 
-  .product-photo {
-    width: 1%;
-  }
+      h2 {
+        text-align: left;
+      }
+    }
 
-  .product-details {
-    line-height: 2;
-  }
+    .modal-footer {
+      flex-direction: row;
 
-  .product-name {
-    font-size: 1rem;
-    font-weight: bolder;
-  }
+      .btn-white {
+        margin-top: 0;
+        margin-right: auto;
+      }
+    }
 
-  .product-price {
-    font-size: 1rem * (24 / 16);
-    font-weight: bolder;
-  }
+    .shopping-cart.table {
+      thead {
+        display: table-header-group;
+      }
 
-  .remove-from-cart {
-    font-size: 1rem * (12 / 16);
-    color: $gray-500;
-    padding-left: $spacer * 1.25;
-    margin-left: -$spacer * 0.25;
-    background: url("~images/icons/icons-close-small-red.png") no-repeat scroll 0 -2px transparent;
+      tbody tr {
+        border-top: 0 none;
+      }
+
+      td {
+        display: table-cell;
+        border-top: $table-border-width solid $table-border-color;
+        text-align: left;
+
+        .field-label {
+          display: none;
+        }
+      }
+
+      .product-photo {
+        width: 1%;
+      }
+    }
   }
 }

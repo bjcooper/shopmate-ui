@@ -8,6 +8,13 @@
     font-size: 100%;
     font-style: italic;
   }
+
+  + .subtitle {
+    margin-top: -$spacer * 1.5;
+    margin-bottom: $spacer * 1.5;
+    font-weight: normal;
+    color: $primary;
+  }
 }
 
 p {
