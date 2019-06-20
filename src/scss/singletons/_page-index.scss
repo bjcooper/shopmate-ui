@@ -123,6 +123,30 @@
         background-image: url("~images/icons/jquery.png");
       }
 
+      &.tech-webpack {
+        background-image: url("~images/icons/webpack.png");
+      }
+
+      &.tech-npm {
+        background-image: url("~images/icons/npm.png");
+      }
+
+      &.tech-docker {
+        background-image: url("~images/icons/docker.png");
+      }
+
+      &.tech-sass {
+        background-image: url("~images/icons/sass.png");
+      }
+
+      &.tech-autoprefixer {
+        background-image: url("~images/icons/autoprefixer.png");
+      }
+
+      &.tech-nodejs {
+        background-image: url("~images/icons/nodejs.png");
+      }
+
       h4,
       P {
         text-align: center;
@@ -149,6 +173,14 @@
           opacity: 1;
           transform: translateX(0);
         }
+      }
+    }
+  }
+
+  #footer {
+    .user-teaser {
+      p {
+        max-width: 36em;
       }
     }
   }
