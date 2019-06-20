@@ -14,35 +14,37 @@
   .demo-links {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: -$spacer * 1.5;
 
     .demo-link {
       flex: 1;
       display: block;
-      background: $gray-300;
-      background-size: cover;
       margin-right: $spacer * 1.5;
       text-align: center;
-      min-height: 240px;
+      background: none no-repeat scroll center center $white;
+      background-size: cover;
+      text-decoration: none !important;
+      border: 5px solid $white;
+      margin-bottom: $spacer * 1.5;
+      box-shadow: $box-shadow-sm;
+
       display: flex;
       justify-content: center;
-      animation-name: noanimation;
       align-items: center;
+      min-height: 240px;
+
+      animation-name: noanimation;
       animation-iteration-count: infinite;
       animation-timing-function: step-end;
       animation-duration: 2.5s;
       animation-delay: -0.25s;
-      text-decoration: none !important;
-      border: 5px solid $gray-600;
-      transition: border-color 0.25s ease;
-      margin-bottom: $spacer * 1.5;
+
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
 
       h3 {
         margin: 0;
         transition: transform 0.25s ease;
-      }
-
-      &:last-child {
-        margin-right: 0;
       }
 
       &.demo-link-landing {
@@ -71,11 +73,81 @@
 
       &:hover {
         border-color: $link-hover-color;
+        box-shadow: $box-shadow-lg;
 
         h3.btn-primary {
           transform: scale(1.5);
           background-color: $link-hover-color;
           border-color: $link-hover-color;
+        }
+      }
+    }
+  }
+
+  .technologies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -($spacer * 1.5);
+
+    > div {
+      flex: 1;
+      margin: 0 ($spacer * 1.5) ($spacer * 1.5) 0;
+      padding: ($spacer * 1.5);
+      background: none no-repeat scroll center center transparent;
+      background-size: cover;
+
+      min-width: 240px;
+      min-height: 240px;
+      max-width: 320px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      transition: background 0.3s ease;
+
+      &.tech-html5 {
+        background-image: url("~images/icons/html5.png");
+      }
+
+      &.tech-css3 {
+        background-image: url("~images/icons/css3.png");
+      }
+
+      &.tech-bootstrap4 {
+        background-image: url("~images/icons/bootstrap4.png");
+      }
+
+      &.tech-jquery {
+        background-image: url("~images/icons/jquery.png");
+      }
+
+      h4,
+      P {
+        text-align: center;
+        color: $white;
+        opacity: 0;
+        transition: transform 0.25s ease;
+      }
+
+      h4 {
+        transform: translateX(-2rem);
+      }
+
+      p {
+        transform: translateX(2rem);
+        font-size: $font-size-sm;
+      }
+
+      &:hover,
+      &:focus {
+        background: $primary;
+
+        h4,
+        P {
+          opacity: 1;
+          transform: translateX(0);
         }
       }
     }
