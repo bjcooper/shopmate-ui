@@ -1,7 +1,127 @@
 #page-index {
   .page-header {
-    padding: 0 ($spacer * 2.5) ($spacer * 0.5);
+    padding: $spacer ($spacer * 2.5) ($spacer * 0.5);
     background: $white;
     margin-bottom: $spacer * 2;
+
+    h1 {
+      line-height: 1.1;
+      hyphens: manual;
+      margin-bottom: 0;
+    }
+  }
+
+  .demo-links {
+    display: flex;
+    flex-direction: column;
+
+    .demo-link {
+      flex: 1;
+      display: block;
+      background: $gray-300;
+      background-size: cover;
+      margin-right: $spacer * 1.5;
+      text-align: center;
+      min-height: 240px;
+      display: flex;
+      justify-content: center;
+      animation-name: noanimation;
+      align-items: center;
+      animation-iteration-count: infinite;
+      animation-timing-function: step-end;
+      animation-duration: 2.5s;
+      animation-delay: -0.25s;
+      text-decoration: none !important;
+      border: 5px solid $gray-600;
+      transition: border-color 0.25s ease;
+      margin-bottom: $spacer * 1.5;
+
+      h3 {
+        margin: 0;
+        transition: transform 0.25s ease;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.demo-link-landing {
+        background-image: url("~images/screenshots/landing-page-1.png");
+
+        &:hover {
+          animation-name: landing-page-images;
+        }
+      }
+
+      &.demo-link-catalog {
+        background-image: url("~images/screenshots/catalog-page-1.png");
+
+        &:hover {
+          animation-name: catalog-page-images;
+        }
+      }
+
+      &.demo-link-blog {
+        background-image: url("~images/screenshots/blog-page-1.png");
+
+        &:hover {
+          animation-name: blog-page-images;
+        }
+      }
+
+      &:hover {
+        border-color: $link-hover-color;
+
+        h3.btn-primary {
+          transform: scale(1.5);
+          background-color: $link-hover-color;
+          border-color: $link-hover-color;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .demo-links {
+      flex-direction: row;
+    }
+  }
+}
+
+@keyframes noanimation { }
+
+@keyframes landing-page-images {
+  0%, 100% {
+    background-image: url("~images/screenshots/landing-page-1.png");
+  }
+  33% {
+    background-image: url("~images/screenshots/landing-page-2.png");
+  }
+  66% {
+    background-image: url("~images/screenshots/landing-mobile.png");
+  }
+}
+
+@keyframes catalog-page-images {
+  0%, 100% {
+    background-image: url("~images/screenshots/catalog-page-1.png");
+  }
+  33% {
+    background-image: url("~images/screenshots/catalog-page-2.png");
+  }
+  66% {
+    background-image: url("~images/screenshots/catalog-mobile.png");
+  }
+}
+
+@keyframes blog-page-images {
+  0%, 100% {
+    background-image: url("~images/screenshots/blog-page-1.png");
+  }
+  33% {
+    background-image: url("~images/screenshots/blog-page-2.png");
+  }
+  66% {
+    background-image: url("~images/screenshots/blog-mobile.png");
   }
 }
