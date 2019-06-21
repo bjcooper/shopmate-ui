@@ -81,6 +81,10 @@
     .product-details {
       grid-area: details;
 
+      .field-wrapper {
+        text-align: center;
+      }
+
       .field {
         text-align: center;
 
@@ -154,6 +158,10 @@
       }
 
       .product-details {
+        .field-wrapper {
+          text-align: left;
+        }
+        
         .field {
           text-align: left;
 
