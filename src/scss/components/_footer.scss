@@ -1,5 +1,6 @@
 #footer {
   padding: ($spacer * 3) $spacer ($spacer * 2);
+  z-index: -2;
 
   &.footer-standard {
     ul {
@@ -36,10 +37,11 @@
 
     &.bg-dark ul.department-links a {
       color: $white;
+      transition: color 0.25s ease;
 
       &:focus,
       &:hover {
-        color: $link-hover-color;
+        color: $primary;
       }
     }
   
@@ -48,12 +50,35 @@
   
       a {
         display: inline-block;
-        width: 40px;
-        height: 40px;
+        width: 48px;
+        height: 48px;
         background: no-repeat scroll 0 0 transparent;
-        margin: 0 ($spacer * 0.75);
-        overflow: hidden;
+        margin: 0 ($spacer * 0.5);
         text-indent: 40px;
+        border: 4px solid transparent;
+        position: relative;
+        font-size: 0;
+        color: transparent;
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          left: 1px;
+          top: 0;
+          transform: scale(0.9);
+          border-radius: 50%;
+          transition: 0.25s ease;
+        }
+
+        &:hover::before {
+          background: $primary;
+          transform: scale(1.2);
+        }
+
   
         &.instagram {
           background-image: url("~images/icons/icons-instagram-black.png");
