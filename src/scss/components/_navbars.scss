@@ -4,6 +4,7 @@
  */
 .navbar {
   .nav-link {
+    transition: color 0.25s ease;
     font-weight: bolder;
   }
 
@@ -90,6 +91,7 @@
   font-weight: bolder;
   letter-spacing: 1rem * 0.25;
   margin-right: 0;
+  transition: color 0.25s ease;
 }
 
 /**

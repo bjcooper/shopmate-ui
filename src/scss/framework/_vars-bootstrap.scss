@@ -732,7 +732,7 @@ $navbar-dark-active-color:          $navbar-dark-color;
 $navbar-dark-toggler-border-color:  transparent;
 
 $navbar-light-color:                $gray-900;
-$navbar-light-hover-color:          $navbar-light-color;
+$navbar-light-hover-color:          $link-hover-color;
 $navbar-light-active-color:         $navbar-light-color;
 // $navbar-light-disabled-color:       rgba($black, .3);
 $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$primary}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M0 7h30M0 15h30M0 23h30'/%3e%3c/svg%3e"), "#", "%23");
