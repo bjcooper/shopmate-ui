@@ -23,9 +23,17 @@ $(function () {
     $(this).hide();
   });
 
-  // Disable fake links.
+  // Disable fake links and forms.
   $('a[href="#"]').click(function (event) {
     event.preventDefault();
+    // Don't navigate for toggles and such.
+    if (!$(this).data('toggle')) {
+      simulateNavigation();
+    }
+  });
+  $('form').on('submit', function (event) {
+    event.preventDefault();
+    simulateNavigation();
   });
 
   // Power up quantity selectors.
@@ -70,3 +78,16 @@ $(function () {
     $(currentModalId).modal('hide');
   })
 });
+
+/**
+ * Provide a visual simulation for navigation so demo links make more sense.
+ */
+function simulateNavigation() {
+  $('.page-wrapper').on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
+    $(this).attr('style', null);
+  })
+
+  $('.page-wrapper')
+    .css('transition', 'none')
+    .css('animation', 'page-leave 1s ease');
+}

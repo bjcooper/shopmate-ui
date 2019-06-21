@@ -18,3 +18,21 @@ body {
   padding: 0 $spacer;
   flex: 1;
 }
+
+@keyframes page-leave {
+  0%, 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  5% {
+    transform: translateX(1rem);
+  }
+  35% {
+    opacity: 0;
+    transform: translateX(-8rem);
+  }
+  60% {
+    opacity: 0;
+    transform: translateX(-4rem);
+  }
+}
