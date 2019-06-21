@@ -237,3 +237,20 @@
     background-image: url("~images/screenshots/blog-mobile.png");
   }
 }
+
+/**
+ * CSS background image preloading.
+ */
+body::after {
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+  content: 
+    url("~images/screenshots/landing-page-1.png")
+    url("~images/screenshots/landing-page-2.png")
+    url("~images/screenshots/landing-mobile.png")
+    url("~images/screenshots/catalog-page-1.png")
+    url("~images/screenshots/catalog-page-2.png")
+    url("~images/screenshots/catalog-mobile.png")
+    url("~images/screenshots/blog-page-1.png")
+    url("~images/screenshots/blog-page-2.png")
+    url("~images/screenshots/blog-mobile.png");
+}
