@@ -186,6 +186,7 @@
 
   .cart-total {
     color: $body-color;
+    transition: 0.25s ease;
   }
 
   &:focus,
