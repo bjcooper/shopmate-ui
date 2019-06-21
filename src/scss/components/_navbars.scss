@@ -144,7 +144,7 @@
   overflow: hidden;
   width: 0;
   cursor: pointer;
-  transition: width 0.2s ease;
+  transition: 0.2s ease;
   margin-right: $spacer;
 
   + #search-reset {
@@ -155,7 +155,12 @@
     opacity: 0.8;
   }
 
+  &:hover {
+    transform: translateY(-2px);
+  }
+
   &:focus {
+    transform: translateY(0);
     width: 16rem;
     padding-left: 2.5rem;
     padding-right: 1rem;
@@ -208,6 +213,7 @@
   line-height: 2rem;
   margin-bottom: -$spacer;
   top: $spacer / -4;
+  transition: 0.2s ease;
 
   .cart-item-count {
     display: block;
@@ -231,6 +237,8 @@
 
   &:focus,
   &:hover {
+    transform: translateY(-2px);
+
     .cart-total {
       color: $primary;
     }
