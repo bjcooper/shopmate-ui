@@ -1,0 +1,40 @@
+tr.remove {
+  position: absolute;
+  animation: remove-row;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+tr.row-out-transition {
+  td {
+    padding: 0 !important;
+    border: 0 none !important;
+
+    animation: shrink-row;
+    animation-delay: 0.4s;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes remove-row {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  99% {
+    opacity: 0;
+    transform: translateX(4rem);
+  }
+  100% {
+    transform: translateX(1000rem);
+  }
+}
+
+@keyframes shrink-row {
+  to {
+    height: 0;
+  }
+}

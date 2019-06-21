@@ -72,6 +72,20 @@ $(function () {
     });
   });
 
+  // Power up remove from cart links.
+  $('a.remove-from-cart').click(function () {
+    // Create a placeholder row.
+    const placeholder = $('<tr class="row-out-transition"><td></td></tr>');
+
+    // Give it the same height as the row to remove and insert it.
+    const row = $(this).closest('tr');
+    $('td', placeholder).css('height', $(row).height());
+
+    // Insert the placeholder row and detach the row to remove.
+    $(row).after(placeholder);
+    $(row).addClass('remove');
+  });
+
   // Power up modal swapping.
   $('a[data-modalswap]').click(function () {
     let currentModalId = '#' + $(this).closest('.modal').attr('id');
@@ -89,16 +103,29 @@ $(function () {
 
   // Power up special add to cart animations.
   $('.add-to-cart').click(function () {
+    // Add the "clicked class" to trigger the animation.
     const link = $(this);
-
     link.addClass('clicked');
+
+    // When the animation finishes, hide the modal.
     setTimeout(function () {
       $(link.data('target')).modal('hide');
     }, 1500);
-    setTimeout(function () {
-      link.removeClass('clicked');
-    }, 2500)
   });
+
+  // Respond to Product Quickview modal events.
+  $('#product-quickview-modal').on('hidden.bs.modal', function () {
+    // Reset add to cart clicked states.
+    $(this).find('.add-to-cart').removeClass('clicked');
+  });
+
+  // Respond to Shopping Cart modal events.
+  $('#shopping-cart-modal').on('hidden.bs.modal', function () {
+    // Reset cart items.
+    $(this).find('tr.row-out-transition').remove();
+    $(this).find('tr.remove').removeClass('remove');
+  });
+
 });
 
 /**
