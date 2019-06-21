@@ -14,6 +14,10 @@
     body {
       opacity: 0;
     }
+
+    .page-wrapper {
+      transform: translateX(-4rem);
+    }
   </style>
 
   <!-- Favicon -->
@@ -23,155 +27,194 @@
 </head>
 
 <body id="page-landing">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container">
+  <div class="page-wrapper">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
 
-      <!-- Brand -->
-      <a class="navbar-brand" href="#">SHOPMATE</a>
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">SHOPMATE</a>
 
-      <!-- Collapse toggle -->
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Collapse toggle -->
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Navbar collapse wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Navbar nav -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Women</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Men</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kids</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Shoes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Brands</a>
-          </li>
-        </ul>
+        <!-- Navbar collapse wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar nav -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shoes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Brands</a>
+            </li>
+          </ul>
 
-        <div class="navbar-actions">
-          <!-- Search form -->
-          <form class="form-inline my-2 my-lg-0">
-            <input id="search-input" class="form-control form-control-sm" type="text" placeholder="search everything"
-              aria-label="Search" autocomplete="off">
-            <a href="#" id="search-reset" class="btn form-control-sm">
-              <span class="sr-only">Clear search</span>
-            </a>
-          </form>
+          <div class="navbar-actions">
+            <!-- Search form -->
+            <form class="form-inline my-2 my-lg-0">
+              <input id="search-input" class="form-control form-control-sm" type="text" placeholder="search everything"
+                aria-label="Search" autocomplete="off">
+              <a href="#" id="search-reset" class="btn form-control-sm">
+                <span class="sr-only">Clear search</span>
+              </a>
+            </form>
 
-          <!-- Cart link -->
-          <div class="nav-item">
-            <a href="#" class="cart-link" data-toggle="modal" data-target="#shopping-cart-modal">
-              <span class="cart-item-count">4</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Top hero -->
-  <div id="top-hero" class="jumbotron jumbotron-fluid bg-secondary text-light">
-    <div class="container">
-      <h2 class="display-3 mb-3">Background <small>and</small> development</h2>
-      <p class="lead">
-        Find out how we empower customers to turn their creative vision into reality.
-      </p>
-      <a class="btn btn-light btn-lg" href="#" role="button">Learn More</a>
-    </div>
-  </div>
-
-  <!-- Main content -->
-  <div id="main-content">
-    <div class="container">
-
-      <!-- Page title -->
-      <h1 class="sr-only">SHOPMATE</h1>
-
-      <!-- Product spotlight -->
-      <div class="row">
-        <div class="card container-fluid product-spotlight my-4">
-          <div class="card-body row">
-            <!-- Product image area -->
-            <div class="product-image col-md">
-              <span class="badge badge-sale">Sale</span>
-              <img class="img-fluid" src="~images/photos/images-bag.png" alt="Vera Bradley Tote"
-                title="Vera Bradley B.B. Collection Tote" />
-            </div>
-
-            <!-- Product details area -->
-            <div class="product-details col-md-8">
-              <h2 class="h3">Vera Bradley</h2>
-              <p>
-                Carry the day in style with this extra-large tote crafted in our chic B.B. Collection textured PVC.
-                Featuring
-                colorful faux leather trim, this tote offers a roomy interior plus just enough perfectly placed
-                pockets
-                to
-                keep smaller items organized and easy to find.
-              </p>
-              <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+            <!-- Cart link -->
+            <div class="nav-item">
+              <a href="#" class="cart-link" data-toggle="modal" data-target="#shopping-cart-modal">
+                <span class="cart-item-count">4</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </nav>
 
-      <!-- Highlights grid -->
-      <div id="highlights-grid" class="row mb-4">
-        <!-- Accent tile -->
-        <a href="#" class="tile-accent">
-          <h3 class="display-3">WOW</h3>
-          <strong class="large">See what's HOT!</strong>
-        </a>
+    <!-- Top hero -->
+    <div id="top-hero" class="jumbotron jumbotron-fluid bg-secondary text-light">
+      <div class="container">
+        <h2 class="display-3 mb-3">Background <small>and</small> development</h2>
+        <p class="lead">
+          Find out how we empower customers to turn their creative vision into reality.
+        </p>
+        <a class="btn btn-light btn-lg" href="#" role="button">Learn More</a>
+      </div>
+    </div>
 
-        <!-- Secondary tile -->
-        <a href="#" class="tile-secondary">
-          <h3 class="display-3">MEN</h3>
-        </a>
+    <!-- Main content -->
+    <div id="main-content">
+      <div class="container">
 
-        <!-- Primary card tile -->
-        <div class="tile-primary">
-          <div class="card text-center">
-            <img class="img-fluid" src="~images/photos/images-model3.png" />
-            <div class="card-body">
-              <h3 class="card-title display-3 mb-0">Let the games begin</h3>
-              <p class="card-text "><strong>Registration is on—get ready for the Open!</strong></p>
-              <a href="#" class="btn btn-primary btn-lg mb-3">Register</a>
-              <span class="badge card-badge badge-orange">Pop</span>
+        <!-- Page title -->
+        <h1 class="sr-only">SHOPMATE</h1>
+
+        <!-- Product spotlight -->
+        <div class="row">
+          <div class="card container-fluid product-spotlight my-4">
+            <div class="card-body row">
+              <!-- Product image area -->
+              <div class="product-image col-md">
+                <span class="badge badge-sale">Sale</span>
+                <img class="img-fluid" src="~images/photos/images-bag.png" alt="Vera Bradley Tote"
+                  title="Vera Bradley B.B. Collection Tote" />
+              </div>
+
+              <!-- Product details area -->
+              <div class="product-details col-md-8">
+                <h2 class="h3">Vera Bradley</h2>
+                <p>
+                  Carry the day in style with this extra-large tote crafted in our chic B.B. Collection textured PVC.
+                  Featuring
+                  colorful faux leather trim, this tote offers a roomy interior plus just enough perfectly placed
+                  pockets
+                  to
+                  keep smaller items organized and easy to find.
+                </p>
+                <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Discount banner -->
-      <div class="discount-banner row banner banner-light">
-        <div class="container text-center my-3">
-          <h3 class="text-primary">10% discount when you subscribe</h3>
-          <p>
-            <strong>Subscribe now to get access to exclusive offers, advanced notice about special sales, reduced
-              shipping, and a whole lot more!</strong>
-          </p>
+        <!-- Highlights grid -->
+        <div id="highlights-grid" class="row mb-4">
+          <!-- Accent tile -->
+          <a href="#" class="tile-accent">
+            <h3 class="display-3">WOW</h3>
+            <strong class="large">See what's HOT!</strong>
+          </a>
 
-          <form class="form-inline mt-4">
-            <input class="form-control form-control-sm" type="email" placeholder="Your e-mail here"
-              aria-label="Subscribe" />
-            <button class="btn btn-primary btn-sm form-control form-control-sm">
-              Subscribe
-            </button>
-          </form>
+          <!-- Secondary tile -->
+          <a href="#" class="tile-secondary">
+            <h3 class="display-3">MEN</h3>
+          </a>
 
+          <!-- Primary card tile -->
+          <div class="tile-primary">
+            <div class="card text-center">
+              <img class="img-fluid" src="~images/photos/images-model3.png" />
+              <div class="card-body">
+                <h3 class="card-title display-3 mb-0">Let the games begin</h3>
+                <p class="card-text "><strong>Registration is on—get ready for the Open!</strong></p>
+                <a href="#" class="btn btn-primary btn-lg mb-3">Register</a>
+                <span class="badge card-badge badge-orange">Pop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Discount banner -->
+        <div class="discount-banner row banner banner-light">
+          <div class="container text-center my-3">
+            <h3 class="text-primary">10% discount when you subscribe</h3>
+            <p>
+              <strong>Subscribe now to get access to exclusive offers, advanced notice about special sales, reduced
+                shipping, and a whole lot more!</strong>
+            </p>
+
+            <form class="form-inline mt-4">
+              <input class="form-control form-control-sm" type="email" placeholder="Your e-mail here"
+                aria-label="Subscribe" />
+              <button class="btn btn-primary btn-sm form-control form-control-sm">
+                Subscribe
+              </button>
+            </form>
+
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Page footer -->
+    <footer id="footer" class="bg-white footer-dense">
+      <div class="container">
+        <h3 class="sr-only">Quick Links</h3>
+        <div class="row">
+          <div class="col-sm">
+            <h4>Questions?</h4>
+            <ul class="links">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Returns</a></li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <h4>What's in Store</h4>
+            <ul class="links">
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Product A–Z</a></li>
+              <li><a href="#">Buy Gift Vouchers</a></li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <h4>Follow Us</h4>
+            <ul class="links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            &copy;2016 Shopmate Ltd
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 
   <!-- Shopping cart -->
@@ -304,42 +347,6 @@
     </div>
   </div>
 
-  <!-- Page footer -->
-  <footer id="footer" class="bg-white footer-dense">
-    <div class="container">
-      <h3 class="sr-only">Quick Links</h3>
-      <div class="row">
-        <div class="col-sm">
-          <h4>Questions?</h4>
-          <ul class="links">
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Track Order</a></li>
-            <li><a href="#">Returns</a></li>
-          </ul>
-        </div>
-        <div class="col-sm">
-          <h4>What's in Store</h4>
-          <ul class="links">
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Product A–Z</a></li>
-            <li><a href="#">Buy Gift Vouchers</a></li>
-          </ul>
-        </div>
-        <div class="col-sm">
-          <h4>Follow Us</h4>
-          <ul class="links">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">YouTube</a></li>
-          </ul>
-        </div>
-        <div class="col-sm">
-          &copy;2016 Shopmate Ltd
-        </div>
-      </div>
-    </div>
-  </footer>
 </body>
 
 </html>

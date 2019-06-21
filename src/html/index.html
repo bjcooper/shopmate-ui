@@ -14,6 +14,10 @@
     body {
       opacity: 0;
     }
+
+    .page-wrapper {
+      transform: translateX(-4rem);
+    }
   </style>
 
   <!-- Favicon -->
@@ -23,203 +27,210 @@
 </head>
 
 <body id="page-index">
+  <div class="page-wrapper">
 
-  <!-- Page header -->
-  <div class="page-header">
-    <div class="container">
-      <h1 class="display-2">SHOP&shy;MATE</h1>
-      <p class="h3 subtitle mb-4">A UI/UX Technical Challenge</p>
+    <!-- Page header -->
+    <div class="page-header">
+      <div class="container">
+        <h1 class="display-2">SHOP&shy;MATE</h1>
+        <p class="h3 subtitle mb-4">A UI/UX Technical Challenge</p>
 
-      <div class="user-teaser blog-author-teaser">
-        <div class="user-image">
-          <img src="~images/photos/brett_goofy_small.jpg" title="Brett Cooper" />
+        <div class="user-teaser blog-author-teaser">
+          <div class="user-image">
+            <img src="~images/photos/brett_goofy_small.jpg" title="Brett Cooper" />
+          </div>
+          <div class="user-details">
+            <div class="user-name">by Brett Cooper</div>
+            <p>
+              With nearly a decade of full-stack web and app development under my belt, I love
+              helping businesses, organizations, and individuals create awesome stuff.
+              <a href="mailto:brett@thewiznerd.com" class="email-link">Let's work together!</a>
+            </p>
+          </div>
         </div>
-        <div class="user-details">
-          <div class="user-name">by Brett Cooper</div>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div id="main-content">
+      <div class="container">
+
+        <!-- Introduction -->
+        <div class="page-section">
+          <h2>Introduction</h2>
           <p>
-            With nearly a decade of full-stack web and app development under my belt, I love
-            helping businesses, organizations, and individuals create awesome stuff.
-            <a href="mailto:brett@thewiznerd.com" class="email-link">Let's work together!</a>
+            Welcome to the cover page for SHOPMATE, a solution that demonstrates my ability to rapidly convert static
+            design mockups into sleek, functional webpages. Enjoy!
+          </p>
+          <p>
+            For this challenge, I created three fully-responsive HTML/CSS pages from <a
+              href="https://github.com/zandoan/turing-uiux" target="_blank">this
+              static design</a> in roughly 20 hours, including all the fancy page elements,
+            behaviors, and "special sauce" you'll see.
           </p>
         </div>
+
+        <!-- Demo links -->
+        <div class="page-section">
+          <h2>Demo Pages</h2>
+          <p>
+            Without further ado, take a look at the demo pages below. Each uses design best practices, semantic HTML5,
+            and
+            CSS3 to provide a modern mobile-first web experience.
+          </p>
+          <div class="demo-links">
+            <a class="demo-link demo-link-landing" href="/landing.html" target="_blank">
+              <h3 class="btn btn-primary">Landing Demo</h3>
+            </a>
+            <a class="demo-link demo-link-catalog" href="catalog.html" target="_blank">
+              <h3 class="btn btn-primary">Catalog Demo</h3>
+            </a>
+            <a class="demo-link demo-link-blog" href="blog.html" target="_blank">
+              <h3 class="btn btn-primary">Blog Demo</h3>
+            </a>
+          </div>
+        </div>
+
+        <!-- Technologies -->
+        <div class="page-section">
+          <h2>Technologies</h2>
+          <p>
+            I've highlighted the key technologies used in this solution below (<strong>hover over a technology to see
+              more
+              info</strong>).
+          </p>
+
+          <h3 class="h4">In Production</h3>
+          <p>
+            The following technologies are included in the final product.
+          </p>
+          <div class="technologies-grid">
+
+            <!-- HTML5 -->
+            <div class="tech-html5">
+              <h4>HTML5</h4>
+              <p>
+                I demonstrate the proper use of clean, well-structured semantic HTML5 to provide excellent reliability,
+                accessibility, and maintainablity.
+              </p>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="tech-css3">
+              <h4>CSS3</h4>
+              <p>
+                I leverage key features from CSS3 to construct a responsive and engaging design. Media-queries, flexbox,
+                and
+                grid layouts provide a rich, mobile-first experience.
+              </p>
+            </div>
+
+            <!-- Bootstrap 4 -->
+            <div class="tech-bootstrap4">
+              <h4>Bootstrap 4</h4>
+              <p>
+                Bootstrap provides a great libary of well-tested components and
+                utilities to get any project off the group without "reinventing the wheel".
+              </p>
+            </div>
+
+            <!-- jQuery -->
+            <div class="tech-jquery">
+              <h4>jQuery</h4>
+              <p>
+                While jQuery less of a "must-have" than it was in the past, it's still very handy for working with
+                events
+                in
+                the DOM. Since Bootstrap already requires it, I make use of it too.
+              </p>
+            </div>
+
+          </div>
+
+          <h3 class="h4">For Development</h3>
+          <p>
+            The following technologies were used during development but aren't part of the final product.
+          </p>
+          <div class="technologies-grid">
+
+            <!-- Webpack -->
+            <div class="tech-webpack">
+              <h4>Webpack</h4>
+              <p>
+                Webpack makes building and bundling super easy. It's my favorite way to tie a powerful suite of modern
+                development tools together into one streamlined build process.
+              </p>
+            </div>
+
+            <!-- NPM -->
+            <div class="tech-npm">
+              <h4>NPM</h4>
+              <p>
+                It's hard to beat NPM for package management and it makes common dev tasks super easy.
+              </p>
+            </div>
+
+            <!-- Docker -->
+            <div class="tech-docker">
+              <h4>Docker</h4>
+              <p>
+                Not completely necessary, but I find containerizing my dev environment allows my to get all the tools I
+                need
+                for a project set up "just so", without breaking other projects.
+              </p>
+            </div>
+
+            <!-- Sass -->
+            <div class="tech-sass">
+              <h4>SASS</h4>
+              <p>
+                Proper variables, mixins, and functions in CSS are just too useful to go without, and SASS is my
+                favorite
+                CSS preprocessor to date.
+              </p>
+            </div>
+
+            <!-- Autoprefixer -->
+            <div class="tech-autoprefixer">
+              <h4>Autoprefixer</h4>
+              <p>
+                Autoprefixer is super handy for cross-browser compatibiltiy because it automatically adds
+                browser-specific
+                prefixes to CSS so you don't have to.
+              </p>
+            </div>
+
+            <!-- Node.js -->
+            <div class="tech-nodejs">
+              <h4>Node.js</h4>
+              <p>
+                A containerized node.js dev server with hot-reloading makes development a total cinch. It's a must-have
+                for me when developing web apps that aren't on a traditional LAMP/LEMP stack.
+              </p>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Page footer -->
+    <footer id="footer" class="bg-white footer-standard">
+      <div class="container">
+        <h3 class="sr-only">Demo Links</h3>
+        <ul class="department-links">
+          <li><a href="/landing.html" target="_blank">Landing Demo</a></li>
+          <li><a href="/catalog.html" target="_blank">Catalog Demo</a></li>
+          <li><a href="/blog.html" target="_blank">Blog Demo</a></li>
+        </ul>
+
+        <ul class="small-print">
+          <li><span>&copy; 2019</span></li>
+          <li><a href="mailto:brett@thewiznerd.com">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
   </div>
-
-  <!-- Main content -->
-  <div id="main-content">
-    <div class="container">
-
-      <!-- Introduction -->
-      <div class="page-section">
-        <h2>Introduction</h2>
-        <p>
-          Welcome to the cover page for SHOPMATE, a solution that demonstrates my ability to rapidly convert static
-          design mockups into sleek, functional webpages. Enjoy!
-        </p>
-        <p>
-          For this challenge, I created three fully-responsive HTML/CSS pages from <a
-            href="https://github.com/zandoan/turing-uiux" target="_blank">this
-            static design</a> in roughly 20 hours, including all the fancy page elements,
-          behaviors, and "special sauce" you'll see.
-        </p>
-      </div>
-
-      <!-- Demo links -->
-      <div class="page-section">
-        <h2>Demo Pages</h2>
-        <p>
-          Without further ado, take a look at the demo pages below. Each uses design best practices, semantic HTML5, and
-          CSS3 to provide a modern mobile-first web experience.
-        </p>
-        <div class="demo-links">
-          <a class="demo-link demo-link-landing" href="/landing.html" target="_blank">
-            <h3 class="btn btn-primary">Landing Demo</h3>
-          </a>
-          <a class="demo-link demo-link-catalog" href="catalog.html" target="_blank">
-            <h3 class="btn btn-primary">Catalog Demo</h3>
-          </a>
-          <a class="demo-link demo-link-blog" href="blog.html" target="_blank">
-            <h3 class="btn btn-primary">Blog Demo</h3>
-          </a>
-        </div>
-      </div>
-
-      <!-- Technologies -->
-      <div class="page-section">
-        <h2>Technologies</h2>
-        <p>
-          I've highlighted the key technologies used in this solution below (<strong>hover over a technology to see more
-            info</strong>).
-        </p>
-
-        <h3 class="h4">In Production</h3>
-        <p>
-          The following technologies are included in the final product.
-        </p>
-        <div class="technologies-grid">
-
-          <!-- HTML5 -->
-          <div class="tech-html5">
-            <h4>HTML5</h4>
-            <p>
-              I demonstrate the proper use of clean, well-structured semantic HTML5 to provide excellent reliability,
-              accessibility, and maintainablity.
-            </p>
-          </div>
-
-          <!-- CSS3 -->
-          <div class="tech-css3">
-            <h4>CSS3</h4>
-            <p>
-              I leverage key features from CSS3 to construct a responsive and engaging design. Media-queries, flexbox,
-              and
-              grid layouts provide a rich, mobile-first experience.
-            </p>
-          </div>
-
-          <!-- Bootstrap 4 -->
-          <div class="tech-bootstrap4">
-            <h4>Bootstrap 4</h4>
-            <p>
-              Bootstrap provides a great libary of well-tested components and
-              utilities to get any project off the group without "reinventing the wheel".
-            </p>
-          </div>
-
-          <!-- jQuery -->
-          <div class="tech-jquery">
-            <h4>jQuery</h4>
-            <p>
-              While jQuery less of a "must-have" than it was in the past, it's still very handy for working with events
-              in
-              the DOM. Since Bootstrap already requires it, I make use of it too.
-            </p>
-          </div>
-
-        </div>
-
-        <h3 class="h4">For Development</h3>
-        <p>
-          The following technologies were used during development but aren't part of the final product.
-        </p>
-        <div class="technologies-grid">
-
-          <!-- Webpack -->
-          <div class="tech-webpack">
-            <h4>Webpack</h4>
-            <p>
-              Webpack makes building and bundling super easy. It's my favorite way to tie a powerful suite of modern
-              development tools together into one streamlined build process.
-            </p>
-          </div>
-
-          <!-- NPM -->
-          <div class="tech-npm">
-            <h4>NPM</h4>
-            <p>
-              It's hard to beat NPM for package management and it makes common dev tasks super easy.
-            </p>
-          </div>
-
-          <!-- Docker -->
-          <div class="tech-docker">
-            <h4>Docker</h4>
-            <p>
-              Not completely necessary, but I find containerizing my dev environment allows my to get all the tools I
-              need
-              for a project set up "just so", without breaking other projects.
-            </p>
-          </div>
-
-          <!-- Sass -->
-          <div class="tech-sass">
-            <h4>SASS</h4>
-            <p>
-              Proper variables, mixins, and functions in CSS are just too useful to go without, and SASS is my favorite
-              CSS preprocessor to date.
-            </p>
-          </div>
-
-          <!-- Autoprefixer -->
-          <div class="tech-autoprefixer">
-            <h4>Autoprefixer</h4>
-            <p>
-              Autoprefixer is super handy for cross-browser compatibiltiy because it automatically adds browser-specific
-              prefixes to CSS so you don't have to.
-            </p>
-          </div>
-
-          <!-- Node.js -->
-          <div class="tech-nodejs">
-            <h4>Node.js</h4>
-            <p>
-              A containerized node.js dev server with hot-reloading makes development a total cinch. It's a must-have
-              for me when developing web apps that aren't on a traditional LAMP/LEMP stack.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Page footer -->
-  <footer id="footer" class="bg-white footer-standard">
-    <div class="container">
-      <h3 class="sr-only">Demo Links</h3>
-      <ul class="department-links">
-        <li><a href="/landing.html" target="_blank">Landing Demo</a></li>
-        <li><a href="/catalog.html" target="_blank">Catalog Demo</a></li>
-        <li><a href="/blog.html" target="_blank">Blog Demo</a></li>
-      </ul>
-
-      <ul class="small-print">
-        <li><span>&copy; 2019</span></li>
-        <li><a href="mailto:brett@thewiznerd.com">Contact</a></li>
-      </ul>
-    </div>
-  </footer>
 </body>
 
 </html>

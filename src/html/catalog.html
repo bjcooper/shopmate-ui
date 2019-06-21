@@ -14,6 +14,10 @@
     body {
       opacity: 0;
     }
+
+    .page-wrapper {
+      transform: translateX(-4rem);
+    }
   </style>
 
   <!-- Favicon -->
@@ -23,767 +27,796 @@
 </head>
 
 <body id="page-catalog">
-  <!-- User bar-->
-  <nav id="user-bar" class="navbar navbar-light bg-white">
-    <div class="container">
+  <div class="page-wrapper">
+    <!-- User bar-->
+    <nav id="user-bar" class="navbar navbar-light bg-white">
+      <div class="container">
 
-      <!-- User menu -->
-      <div class="nav-item">
-        Hi!
-        <a href="#" data-toggle="modal" data-target="#sign-in-modal">Sign in</a>
-        or
-        <a href="#" data-toggle="modal" data-target="#register-modal">Register</a>
-      </div>
+        <!-- User menu -->
+        <div class="nav-item">
+          Hi!
+          <a href="#" data-toggle="modal" data-target="#sign-in-modal">Sign in</a>
+          or
+          <a href="#" data-toggle="modal" data-target="#register-modal">Register</a>
+        </div>
 
-      <!-- Special links -->
-      <ul class="nav special-links">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Daily Deals</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sell</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Help &amp; Contact</a>
-        </li>
-      </ul>
-
-      <!-- Currency selector -->
-      <div class="nav-item currency-selector">
-        <span class="currency-flag currency-gbp">
-          <img src="~images/icons/gbr.png" alt="Flag of Great Britian" />
-        </span>
-        <span class="currency-symbol">&pound;</span>
-        <span class="currency-label">GBP</span>
-      </div>
-
-      <!-- Cart summary -->
-      <div class="nav-item">
-        <a href="#" class="cart-link" data-toggle="modal" data-target="#shopping-cart-modal">
-          <span class="cart-item-count">4</span>
-          <span class="cart-total">
-            Your bag: &pound;3.99
-          </span>
-        </a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-
-      <!-- Brand -->
-      <a class="navbar-brand text-primary" href="#">SHOPMATE</a>
-
-      <!-- Collapse toggle -->
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Navbar collapse wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Navbar nav -->
-        <ul class="navbar-nav mr-auto">
+        <!-- Special links -->
+        <ul class="nav special-links">
           <li class="nav-item">
-            <a class="nav-link" href="#">Women</a>
+            <a class="nav-link" href="#">Daily Deals</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Men</a>
+            <a class="nav-link" href="#">Sell</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Kids</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Shoes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Brands</a>
+            <a class="nav-link" href="#">Help &amp; Contact</a>
           </li>
         </ul>
 
-        <div class="navbar-actions">
-          <!-- Search form -->
-          <form class="form-inline my-2 my-lg-0">
-            <input id="search-input" class="form-control form-control-sm" type="text" placeholder="search everything"
-              aria-label="Search" autocomplete="off">
-            <a href="#" id="search-reset" class="btn form-control-sm">
-              <span class="sr-only">Clear search</span>
-            </a>
-          </form>
+        <!-- Currency selector -->
+        <div class="nav-item currency-selector">
+          <span class="currency-flag currency-gbp">
+            <img src="~images/icons/gbr.png" alt="Flag of Great Britian" />
+          </span>
+          <span class="currency-symbol">&pound;</span>
+          <span class="currency-label">GBP</span>
+        </div>
 
-          <!-- Cart link -->
-          <div class="nav-item">
-            <a href="#" class="cart-link" data-toggle="modal" data-target="#shopping-cart-modal">
-              <span class="cart-item-count">4</span>
-            </a>
+        <!-- Cart summary -->
+        <div class="nav-item">
+          <a href="#" class="cart-link" data-toggle="modal" data-target="#shopping-cart-modal">
+            <span class="cart-item-count">4</span>
+            <span class="cart-total">
+              Your bag: &pound;3.99
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand text-primary" href="#">SHOPMATE</a>
+
+        <!-- Collapse toggle -->
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar collapse wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar nav -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shoes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Brands</a>
+            </li>
+          </ul>
+
+          <div class="navbar-actions">
+            <!-- Search form -->
+            <form class="form-inline my-2 my-lg-0">
+              <input id="search-input" class="form-control form-control-sm" type="text" placeholder="search everything"
+                aria-label="Search" autocomplete="off">
+              <a href="#" id="search-reset" class="btn form-control-sm">
+                <span class="sr-only">Clear search</span>
+              </a>
+            </form>
+
+            <!-- Cart link -->
+            <div class="nav-item">
+              <a href="#" class="cart-link" data-toggle="modal" data-target="#shopping-cart-modal">
+                <span class="cart-item-count">4</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <div id="main-content">
+      <div class="container">
+
+        <!-- Page title -->
+        <h1 class="sr-only">Catalogue</h1>
+
+        <!-- Product spotlight -->
+        <div id="menswear-categories" class="card my-4">
+          <div class="card-body">
+            <h2 class="display-3 mb-3">Men's wear</h2>
+            <ul class="list-cols-3">
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">ASOS Basic Tops</a></li>
+              <li><a href="#">Bags</a></li>
+              <li><a href="#">Caps &amp; Hats</a></li>
+              <li><a href="#">Gifts</a></li>
+              <li><a href="#">Grooming</a></li>
+              <li><a href="#">Hoodies &amp; Sweatshirts</a></li>
+              <li><a href="#">Jackets &amp; Coats</a></li>
+              <li><a href="#">Jeans</a></li>
+              <li><a href="#">Jewellry</a></li>
+              <li><a href="#">Joggers</a></li>
+              <li><a href="#">Jumpers &amp; Cardigans</a></li>
+              <li><a href="#">Leather Jackets</a></li>
+              <li><a href="#">Long Sleeve T-Shirts</a></li>
+              <li><a href="#">Loungewear</a></li>
+              <li><a href="#">Oversized &amp; Longline</a></li>
+              <li><a href="#">Polo Shirts</a></li>
+              <li><a href="#">Shirts</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Categories grid -->
+        <div class="product-grid filter-section">
+
+          <!-- Filters -->
+          <div class="product-grid-filters">
+
+            <!-- Filter sumamry -->
+            <div class="filter-summary">
+              <div class="text-summary">Matched 486 items</div>
+
+              <ul class="active-filters">
+                <li><a href="#" class="remove-filter hide-onclick"> Gender: Men's</a></li>
+                <li><a href="#" class="remove-filter hide-onclick"> Category: Shirts</a></li>
+              </ul>
+            </div>
+
+            <!-- Color filter -->
+            <div class="field color-filter">
+              <div class="field-label">Color</div>
+              <ul class="color-options">
+                <li><a href="#" class="color-option selected-onclick blue">Periwinkle</a></li>
+                <li><a href="#" class="color-option selected-onclick teal">Teal</a></li>
+                <li><a href="#" class="color-option selected-onclick pink">Pink</a></li>
+                <li><a href="#" class="color-option selected-onclick orange">Orange</a></li>
+                <li><a href="#" class="color-option selected-onclick yellow">Yellow</a></li>
+                <li><a href="#" class="color-option selected-onclick green">Green</a></li>
+                <li><a href="#" class="color-option selected-onclick purple">Purple</a></li>
+              </ul>
+            </div>
+
+            <!-- Size filter -->
+            <div class="field size-filter">
+              <div class="field-label">Size</div>
+              <ul class="size-options">
+                <li><a href="#" class="size-option selected-onclick">XS</a></li>
+                <li><a href="#" class="size-option selected-onclick selected">S</a></li>
+                <li><a href="#" class="size-option selected-onclick">M</a></li>
+                <li><a href="#" class="size-option selected-onclick">L</a></li>
+                <li><a href="#" class="size-option selected-onclick">XL</a></li>
+              </ul>
+            </div>
+
+            <!-- Price range filter -->
+            <div class="field price-filter">
+              <div class="field-label">Price range</div>
+              <input type="text" class="range-slider" data-type="double" data-min="4" data-max="28" data-step="1"
+                data-from="6" data-to="24" data-prefix="&pound;" />
+            </div>
+
+            <!-- Brand filter -->
+            <div class="field brand-filter">
+              <div class="field-label">Brand</div>
+              <div class="brand-options" data-simplebar>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--1" type="checkbox" class="custom-control-input" checked />
+                  <label class="custom-control-label" for="brand-option--1">Abercrombie &amp; Fitch</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--2" type="checkbox" class="custom-control-input" checked />
+                  <label class="custom-control-label" for="brand-option--2">Adidas Originals</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--3" type="checkbox" class="custom-control-input" checked />
+                  <label class="custom-control-label" for="brand-option--3">ASOS</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--4" type="checkbox" class="custom-control-input" />
+                  <label class="custom-control-label" for="brand-option--4">Cheap Monday</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--5" type="checkbox" class="custom-control-input" />
+                  <label class="custom-control-label" for="brand-option--5">Diesel</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--6" type="checkbox" class="custom-control-input" />
+                  <label class="custom-control-label" for="brand-option--6">Ellesse</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--7" type="checkbox" class="custom-control-input" />
+                  <label class="custom-control-label" for="brand-option--7">Fred Perry</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--8" type="checkbox" class="custom-control-input" />
+                  <label class="custom-control-label" for="brand-option--8">Jack &amp; Jones</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--9" type="checkbox" class="custom-control-input" />
+                  <label class="custom-control-label" for="brand-option--9">New Balance</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--10" type="checkbox" class="custom-control-input" />
+                  <label class="custom-control-label" for="brand-option--10">New Look</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--11" type="checkbox" class="custom-control-input" />
+                  <label class="custom-control-label" for="brand-option--11">Polo Ralph Lauren</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--12" type="checkbox" class="custom-control-input" />
+                  <label class="custom-control-label" for="brand-option--12">Religion</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--13" type="checkbox" class="custom-control-input" />
+                  <label class="custom-control-label" for="brand-option--13">River Island</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--14" type="checkbox" class="custom-control-input" />
+                  <label class="custom-control-label" for="brand-option--14">Selected Homme</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input id="brand-option--15" type="checkbox" class="custom-control-input" />
+                  <label class="custom-control-label" for="brand-option--15">Vans</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Filter form actions -->
+            <div class="filter-actions text-center">
+              <button class="btn btn-primary btn-sm">Apply</button>
+              <button class="btn btn-link btn-sm btn-clear ml-1">Clear all</button>
+            </div>
+          </div>
+
+          <!-- Products grid filter section -->
+          <div class="product-teaser">
+            <div class="product-image">
+              <img src="~images/photos/images-shirt5.png" />
+            </div>
+            <div class="product-details">
+              <div class="product-title">Navidad Men's Knit</div>
+              <div class="price">&pound;24.99</div>
+            </div>
+            <div class="product-options">
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
+                View</a>
+              <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+            </div>
+          </div>
+
+          <div class="product-teaser">
+            <div class="product-image">
+              <img src="~images/photos/images-shirt6.png" />
+            </div>
+            <div class="product-details">
+              <div class="product-title">Lolwut Pizza Cat Tee</div>
+              <div class="price">&pound;10.99</div>
+            </div>
+            <div class="product-options">
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
+                View</a>
+              <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+            </div>
+          </div>
+
+          <div class="product-teaser">
+            <div class="product-image">
+              <img src="~images/photos/images-shirt7.png" />
+            </div>
+            <div class="product-details">
+              <div class="product-title">Men's Button-Up</div>
+              <div class="price">From &pound;4.99</div>
+            </div>
+            <div class="product-options">
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
+                View</a>
+              <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+            </div>
+          </div>
+
+          <div class="product-teaser">
+            <div class="product-badge badge badge-primary">HOT</div>
+            <div class="product-image">
+              <img src="~images/photos/images-shirt8.png" />
+            </div>
+            <div class="product-details">
+              <div class="product-title">New Look Gradient Fade Tee</div>
+              <div class="price">&pound;14.99</div>
+            </div>
+            <div class="product-options">
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
+                View</a>
+              <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+            </div>
+          </div>
+
+          <div class="product-teaser">
+            <div class="product-image">
+              <img src="~images/photos/images-shirt9.png" />
+            </div>
+            <div class="product-details">
+              <div class="product-title">Novelty Lizard Tee</div>
+              <div class="price">&pound;14.99</div>
+            </div>
+            <div class="product-options">
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
+                View</a>
+              <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+            </div>
+          </div>
+
+          <div class="product-teaser">
+            <div class="product-image">
+              <img src="~images/photos/images-shirt10.png" />
+            </div>
+            <div class="product-title">Brain Esplode Tee</div>
+            <div class="product-details">
+              <span class="price">&pound;14.99</span>
+              <ul class="color-options">
+                <li><span class="color-option blue">Periwinkle</span></li>
+                <li><span class="color-option teal">Teal</span></li>
+                <li><span class="color-option pink">Pink</span></li>
+              </ul>
+            </div>
+            <div class="product-options">
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
+                View</a>
+              <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Products grid -->
+        <div class="product-grid">
+
+          <!-- Products -->
+          <div class="product-teaser">
+            <div class="product-badge badge badge-primary">HOT</div>
+            <div class="product-image">
+              <img src="~images/photos/images-shirt13.png" />
+            </div>
+            <div class="product-details">
+              <div class="product-title">Pull &amp; Bear Jumper in Textured Knit in Blue</div>
+              <div class="price">&pound;14.99</div>
+            </div>
+            <div class="product-options">
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
+                View</a>
+              <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+            </div>
+          </div>
+
+          <div class="product-teaser">
+            <div class="product-image">
+              <img src="~images/photos/images-shirt12.png" />
+            </div>
+            <div class="product-details">
+              <div class="product-title">Harajuku Stormtrooper Tee</div>
+              <div class="price">&pound;12.99</div>
+            </div>
+            <div class="product-options">
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
+                View</a>
+              <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+            </div>
+          </div>
+
+          <div class="product-teaser">
+            <div class="product-image">
+              <img src="~images/photos/images-shirt11.png" />
+            </div>
+            <div class="product-details">
+              <div class="product-title">Los Pollos Hermanos Tee</div>
+              <span class="price">&pound;14.99</span>
+              <ul class="color-options">
+                <li><span class="color-option blue">Periwinkle</span></li>
+                <li><span class="color-option teal">Teal</span></li>
+                <li><span class="color-option pink">Pink</span></li>
+              </ul>
+            </div>
+            <div class="product-options">
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
+                View</a>
+              <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand spotlight -->
+        <div id="brand-spotlight" class="jumbotron jumbotron-fluid bg-secondary text-light my-4">
+          <div class="container">
+            <h2 class="display-3 mb-1">Converse</h2>
+            <p class="lead">
+              Explore styles tough enough to handle all your workouts.
+            </p>
+            <a class="btn btn-light btn-lg" href="#" role="button">Shop Brand</a>
+          </div>
+        </div>
+
+        <!-- Subscription banner -->
+        <div class="discount-banner banner banner-light banner-sm">
+          <div class="row align-items-center">
+            <p class="h4 col-sm">Subscribe for shop news, updates, and special offers</p>
+            <form class="form-inline col-sm-auto">
+              <input class="form-control form-control-sm mr-2" type="email" placeholder="Your e-mail here"
+                aria-label="Subscribe" />
+              <button class="btn btn-primary btn-sm form-control form-control-sm">
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </nav>
 
-  <!-- Main content -->
-  <div id="main-content">
-    <div class="container">
+    <!-- Page footer -->
+    <footer id="footer" class="bg-dark text-white footer-standard">
+      <div class="container">
+        <h3 class="sr-only">Department Links</h3>
+        <ul class="department-links">
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Brands</a></li>
+        </ul>
 
-      <!-- Page title -->
-      <h1 class="sr-only">Catalogue</h1>
+        <h3 class="sr-only">Social Media</h3>
+        <ul class="social-links">
+          <li><a class="instagram" href="#">Instagram</a></li>
+          <li><a class="pinterest" href="#">Pinterest</a></li>
+          <li><a class="twitter" href="#">Twitter</a></li>
+          <li><a class="facebook" href="#">Facebook</a></li>
+        </ul>
 
-      <!-- Product spotlight -->
-      <div id="menswear-categories" class="card my-4">
-        <div class="card-body">
-          <h2 class="display-3 mb-3">Men's wear</h2>
-          <ul class="list-cols-3">
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">ASOS Basic Tops</a></li>
-            <li><a href="#">Bags</a></li>
-            <li><a href="#">Caps &amp; Hats</a></li>
-            <li><a href="#">Gifts</a></li>
-            <li><a href="#">Grooming</a></li>
-            <li><a href="#">Hoodies &amp; Sweatshirts</a></li>
-            <li><a href="#">Jackets &amp; Coats</a></li>
-            <li><a href="#">Jeans</a></li>
-            <li><a href="#">Jewellry</a></li>
-            <li><a href="#">Joggers</a></li>
-            <li><a href="#">Jumpers &amp; Cardigans</a></li>
-            <li><a href="#">Leather Jackets</a></li>
-            <li><a href="#">Long Sleeve T-Shirts</a></li>
-            <li><a href="#">Loungewear</a></li>
-            <li><a href="#">Oversized &amp; Longline</a></li>
-            <li><a href="#">Polo Shirts</a></li>
-            <li><a href="#">Shirts</a></li>
-          </ul>
-        </div>
+        <ul class="small-print">
+          <li><span>&copy;2016 Shopmate Ltd</span></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
       </div>
+    </footer>
+  </div>
 
-      <!-- Categories grid -->
-      <div class="product-grid filter-section">
+  <!-- Product quick view -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="product-quickview-modal">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body product-quickview">
 
-        <!-- Filters -->
-        <div class="product-grid-filters">
-
-          <!-- Filter sumamry -->
-          <div class="filter-summary">
-            <div class="text-summary">Matched 486 items</div>
-
-            <ul class="active-filters">
-              <li><a href="#" class="remove-filter hide-onclick"> Gender: Men's</a></li>
-              <li><a href="#" class="remove-filter hide-onclick"> Category: Shirts</a></li>
-            </ul>
-          </div>
-
-          <!-- Color filter -->
-          <div class="field color-filter">
-            <div class="field-label">Color</div>
-            <ul class="color-options">
-              <li><a href="#" class="color-option selected-onclick blue">Periwinkle</a></li>
-              <li><a href="#" class="color-option selected-onclick teal">Teal</a></li>
-              <li><a href="#" class="color-option selected-onclick pink">Pink</a></li>
-              <li><a href="#" class="color-option selected-onclick orange">Orange</a></li>
-              <li><a href="#" class="color-option selected-onclick yellow">Yellow</a></li>
-              <li><a href="#" class="color-option selected-onclick green">Green</a></li>
-              <li><a href="#" class="color-option selected-onclick purple">Purple</a></li>
-            </ul>
-          </div>
-
-          <!-- Size filter -->
-          <div class="field size-filter">
-            <div class="field-label">Size</div>
-            <ul class="size-options">
-              <li><a href="#" class="size-option selected-onclick">XS</a></li>
-              <li><a href="#" class="size-option selected-onclick selected">S</a></li>
-              <li><a href="#" class="size-option selected-onclick">M</a></li>
-              <li><a href="#" class="size-option selected-onclick">L</a></li>
-              <li><a href="#" class="size-option selected-onclick">XL</a></li>
-            </ul>
-          </div>
-
-          <!-- Price range filter -->
-          <div class="field price-filter">
-            <div class="field-label">Price range</div>
-            <input type="text" class="range-slider" data-type="double" data-min="4" data-max="28" data-step="1"
-              data-from="6" data-to="24" data-prefix="&pound;" />
-          </div>
-
-          <!-- Brand filter -->
-          <div class="field brand-filter">
-            <div class="field-label">Brand</div>
-            <div class="brand-options" data-simplebar>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--1" type="checkbox" class="custom-control-input" checked />
-                <label class="custom-control-label" for="brand-option--1">Abercrombie &amp; Fitch</label>
+          <!-- Product information -->
+          <div class="product-information">
+            <!-- Product images -->
+            <div class="product-images">
+              <div class="selected-image">
+                <img src="~images/photos/images-shirt-king4.png" />
               </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--2" type="checkbox" class="custom-control-input" checked />
-                <label class="custom-control-label" for="brand-option--2">Adidas Originals</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--3" type="checkbox" class="custom-control-input" checked />
-                <label class="custom-control-label" for="brand-option--3">ASOS</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--4" type="checkbox" class="custom-control-input" />
-                <label class="custom-control-label" for="brand-option--4">Cheap Monday</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--5" type="checkbox" class="custom-control-input" />
-                <label class="custom-control-label" for="brand-option--5">Diesel</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--6" type="checkbox" class="custom-control-input" />
-                <label class="custom-control-label" for="brand-option--6">Ellesse</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--7" type="checkbox" class="custom-control-input" />
-                <label class="custom-control-label" for="brand-option--7">Fred Perry</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--8" type="checkbox" class="custom-control-input" />
-                <label class="custom-control-label" for="brand-option--8">Jack &amp; Jones</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--9" type="checkbox" class="custom-control-input" />
-                <label class="custom-control-label" for="brand-option--9">New Balance</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--10" type="checkbox" class="custom-control-input" />
-                <label class="custom-control-label" for="brand-option--10">New Look</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--11" type="checkbox" class="custom-control-input" />
-                <label class="custom-control-label" for="brand-option--11">Polo Ralph Lauren</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--12" type="checkbox" class="custom-control-input" />
-                <label class="custom-control-label" for="brand-option--12">Religion</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--13" type="checkbox" class="custom-control-input" />
-                <label class="custom-control-label" for="brand-option--13">River Island</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--14" type="checkbox" class="custom-control-input" />
-                <label class="custom-control-label" for="brand-option--14">Selected Homme</label>
-              </div>
-              <div class="custom-control custom-checkbox">
-                <input id="brand-option--15" type="checkbox" class="custom-control-input" />
-                <label class="custom-control-label" for="brand-option--15">Vans</label>
+              <div class="image-thumbnails">
+                <div class="image-thumbnail"><img src="~images/photos/images-shirt-king3.png" /></div>
+                <div class="image-thumbnail"><img src="~images/photos/images-shirt-king2.png" /></div>
+                <div class="image-thumbnail selected"><img src="~images/photos/images-shirt-king1.png" /></div>
               </div>
             </div>
-          </div>
 
-          <!-- Filter form actions -->
-          <div class="filter-actions text-center">
-            <button class="btn btn-primary btn-sm">Apply</button>
-            <button class="btn btn-link btn-sm btn-clear ml-1">Clear all</button>
-          </div>
-        </div>
+            <!-- Product header -->
+            <div class="product-head">
+              <!-- Breadcrumb -->
+              <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">All Categories</a></li>
+                <li><a href="#">Men's Clothing &amp; Accessories</a></li>
+              </ul>
 
-        <!-- Products grid filter section -->
-        <div class="product-teaser">
-          <div class="product-image">
-            <img src="~images/photos/images-shirt5.png" />
-          </div>
-          <div class="product-details">
-            <div class="product-title">Navidad Men's Knit</div>
-            <div class="price">&pound;24.99</div>
-          </div>
-          <div class="product-options">
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
-              View</a>
-            <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-          </div>
-        </div>
+              <!-- Rating -->
+              <ul class="star-rating">
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="no-star"></li>
+              </ul>
 
-        <div class="product-teaser">
-          <div class="product-image">
-            <img src="~images/photos/images-shirt6.png" />
-          </div>
-          <div class="product-details">
-            <div class="product-title">Lolwut Pizza Cat Tee</div>
-            <div class="price">&pound;10.99</div>
-          </div>
-          <div class="product-options">
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
-              View</a>
-            <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-          </div>
-        </div>
+              <!-- Product title -->
+              <h2>Super Oversized T-Shirt with Raw Sleeves in Brown</h2>
 
-        <div class="product-teaser">
-          <div class="product-image">
-            <img src="~images/photos/images-shirt7.png" />
-          </div>
-          <div class="product-details">
-            <div class="product-title">Men's Button-Up</div>
-            <div class="price">From &pound;4.99</div>
-          </div>
-          <div class="product-options">
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
-              View</a>
-            <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-          </div>
-        </div>
-
-        <div class="product-teaser">
-          <div class="product-badge badge badge-primary">HOT</div>
-          <div class="product-image">
-            <img src="~images/photos/images-shirt8.png" />
-          </div>
-          <div class="product-details">
-            <div class="product-title">New Look Gradient Fade Tee</div>
-            <div class="price">&pound;14.99</div>
-          </div>
-          <div class="product-options">
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
-              View</a>
-            <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-          </div>
-        </div>
-
-        <div class="product-teaser">
-          <div class="product-image">
-            <img src="~images/photos/images-shirt9.png" />
-          </div>
-          <div class="product-details">
-            <div class="product-title">Novelty Lizard Tee</div>
-            <div class="price">&pound;14.99</div>
-          </div>
-          <div class="product-options">
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
-              View</a>
-            <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-          </div>
-        </div>
-
-        <div class="product-teaser">
-          <div class="product-image">
-            <img src="~images/photos/images-shirt10.png" />
-          </div>
-          <div class="product-title">Brain Esplode Tee</div>
-          <div class="product-details">
-            <span class="price">&pound;14.99</span>
-            <ul class="color-options">
-              <li><span class="color-option blue">Periwinkle</span></li>
-              <li><span class="color-option teal">Teal</span></li>
-              <li><span class="color-option pink">Pink</span></li>
-            </ul>
-          </div>
-          <div class="product-options">
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
-              View</a>
-            <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Products grid -->
-      <div class="product-grid">
-
-        <!-- Products -->
-        <div class="product-teaser">
-          <div class="product-badge badge badge-primary">HOT</div>
-          <div class="product-image">
-            <img src="~images/photos/images-shirt13.png" />
-          </div>
-          <div class="product-details">
-            <div class="product-title">Pull &amp; Bear Jumper in Textured Knit in Blue</div>
-            <div class="price">&pound;14.99</div>
-          </div>
-          <div class="product-options">
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
-              View</a>
-            <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-          </div>
-        </div>
-
-        <div class="product-teaser">
-          <div class="product-image">
-            <img src="~images/photos/images-shirt12.png" />
-          </div>
-          <div class="product-details">
-            <div class="product-title">Harajuku Stormtrooper Tee</div>
-            <div class="price">&pound;12.99</div>
-          </div>
-          <div class="product-options">
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
-              View</a>
-            <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-          </div>
-        </div>
-
-        <div class="product-teaser">
-          <div class="product-image">
-            <img src="~images/photos/images-shirt11.png" />
-          </div>
-          <div class="product-details">
-            <div class="product-title">Los Pollos Hermanos Tee</div>
-            <span class="price">&pound;14.99</span>
-            <ul class="color-options">
-              <li><span class="color-option blue">Periwinkle</span></li>
-              <li><span class="color-option teal">Teal</span></li>
-              <li><span class="color-option pink">Pink</span></li>
-            </ul>
-          </div>
-          <div class="product-options">
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#product-quickview-modal">
-              View</a>
-            <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product quick view -->
-      <div class="modal fade" tabindex="-1" role="dialog" id="product-quickview-modal">
-        <div class="modal-dialog modal-xl" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+              <!-- Product price -->
+              <div class="product-price">&pound;13.99</div>
             </div>
-            <div class="modal-body product-quickview">
 
-              <!-- Product information -->
-              <div class="product-information">
-                <!-- Product images -->
-                <div class="product-images">
-                  <div class="selected-image">
-                    <img src="~images/photos/images-shirt-king4.png" />
-                  </div>
-                  <div class="image-thumbnails">
-                    <div class="image-thumbnail"><img src="~images/photos/images-shirt-king3.png" /></div>
-                    <div class="image-thumbnail"><img src="~images/photos/images-shirt-king2.png" /></div>
-                    <div class="image-thumbnail selected"><img src="~images/photos/images-shirt-king1.png" /></div>
-                  </div>
-                </div>
+            <!-- Product details -->
+            <div class="product-details">
 
-                <!-- Product header -->
-                <div class="product-head">
-                  <!-- Breadcrumb -->
-                  <ul class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">All Categories</a></li>
-                    <li><a href="#">Men's Clothing &amp; Accessories</a></li>
+              <!-- Color selector -->
+              <div class="field">
+                <div class="field-label">Color</div>
+                <ul class="color-options">
+                  <li><a href="#" class="color-option selected-onclick blue">Periwinkle</a></li>
+                  <li><a href="#" class="color-option selected-onclick teal">Teal</a></li>
+                  <li><a href="#" class="color-option selected-onclick pink">Pink</a></li>
+                  <li><a href="#" class="color-option selected-onclick orange">Orange</a></li>
+                  <li><a href="#" class="color-option selected-onclick yellow">Yellow</a></li>
+                  <li><a href="#" class="color-option selected-onclick green">Green</a></li>
+                  <li><a href="#" class="color-option selected-onclick purple">Purple</a></li>
+                </ul>
+              </div>
+
+              <!-- Size selector -->
+              <div class="field-wrapper">
+                <div class="field">
+                  <div class="field-label">
+                    Size
+                    <a href="#" class="field-label-info">Size guide</a>
+                  </div>
+                  <ul class="size-options">
+                    <li><a href="#" class="size-option selected-onclick">XS</a></li>
+                    <li><a href="#" class="size-option selected-onclick selected">S</a></li>
+                    <li><a href="#" class="size-option selected-onclick">M</a></li>
+                    <li><a href="#" class="size-option selected-onclick">L</a></li>
+                    <li><a href="#" class="size-option selected-onclick">XL</a></li>
+                    <li><a href="#" class="size-option selected-onclick">XXL</a></li>
                   </ul>
+                </div>
+              </div>
 
-                  <!-- Rating -->
+              <!-- Quantity selector -->
+              <div class="field">
+                <div class="field-label">Quantity</div>
+                <div class="input-group quantity-selector">
+                  <button class="btn decrement">-</button>
+                  <div class="quantity-value">1</div>
+                  <button class="btn increment">+</button>
+                </div>
+              </div>
+
+              <!-- Product actions -->
+              <div class="product-actions">
+                <button class="btn btn-xl btn-primary">Add to cart</button>
+                <a href="#" class="btn btn-sm btn-add-to-wishlist">Add to wish list</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Product reviews -->
+          <div class="product-reviews container">
+            <!-- Existing reviews -->
+            <h3>Product reviews</h3>
+            <div class="product-reviews-list">
+              <div class="review row">
+
+                <!-- Review column 1 -->
+                <div class="col-sm-3">
                   <ul class="star-rating">
                     <li class="star"></li>
                     <li class="star"></li>
                     <li class="star"></li>
                     <li class="star"></li>
-                    <li class="no-star"></li>
+                    <li></li>
                   </ul>
-
-                  <!-- Product title -->
-                  <h2>Super Oversized T-Shirt with Raw Sleeves in Brown</h2>
-
-                  <!-- Product price -->
-                  <div class="product-price">&pound;13.99</div>
+                  <div class="user-name">
+                    Pablo Permins
+                  </div>
+                  <div class="review-time">
+                    one hour ago
+                  </div>
                 </div>
 
-                <!-- Product details -->
-                <div class="product-details">
+                <!-- Review column 2-->
+                <div class="col-sm-9">
+                  <p class="review-body">
+                    Got this through the post the other day and right from opening the packet I knew this was
+                    quality, put it on and I was right!! Well done
+                  </p>
 
-                  <!-- Color selector -->
-                  <div class="field">
-                    <div class="field-label">Color</div>
+                  <div class="content-metadata">
+                    <div class="content-likes">113</div>
+                    <div class="content-comments">6</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add review form -->
+            <h3>Add a review</h3>
+            <form>
+              <div class="form-group row">
+                <label for="review-nickname" class="col-sm-3 col-form-label">Choose a nickname</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="review-nickname" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="review-explanation" class="col-sm-3 col-form-label">Your review</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control" id="review-explanation" rows="4"></textarea>
+                  <p class="help-text small">
+                    Your review must be at least 50 characters. <a href="#">Full review guidelines</a>
+                  </p>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="review-rating" class="col-sm-3 col-form-label">Overall rating</label>
+                <div class="col-sm-9">
+                  <ul class="star-rating star-rating-selector">
+                    <li class="star"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-9">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Related products-->
+          <div class="related-products">
+            <h3>You may also like</h3>
+            <div class="related-products-list-wrapper" data-simplebar>
+              <div class="related-products-list">
+
+                <div class="product-teaser">
+                  <div class="product-badge badge badge-primary">HOT</div>
+                  <div class="product-image">
+                    <img src="~images/photos/images-shirt17.png" />
+                  </div>
+                  <div class="product-details">
+                    <div class="product-title">New Look Powercat Tee in Gradient Fade</div>
+                    <div class="price">&pound;14.99</div>
+                  </div>
+                  <div class="product-options">
+                    <a href="#" class="btn btn-primary" data-toggle="modal"
+                      data-target="#product-quickview-modal">View</a>
+                    <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+                  </div>
+                </div>
+
+                <div class="product-teaser">
+                  <div class="product-image">
+                    <img src="~images/photos/images-shirt16.png" />
+                  </div>
+                  <div class="product-details">
+                    <div class="product-title">SwampMonster Full Print Tee</div>
+                    <div class="price">&pound;18.99</div>
+                  </div>
+                  <div class="product-options">
+                    <a href="#" class="btn btn-primary" data-toggle="modal"
+                      data-target="#product-quickview-modal">View</a>
+                    <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+                  </div>
+                </div>
+
+                <div class="product-teaser">
+                  <div class="product-image">
+                    <img src="~images/photos/images-shirt15.png" />
+                  </div>
+                  <div class="product-details">
+                    <div class="product-title">Rastafarian Lion Tee</div>
+                    <div class="price">&pound;14.99</div>
                     <ul class="color-options">
-                      <li><a href="#" class="color-option selected-onclick blue">Periwinkle</a></li>
-                      <li><a href="#" class="color-option selected-onclick teal">Teal</a></li>
-                      <li><a href="#" class="color-option selected-onclick pink">Pink</a></li>
-                      <li><a href="#" class="color-option selected-onclick orange">Orange</a></li>
-                      <li><a href="#" class="color-option selected-onclick yellow">Yellow</a></li>
-                      <li><a href="#" class="color-option selected-onclick green">Green</a></li>
-                      <li><a href="#" class="color-option selected-onclick purple">Purple</a></li>
+                      <li><span class="color-option blue">Periwinkle</span></li>
+                      <li><span class="color-option teal">Teal</span></li>
+                      <li><span class="color-option pink">Pink</span></li>
                     </ul>
                   </div>
-
-                  <!-- Size selector -->
-                  <div class="field-wrapper">
-                    <div class="field">
-                      <div class="field-label">
-                        Size
-                        <a href="#" class="field-label-info">Size guide</a>
-                      </div>
-                      <ul class="size-options">
-                        <li><a href="#" class="size-option selected-onclick">XS</a></li>
-                        <li><a href="#" class="size-option selected-onclick selected">S</a></li>
-                        <li><a href="#" class="size-option selected-onclick">M</a></li>
-                        <li><a href="#" class="size-option selected-onclick">L</a></li>
-                        <li><a href="#" class="size-option selected-onclick">XL</a></li>
-                        <li><a href="#" class="size-option selected-onclick">XXL</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <!-- Quantity selector -->
-                  <div class="field">
-                    <div class="field-label">Quantity</div>
-                    <div class="input-group quantity-selector">
-                      <button class="btn decrement">-</button>
-                      <div class="quantity-value">1</div>
-                      <button class="btn increment">+</button>
-                    </div>
-                  </div>
-
-                  <!-- Product actions -->
-                  <div class="product-actions">
-                    <button class="btn btn-xl btn-primary">Add to cart</button>
-                    <a href="#" class="btn btn-sm btn-add-to-wishlist">Add to wish list</a>
+                  <div class="product-options">
+                    <a href="#" class="btn btn-primary" data-toggle="modal"
+                      data-target="#product-quickview-modal">View</a>
+                    <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
                   </div>
                 </div>
 
-              </div>
-
-              <!-- Product reviews -->
-              <div class="product-reviews container">
-                <!-- Existing reviews -->
-                <h3>Product reviews</h3>
-                <div class="product-reviews-list">
-                  <div class="review row">
-
-                    <!-- Review column 1 -->
-                    <div class="col-sm-3">
-                      <ul class="star-rating">
-                        <li class="star"></li>
-                        <li class="star"></li>
-                        <li class="star"></li>
-                        <li class="star"></li>
-                        <li></li>
-                      </ul>
-                      <div class="user-name">
-                        Pablo Permins
-                      </div>
-                      <div class="review-time">
-                        one hour ago
-                      </div>
-                    </div>
-
-                    <!-- Review column 2-->
-                    <div class="col-sm-9">
-                      <p class="review-body">
-                        Got this through the post the other day and right from opening the packet I knew this was
-                        quality, put it on and I was right!! Well done
-                      </p>
-
-                      <div class="content-metadata">
-                        <div class="content-likes">113</div>
-                        <div class="content-comments">6</div>
-                      </div>
-                    </div>
+                <div class="product-teaser">
+                  <div class="product-image">
+                    <img src="~images/photos/images-shirt14.png" />
+                  </div>
+                  <div class="product-details">
+                    <div class="product-title">The Doge Full Print Tee</div>
+                    <div class="price">&pound;4.99</div>
+                  </div>
+                  <div class="product-options">
+                    <a href="#" class="btn btn-primary" data-toggle="modal"
+                      data-target="#product-quickview-modal">View</a>
+                    <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
                   </div>
                 </div>
 
-                <!-- Add review form -->
-                <h3>Add a review</h3>
-                <form>
-                  <div class="form-group row">
-                    <label for="review-nickname" class="col-sm-3 col-form-label">Choose a nickname</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="review-nickname" />
-                    </div>
+                <div class="product-teaser">
+                  <div class="product-badge badge badge-primary">HOT</div>
+                  <div class="product-image">
+                    <img src="~images/photos/images-shirt17.png" />
                   </div>
-                  <div class="form-group row">
-                    <label for="review-explanation" class="col-sm-3 col-form-label">Your review</label>
-                    <div class="col-sm-9">
-                      <textarea class="form-control" id="review-explanation" rows="4"></textarea>
-                      <p class="help-text small">
-                        Your review must be at least 50 characters. <a href="#">Full review guidelines</a>
-                      </p>
-                    </div>
+                  <div class="product-details">
+                    <div class="product-title">New Look Powercat Tee in Gradient Fade</div>
+                    <div class="price">&pound;14.99</div>
                   </div>
-                  <div class="form-group row">
-                    <label for="review-rating" class="col-sm-3 col-form-label">Overall rating</label>
-                    <div class="col-sm-9">
-                      <ul class="star-rating star-rating-selector">
-                        <li class="star"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-9">
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-
-              <!-- Related products-->
-              <div class="related-products">
-                <h3>You may also like</h3>
-                <div class="related-products-list-wrapper" data-simplebar>
-                  <div class="related-products-list">
-
-                    <div class="product-teaser">
-                      <div class="product-badge badge badge-primary">HOT</div>
-                      <div class="product-image">
-                        <img src="~images/photos/images-shirt17.png" />
-                      </div>
-                      <div class="product-details">
-                        <div class="product-title">New Look Powercat Tee in Gradient Fade</div>
-                        <div class="price">&pound;14.99</div>
-                      </div>
-                      <div class="product-options">
-                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                          data-target="#product-quickview-modal">View</a>
-                        <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-                      </div>
-                    </div>
-
-                    <div class="product-teaser">
-                      <div class="product-image">
-                        <img src="~images/photos/images-shirt16.png" />
-                      </div>
-                      <div class="product-details">
-                        <div class="product-title">SwampMonster Full Print Tee</div>
-                        <div class="price">&pound;18.99</div>
-                      </div>
-                      <div class="product-options">
-                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                          data-target="#product-quickview-modal">View</a>
-                        <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-                      </div>
-                    </div>
-
-                    <div class="product-teaser">
-                      <div class="product-image">
-                        <img src="~images/photos/images-shirt15.png" />
-                      </div>
-                      <div class="product-details">
-                        <div class="product-title">Rastafarian Lion Tee</div>
-                        <div class="price">&pound;14.99</div>
-                        <ul class="color-options">
-                          <li><span class="color-option blue">Periwinkle</span></li>
-                          <li><span class="color-option teal">Teal</span></li>
-                          <li><span class="color-option pink">Pink</span></li>
-                        </ul>
-                      </div>
-                      <div class="product-options">
-                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                          data-target="#product-quickview-modal">View</a>
-                        <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-                      </div>
-                    </div>
-
-                    <div class="product-teaser">
-                      <div class="product-image">
-                        <img src="~images/photos/images-shirt14.png" />
-                      </div>
-                      <div class="product-details">
-                        <div class="product-title">The Doge Full Print Tee</div>
-                        <div class="price">&pound;4.99</div>
-                      </div>
-                      <div class="product-options">
-                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                          data-target="#product-quickview-modal">View</a>
-                        <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-                      </div>
-                    </div>
-
-                    <div class="product-teaser">
-                      <div class="product-badge badge badge-primary">HOT</div>
-                      <div class="product-image">
-                        <img src="~images/photos/images-shirt17.png" />
-                      </div>
-                      <div class="product-details">
-                        <div class="product-title">New Look Powercat Tee in Gradient Fade</div>
-                        <div class="price">&pound;14.99</div>
-                      </div>
-                      <div class="product-options">
-                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                          data-target="#product-quickview-modal">View</a>
-                        <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-                      </div>
-                    </div>
-
-                    <div class="product-teaser">
-                      <div class="product-image">
-                        <img src="~images/photos/images-shirt16.png" />
-                      </div>
-                      <div class="product-details">
-                        <div class="product-title">SwampMonster Full Print Tee</div>
-                        <div class="price">&pound;18.99</div>
-                      </div>
-                      <div class="product-options">
-                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                          data-target="#product-quickview-modal">View</a>
-                        <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-                      </div>
-                    </div>
-
-                    <div class="product-teaser">
-                      <div class="product-image">
-                        <img src="~images/photos/images-shirt15.png" />
-                      </div>
-                      <div class="product-details">
-                        <div class="product-title">Rastafarian Lion Tee</div>
-                        <div class="price">&pound;14.99</div>
-                      </div>
-                      <div class="product-options">
-                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                          data-target="#product-quickview-modal">View</a>
-                        <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-                      </div>
-                    </div>
-
-                    <div class="product-teaser">
-                      <div class="product-image">
-                        <img src="~images/photos/images-shirt14.png" />
-                      </div>
-                      <div class="product-details">
-                        <div class="product-title">The Doge Full Print Tee</div>
-                        <div class="price">&pound;4.99</div>
-                      </div>
-                      <div class="product-options">
-                        <a href="#" class="btn btn-primary" data-toggle="modal"
-                          data-target="#product-quickview-modal">View</a>
-                        <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
-                      </div>
-                    </div>
-
+                  <div class="product-options">
+                    <a href="#" class="btn btn-primary" data-toggle="modal"
+                      data-target="#product-quickview-modal">View</a>
+                    <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
                   </div>
                 </div>
+
+                <div class="product-teaser">
+                  <div class="product-image">
+                    <img src="~images/photos/images-shirt16.png" />
+                  </div>
+                  <div class="product-details">
+                    <div class="product-title">SwampMonster Full Print Tee</div>
+                    <div class="price">&pound;18.99</div>
+                  </div>
+                  <div class="product-options">
+                    <a href="#" class="btn btn-primary" data-toggle="modal"
+                      data-target="#product-quickview-modal">View</a>
+                    <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+                  </div>
+                </div>
+
+                <div class="product-teaser">
+                  <div class="product-image">
+                    <img src="~images/photos/images-shirt15.png" />
+                  </div>
+                  <div class="product-details">
+                    <div class="product-title">Rastafarian Lion Tee</div>
+                    <div class="price">&pound;14.99</div>
+                  </div>
+                  <div class="product-options">
+                    <a href="#" class="btn btn-primary" data-toggle="modal"
+                      data-target="#product-quickview-modal">View</a>
+                    <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+                  </div>
+                </div>
+
+                <div class="product-teaser">
+                  <div class="product-image">
+                    <img src="~images/photos/images-shirt14.png" />
+                  </div>
+                  <div class="product-details">
+                    <div class="product-title">The Doge Full Print Tee</div>
+                    <div class="price">&pound;4.99</div>
+                  </div>
+                  <div class="product-options">
+                    <a href="#" class="btn btn-primary" data-toggle="modal"
+                      data-target="#product-quickview-modal">View</a>
+                    <a href="#" class="btn btn-add-to-wishlist btn-sm visible-hover">Add to Wish List</a>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Brand spotlight -->
-      <div id="brand-spotlight" class="jumbotron jumbotron-fluid bg-secondary text-light my-4">
-        <div class="container">
-          <h2 class="display-3 mb-1">Converse</h2>
-          <p class="lead">
-            Explore styles tough enough to handle all your workouts.
-          </p>
-          <a class="btn btn-light btn-lg" href="#" role="button">Shop Brand</a>
-        </div>
-      </div>
-
-      <!-- Subscription banner -->
-      <div class="discount-banner banner banner-light banner-sm">
-        <div class="row align-items-center">
-          <p class="h4 col-sm">Subscribe for shop news, updates, and special offers</p>
-          <form class="form-inline col-sm-auto">
-            <input class="form-control form-control-sm mr-2" type="email" placeholder="Your e-mail here"
-              aria-label="Subscribe" />
-            <button class="btn btn-primary btn-sm form-control form-control-sm">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </div>
-
     </div>
   </div>
 
@@ -991,34 +1024,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Page footer -->
-  <footer id="footer" class="bg-dark text-white footer-standard">
-    <div class="container">
-      <h3 class="sr-only">Department Links</h3>
-      <ul class="department-links">
-        <li><a href="#">Women</a></li>
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Kids</a></li>
-        <li><a href="#">Shoes</a></li>
-        <li><a href="#">Brands</a></li>
-      </ul>
-
-      <h3 class="sr-only">Social Media</h3>
-      <ul class="social-links">
-        <li><a class="instagram" href="#">Instagram</a></li>
-        <li><a class="pinterest" href="#">Pinterest</a></li>
-        <li><a class="twitter" href="#">Twitter</a></li>
-        <li><a class="facebook" href="#">Facebook</a></li>
-      </ul>
-
-      <ul class="small-print">
-        <li><span>&copy;2016 Shopmate Ltd</span></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Privacy policy</a></li>
-      </ul>
-    </div>
-  </footer>
 
 </body>
 
