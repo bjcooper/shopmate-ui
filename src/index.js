@@ -94,10 +94,10 @@ $(function () {
     link.addClass('clicked');
     setTimeout(function () {
       $(link.data('target')).modal('hide');
-    }, 2000);
+    }, 1500);
     setTimeout(function () {
       link.removeClass('clicked');
-    }, 3000)
+    }, 2500)
   });
 });
 
