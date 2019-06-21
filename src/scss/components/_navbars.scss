@@ -7,22 +7,75 @@
     font-weight: bolder;
   }
 
-  .navbar-toggler {
+  > .container {
+    position: relative;
+  }
+
+  button.navbar-toggler {
     margin-right: -$spacer * 0.75;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:not(.collapsed) {
+      .navbar-toggler-icon {
+        background-image: url("~images/icons/close-big-red.png");
+        background-size: auto;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    padding-bottom: $spacer;
+
+    .navbar-nav {
+      margin-top: $spacer;
+      margin-bottom: $spacer;
+
+      .nav-link {
+        font-size: $font-size-lg;
+        text-align: center;
+      }
+    }
+
+    .navbar-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   @include media-breakpoint-up(lg) {
-    padding-left: $spacer * 2;
-    padding-right: $spacer * 2;
+    .navbar-collapse {
+      padding-bottom: 0;
+
+      .navbar-nav {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: $spacer * 2;
+
+        .nav-link {
+          font-size: $font-size-base;
+          text-align: left;
+        }
+      }
+
+      .navbar-actions {
+        position: absolute;
+        right: 0;
+        justify-content: flex-end;
+      }
+    }
   }
 }
 
 @include media-breakpoint-up(lg) {
-  .navbar-dark.navbar-expand-lg {
+  .navbar-expand-lg {
     .navbar-nav {
       .nav-link {
-        padding-right: $spacer;
-        padding-left: $spacer;
+        padding-right: $spacer * 1.25;
+        padding-left: $spacer * 1.25;
       }
     }
   }
