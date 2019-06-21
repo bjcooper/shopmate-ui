@@ -16,6 +16,10 @@ body.blog {
     padding-left: $spacer;
     padding-right: $spacer;
     @include remove-gutter();
+
+    > .container {
+      @include center-content($blog-width);
+    }
   }
 
   .banner-light {
@@ -29,6 +33,10 @@ body.blog {
   font-family: $font-family-copy;
   font-weight: $font-weight-copy;
 
+  .container {
+    @include center-content($blog-width);
+  }
+
   .blog-header {
     background: $gray-100;
     @include remove-gutter();
@@ -40,7 +48,8 @@ body.blog {
   .blog-meta {
     display: flex;
     justify-content: center;
-    padding: ($spacer * 1.5) ($spacer * 1.5);
+    padding-top: $spacer * 1.5;
+    padding-bottom: $spacer * 1.5;
 
     > div {
       padding: ($spacer * 0.5);
@@ -69,9 +78,6 @@ body.blog {
   .blog-title {
     text-align: center;
     margin-bottom: $spacer * 2;
-    @include center-content($blog-width - 20px);
-    padding-left: $spacer;
-    padding-right: $spacer;
   }
 
   /**
@@ -80,10 +86,7 @@ body.blog {
   .blog-intro {
     text-align: center;
     @include blog-bold();
-    @include center-content($blog-width - 20px);
     margin-bottom: $spacer * 4;
-    padding-left: $spacer;
-    padding-right: $spacer;
   }
 
   /**
@@ -117,7 +120,6 @@ body.blog {
    */
   .blog-lead {
     @include blog-bold();
-    @include center-content($blog-width - 120px);
     margin-bottom: $spacer * 3;
   }
 
@@ -125,8 +127,6 @@ body.blog {
    * Main body copy
    */
   .blog-body {
-    @include center-content($blog-width);
-
     p {
       max-width: none;
       margin-bottom: $spacer * 2;
@@ -164,7 +164,6 @@ body.blog {
    * Footer
    */
   .blog-footer {
-    @include center-content($blog-width);
 
     /**
      * Blog tags/categories
@@ -217,8 +216,6 @@ body.blog {
  * Comments section
  */
 .blog-post-comments {
-  @include center-content($blog-width);
-
   .h3 {
     margin-bottom: $spacer * 2.5;
   }
@@ -232,8 +229,6 @@ body.blog {
  * Related posts section
  */
 .blog-post-related {
-  @include center-content($blog-width);
-
   .h3 {
     margin-bottom: $spacer * 1.5;
   }
