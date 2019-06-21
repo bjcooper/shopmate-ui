@@ -16,7 +16,15 @@ $(function () {
 
   // Add some standard click behaviors.
   $('.selected-onclick').click(function () {
-    $(this).toggleClass('selected');
+    // If this is a single-select group, unselect others.
+    let group = $(this).closest('.single-selection-group');
+    if (group.length) {
+      $(group).find('.selected-onclick').removeClass('selected');
+      $(this).addClass('selected');
+    }
+    else {
+      $(this).toggleClass('selected');
+    }
   });
 
   $('.hide-onclick').click(function () {
@@ -27,7 +35,7 @@ $(function () {
   $('a[href="#"]').click(function (event) {
     event.preventDefault();
     // Don't navigate for toggles and such.
-    if (!$(this).data('toggle') && !$(this).hasClass('no-nav')) {
+    if (!$(this).data('toggle') && !$(this).hasClass('no-nav') && !$(this).hasClass('selected-onclick') && !$(this).hasClass('hide-onclick')) {
       simulateNavigation();
     }
   });
