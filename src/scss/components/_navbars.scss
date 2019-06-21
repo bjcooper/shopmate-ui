@@ -64,6 +64,7 @@
 
         &:focus,
         &:hover {
+          color: $navbar-light-color;
           transform: translateY(-2px);
 
           &::before,
@@ -113,6 +114,44 @@
   }
 }
 
+.navbar-light {
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-link {
+
+        &::before,
+        &::after {
+          background: rgba($primary, 0.6);
+        }
+
+        &:focus,
+        &:hover {
+          color: $navbar-light-color;
+        }
+      }
+    }
+  }
+}
+
+.navbar-dark {
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-link {
+
+        &::before,
+        &::after {
+          background: rgba($primary, 0.8);
+        }
+
+        &:focus,
+        &:hover {
+          color: $navbar-dark-color;
+        }
+      }
+    }
+  }
+}
+
 @include media-breakpoint-up(lg) {
   .navbar-expand-lg {
     .navbar-nav {
@@ -148,6 +187,7 @@
   margin-right: $spacer;
 
   + #search-reset {
+    z-index: 1;
     display: none;
     margin-left: -3rem;
     background: url("~images/icons/icons-close-small-black.png") 50% 50% no-repeat scroll transparent;

@@ -27,7 +27,7 @@ $(function () {
   $('a[href="#"]').click(function (event) {
     event.preventDefault();
     // Don't navigate for toggles and such.
-    if (!$(this).data('toggle')) {
+    if (!$(this).data('toggle') && !$(this).hasClass('no-nav')) {
       simulateNavigation();
     }
   });
