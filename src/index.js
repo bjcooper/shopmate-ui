@@ -14,7 +14,7 @@ $(function () {
   // Enable range sliders.
   $('.range-slider').ionRangeSlider();
 
-  // Add some standard click behaviors.
+  // Select items on-click.
   $('.selected-onclick').click(function () {
     // If this is a single-select group, unselect others.
     let group = $(this).closest('.single-selection-group');
@@ -27,11 +27,12 @@ $(function () {
     }
   });
 
+  // Hide items on-click.
   $('.hide-onclick').click(function () {
     $(this).hide();
   });
 
-  // Disable fake links and forms.
+  // Disable demo links and forms.
   $('a[href="#"]').click(function (event) {
     event.preventDefault();
     // Don't navigate for toggles and such.
@@ -85,6 +86,19 @@ $(function () {
     // Hide the current modal.
     $(currentModalId).modal('hide');
   })
+
+  // Power up special add to cart animations.
+  $('.add-to-cart').click(function () {
+    const link = $(this);
+
+    link.addClass('clicked');
+    setTimeout(function () {
+      $(link.data('target')).modal('hide');
+    }, 2000);
+    setTimeout(function () {
+      link.removeClass('clicked');
+    }, 3000)
+  });
 });
 
 /**

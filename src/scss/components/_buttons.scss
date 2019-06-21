@@ -46,3 +46,89 @@
   font-size: 1rem;
   padding: $spacer ($spacer * 3);
 }
+
+$check-height: 1.5rem;
+$check-width: $check-height / 2;
+$check-thickness: 3px;
+$check-color: $white;
+$check-delay: 0.25s;
+
+.btn.add-to-cart {
+  .checkmark {
+    display: inline-block;
+    position: relative;
+    width: 0;
+    margin-left: -0.5rem;
+    transition: width 0.25s ease-out;
+    opacity: 0;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      position: absolute;
+      left: 0;
+      top: -0.25rem;
+      transform: scaleX(-1) rotate(135deg);
+      transform-origin: left top;
+      border-color: transparent;
+      border-width:  $check-thickness $check-thickness 0 0;
+      border-style: solid;
+    }
+  }
+
+  .initial-text {
+    display: inline-block;
+  }
+
+  .clicked-text {
+    display: none;
+  }
+
+  &.clicked {
+    background-color: $primary;
+
+    .checkmark {
+      opacity: 1;
+      width: 1.75rem;
+
+      &::after {
+        animation-delay: 0.4s;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-name: show-checkmark;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    .initial-text {
+      display: none;
+    }
+
+    .clicked-text {
+      display: inline-block;
+    }
+  }
+}
+
+@keyframes show-checkmark {
+  0% {
+    border-color: $check-color;
+    height: 0;
+    width: 0;
+  }
+  20% {
+    height: 0;
+    width: $check-width;
+  }
+  40% {
+    height: $check-height;
+    width: $check-width;
+  }
+  100% {
+    border-color: $check-color;
+    height: $check-height;
+    width: $check-width;
+  }
+}
