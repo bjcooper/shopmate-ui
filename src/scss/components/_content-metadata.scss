@@ -42,7 +42,7 @@
 
   .content-actions {
     ul {
-      list-style: none;
+      @include list-style-none();
       padding: 0;
       margin-bottom: 0;
       height: 36px;

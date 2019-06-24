@@ -1,5 +1,5 @@
 .star-rating {
-  list-style: none;
+  @include list-style-none();
   padding: 0;
   margin: 0;
 
@@ -33,4 +33,8 @@
       filter: brightness(80%);
     }
   }
+}
+
+.modal.show .star-rating {
+  @include list-style-none();
 }

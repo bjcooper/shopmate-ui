@@ -30,7 +30,7 @@
 
       .active-filters {
         font-size: $font-size-larger * (12 / 16);
-        list-style: none;
+        @include list-style-none();
         padding: 0;
         margin-bottom: 0;
 

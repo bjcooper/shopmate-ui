@@ -1,6 +1,6 @@
 .breadcrumb {
   font-size: $font-size-sm;
-  list-style: none;
+  @include list-style-none();
   padding: 0;
   margin-bottom: $spacer * 1.5;
 

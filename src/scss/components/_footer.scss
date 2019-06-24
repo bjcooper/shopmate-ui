@@ -4,7 +4,7 @@
 
   &.footer-standard {
     ul {
-      list-style: none;
+      @include list-style-none();
       padding: 0;
       text-align: center;
       justify-content: center;
@@ -144,7 +144,7 @@
 
   &.footer-dense {
     ul.links {
-      list-style: none;
+      @include list-style-none();
       padding: 0;
   
       a {

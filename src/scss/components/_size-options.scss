@@ -1,5 +1,5 @@
 ul.size-options {
-  list-style: none;
+  @include list-style-none();
   padding: 0;
   display: flex;
   flex-wrap: wrap;

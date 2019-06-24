@@ -8,3 +8,14 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/**
+ * Mixin to remove bullets from a list.
+ *
+ * This includes a hack to replace the bullet image with a transparent one in
+ * order to cover a bug in Edge (https://stackoverflow.com/questions/20356311/internet-explorer-11-ignores-list-stylenone-on-the-first-load).
+ */ 
+@mixin list-style-none() {
+  list-style: none;
+  list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);
+}
