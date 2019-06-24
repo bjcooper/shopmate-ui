@@ -80,10 +80,12 @@ $check-delay: 0.25s;
 
   .initial-text {
     display: inline-block;
+    white-space: nowrap;
   }
 
   .clicked-text {
     display: none;
+    white-space: nowrap;
   }
 
   &.clicked {
