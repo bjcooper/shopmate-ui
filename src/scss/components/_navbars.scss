@@ -186,6 +186,10 @@
   transition: 0.2s ease;
   margin-right: $spacer;
 
+  &::placeholder {
+    color: transparent;
+  }
+
   + #search-reset {
     z-index: 1;
     display: none;
@@ -207,6 +211,10 @@
     border-color: $input-border-color;
     background-position-x: 0.75rem;
     cursor: auto;
+
+    &::placeholder {
+      opacity: 1;
+    }
 
     + #search-reset {
       display: block;
@@ -231,12 +239,16 @@
 
   &::placeholder {
     color: $white;
-    opacity: 0.7;
   }
 
   &:focus {
     background-color: $gray-500;
     background-color: rgba($white, 0.5);
+
+    &::placeholder {
+      color: $white;
+      opacity: 0.7;
+    }
   }
 }
 
