@@ -54,28 +54,24 @@ $check-color: $white;
 $check-delay: 0.25s;
 
 .btn.add-to-cart {
+  position: relative;
+  transition: padding 0.25s ease;
+
   .checkmark {
     display: inline-block;
-    position: relative;
+    height: 0;
     width: 0;
-    margin-left: -0.5rem;
-    transition: width 0.25s ease-out;
     opacity: 0;
 
-    &::after {
-      content: '';
-      display: block;
-      height: 0;
-      width: 0;
-      position: absolute;
-      left: 0;
-      top: -0.25rem;
-      transform: scaleX(-1) rotate(135deg);
-      transform-origin: left top;
-      border-color: transparent;
-      border-width:  $check-thickness $check-thickness 0 0;
-      border-style: solid;
-    }
+    position: absolute;
+    top: 50%;
+    left: 2.5rem;
+    
+    transform: scaleX(-1) rotate(135deg);
+    transform-origin: left top;
+    border-color: $check-color;
+    border-width:  $check-thickness $check-thickness 0 0;
+    border-style: solid;
   }
 
   .initial-text {
@@ -90,18 +86,14 @@ $check-delay: 0.25s;
 
   &.clicked {
     background-color: $primary;
+    padding-left: 4.5rem;
 
     .checkmark {
-      opacity: 1;
-      width: 1.75rem;
-
-      &::after {
-        animation-delay: 0.4s;
-        animation-duration: 1s;
-        animation-timing-function: ease;
-        animation-name: show-checkmark;
-        animation-fill-mode: forwards;
-      }
+      animation-delay: 0.3s;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;
+      animation-name: show-checkmark;
+      animation-fill-mode: forwards;
     }
 
     .initial-text {
@@ -116,20 +108,16 @@ $check-delay: 0.25s;
 
 @keyframes show-checkmark {
   0% {
-    border-color: $check-color;
-    height: 0;
-    width: 0;
+    opacity: 1;
+    height: 0rem;
+    width: 0rem;
   }
-  20% {
-    height: 0;
-    width: $check-width;
-  }
-  40% {
-    height: $check-height;
+  50% {
+    height: 0rem;
     width: $check-width;
   }
   100% {
-    border-color: $check-color;
+    opacity: 1;
     height: $check-height;
     width: $check-width;
   }
