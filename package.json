@@ -1,7 +1,7 @@
 {
-  "name": "turing-uiux",
+  "name": "shopmate-ui",
   "version": "1.0.0",
-  "description": "HTML/CSS mastery demonstration for Turing.ly.",
+  "description": "HTML/CSS mastery demonstration for a fictitious e-commerce site.",
   "main": "index.js",
   "scripts": {
     "serve": "NODE_ENV=development webpack-dev-server --mode development --hot",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.thewiznerd.com:Brett/turing-uiux.git"
+    "url": "git@git.thewiznerd.com:Brett/shopmate-ui.git"
   },
   "keywords": [
     "webpack",
